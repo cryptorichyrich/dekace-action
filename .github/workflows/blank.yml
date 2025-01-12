@@ -1,0 +1,36 @@
+name: Fetch YouTube Playlists
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:      # Allows manual trigger
+
+jobs:
+  fetch-playlists:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Create directories
+        run: |
+          mkdir -p _site/assets/data
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install googleapis@126.0.1
+
+      - name: Run playlist fetcher
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          echo "Starting playlist fetch..."
+          node fetch-playlists.js
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3        
