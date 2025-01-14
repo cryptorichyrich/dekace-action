@@ -19,8 +19,10 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Install dependencies
-      run: npm install
+    - name: Install dependencies including jsdom
+      run: |
+        npm install
+        npm install jsdom
 
     - name: Get current year
       id: get_year
