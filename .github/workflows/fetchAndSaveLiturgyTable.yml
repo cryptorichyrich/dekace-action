@@ -22,10 +22,14 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Get current year
+      id: get_year
+      run: echo "::set-output name=year::$(date +'%Y')"
+
     - name: Run script to fetch data
       run: node fetchAndSaveLiturgyTable.js
       env:
-        YEAR: 2025
+        YEAR: ${{ steps.get_year.outputs.year }}
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
