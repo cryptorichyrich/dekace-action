@@ -43,3 +43,8 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./assets/data
+        # Add this to ensure we don't clean the existing content
+        keep_history: true
+        # Optionally, if you want to commit only the changes in ./assets/data
+        # external_repository: cryptorichyrich/dekace-action
+        # publish_branch: gh-pages
