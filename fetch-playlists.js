@@ -28,6 +28,44 @@ async function getChannelId(handle) {
   }
 }
 
+async function fetchVideoDetails(videoId) {
+  const youtube = google.youtube({
+    version: 'v3',
+    auth: process.env.YOUTUBE_API_KEY
+  });
+
+  let videoDetails = {};
+  
+  try {
+    const [contentDetailsResponse, statisticsResponse] = await Promise.all([
+      youtube.videos.list({
+        part: 'contentDetails',
+        id: videoId
+      }),
+      youtube.videos.list({
+        part: 'statistics',
+        id: videoId
+      })
+    ]);
+
+    if (contentDetailsResponse.data.items && contentDetailsResponse.data.items.length > 0) {
+      videoDetails.duration = contentDetailsResponse.data.items[0].contentDetails.duration;
+    }
+
+    if (statisticsResponse.data.items && statisticsResponse.data.items.length > 0) {
+      const stats = statisticsResponse.data.items[0].statistics;
+      videoDetails.viewCount = stats.viewCount;
+      videoDetails.likeCount = stats.likeCount || 'N/A';
+      videoDetails.commentCount = stats.commentCount;
+      videoDetails.favoriteCount = stats.favoriteCount || 'N/A';
+    }
+  } catch (error) {
+    console.error(`Error fetching video details for ${videoId}:`, error.message);
+  }
+
+  return videoDetails;
+}
+
 async function fetchPlaylistsData() {
   try {
     if (!process.env.YOUTUBE_API_KEY) {
@@ -61,23 +99,27 @@ async function fetchPlaylistsData() {
       playlistResponse.data.items.map(async (playlist) => {
         console.log(`Fetching videos for playlist: ${playlist.snippet.title}`);
         
-        // Get all videos for each playlist, handling pagination
         let videos = [];
         let nextPageToken = null;
         do {
           const videoResponse = await youtube.playlistItems.list({
             part: 'snippet,contentDetails',
             playlistId: playlist.id,
-            maxResults: 50, // Max results per call
+            maxResults: 50,
             pageToken: nextPageToken
           });
 
-          videos = videos.concat(videoResponse.data.items.map(item => ({
-            id: item.contentDetails.videoId,
-            title: item.snippet.title,
-            description: item.snippet.description,
-            thumbnail: item.snippet.thumbnails.medium?.url || '',
-            publishedAt: item.snippet.publishedAt
+          videos = videos.concat(await Promise.all(videoResponse.data.items.map(async item => {
+            const baseVideo = {
+              id: item.contentDetails.videoId,
+              title: item.snippet.title,
+              description: item.snippet.description,
+              thumbnail: item.snippet.thumbnails.medium?.url || '',
+              publishedAt: item.snippet.publishedAt
+            };
+            
+            const extraDetails = await fetchVideoDetails(item.contentDetails.videoId);
+            return { ...baseVideo, ...extraDetails };
           })));
 
           nextPageToken = videoResponse.data.nextPageToken;
