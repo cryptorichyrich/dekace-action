@@ -142,7 +142,7 @@ async function fetchPlaylistsData() {
       fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
-    // Write to JSON file
+    // Write to JSON file, overwriting if it exists
     const outputPath = path.join(OUTPUT_DIR, 'playlists.json');
     fs.writeFileSync(
       outputPath,
