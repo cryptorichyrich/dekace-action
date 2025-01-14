@@ -61,20 +61,27 @@ async function fetchPlaylistsData() {
       playlistResponse.data.items.map(async (playlist) => {
         console.log(`Fetching videos for playlist: ${playlist.snippet.title}`);
         
-        // Get videos for each playlist
-        const videoResponse = await youtube.playlistItems.list({
-          part: 'snippet,contentDetails',
-          playlistId: playlist.id,
-          maxResults: 50
-        });
+        // Get all videos for each playlist, handling pagination
+        let videos = [];
+        let nextPageToken = null;
+        do {
+          const videoResponse = await youtube.playlistItems.list({
+            part: 'snippet,contentDetails',
+            playlistId: playlist.id,
+            maxResults: 50, // Max results per call
+            pageToken: nextPageToken
+          });
 
-        const videos = videoResponse.data.items.map(item => ({
-          id: item.contentDetails.videoId,
-          title: item.snippet.title,
-          description: item.snippet.description,
-          thumbnail: item.snippet.thumbnails.medium?.url || '',
-          publishedAt: item.snippet.publishedAt
-        }));
+          videos = videos.concat(videoResponse.data.items.map(item => ({
+            id: item.contentDetails.videoId,
+            title: item.snippet.title,
+            description: item.snippet.description,
+            thumbnail: item.snippet.thumbnails.medium?.url || '',
+            publishedAt: item.snippet.publishedAt
+          })));
+
+          nextPageToken = videoResponse.data.nextPageToken;
+        } while (nextPageToken);
 
         return {
           id: playlist.id,
@@ -100,8 +107,6 @@ async function fetchPlaylistsData() {
       JSON.stringify(playlists, null, 2)
     );
 
-    console.log(JSON.stringify(playlists, null, 2));
-
     console.log(`Successfully saved playlists data to ${outputPath}`);
     return playlists;
   } catch (error) {
@@ -114,4 +119,3 @@ async function fetchPlaylistsData() {
 }
 
 fetchPlaylistsData();
-
