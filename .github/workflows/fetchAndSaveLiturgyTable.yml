@@ -1,4 +1,4 @@
-name: Deploy Calendar Data to GitHub Pages
+name: Deploy Liturgy Table Data to GitHub Pages
 
 on:
   schedule:
@@ -23,9 +23,9 @@ jobs:
       run: npm install
 
     - name: Run script to fetch data
-      run: fetchAndSaveLiturgyTable.js
+      run: node fetchAndSaveLiturgyTable.js
       env:
-        YEAR: 2025  # You might want to make this dynamic or configurable
+        YEAR: 2025
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
