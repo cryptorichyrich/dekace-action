@@ -27,6 +27,7 @@ jobs:
       run: |
         npm init -y
         npm install jsdom
+        npm install axios
 
     - name: Get current year
       id: get_year
