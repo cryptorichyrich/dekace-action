@@ -113,6 +113,8 @@ async function fetchPlaylistsData() {
             const baseVideo = {
               id: item.contentDetails.videoId,
               title: item.snippet.title,
+              duration: item.contentDetails.duration,
+              viewCount: item.statistics.viewCount,
               description: item.snippet.description,
               thumbnail: item.snippet.thumbnails.medium?.url || '',
               publishedAt: item.snippet.publishedAt
