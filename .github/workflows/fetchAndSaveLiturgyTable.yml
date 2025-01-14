@@ -26,7 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm init -y
-        npm install googleapis@126.0.1
+        npm install jsdom
 
     - name: Get current year
       id: get_year
