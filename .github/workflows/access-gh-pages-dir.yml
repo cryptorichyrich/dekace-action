@@ -1,6 +1,7 @@
 name: Run updateHelloWorld Script
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main  # or master, or whatever your default branch is
