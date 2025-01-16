@@ -18,7 +18,13 @@ jobs:
           node-version: '16' # Update to at least 15.0.0; here I've used 16 for stability
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm init -y
+          npm install googleapis@126.0.1
+          npm install JSONStream
+          npm install event-stream
+          npm install dotenv
+          npm install jsdom
 
       - name: Run fetchdata script
         env:
