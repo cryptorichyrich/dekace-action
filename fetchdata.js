@@ -165,19 +165,25 @@ async function fetchPlaylistsData() {
 
     console.log(`Found ${playlistResponse.data.items.length} playlists`);
 
-    // Save directly to root directory
-    const rootPath = __dirname;
-    const outputPath = path.join(rootPath, 'playlists.json');
+    const outputPath = path.join(__dirname, 'playlists.json');
     let existingPlaylists = [];
 
-    // Check if the file exists and read it using streams
-    if (fs.existsSync(outputPath)) {
-      await new Promise(resolve => {
-        fs.createReadStream(outputPath)
-          .pipe(JSONStream.parse('*'))
-          .pipe(es.mapSync(playlist => existingPlaylists.push(playlist)))
-          .on('end', resolve);
-      });
+    // Retrieve playlists.json from gh-pages if it exists
+    try {
+      const ghPagesPath = path.join(__dirname, '../gh-pages/playlists.json'); // Adjust this path if needed
+      if (fs.existsSync(ghPagesPath)) {
+        await new Promise(resolve => {
+          fs.createReadStream(ghPagesPath)
+            .pipe(JSONStream.parse('*'))
+            .pipe(es.mapSync(playlist => existingPlaylists.push(playlist)))
+            .on('end', resolve);
+        });
+        console.log('Existing playlists loaded from gh-pages.');
+      } else {
+        console.log('No existing playlists.json found in gh-pages, starting from scratch.');
+      }
+    } catch (err) {
+      logError('Failed to load existing playlists from gh-pages:', err);
     }
 
     const playlists = await Promise.all(
