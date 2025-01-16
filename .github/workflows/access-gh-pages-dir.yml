@@ -1,13 +1,12 @@
-name: Generate and Deploy Hello World
+name: Run updateHelloWorld Script
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main  # or master, or whatever your default branch is
 
 jobs:
-  build-and-deploy:
+  run-js:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -18,28 +17,21 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Create hello-world.txt
-        run: |
-          mkdir -p temp
-          node -e "
-            const fs = require('fs');
-            const content = 'Hello World! Generated at: ' + new Date().toISOString();
-            fs.writeFileSync('temp/hello-world.txt', content);
-          "
+      - name: Install dependencies
+        run: npm install  # If your script requires additional npm packages, install them here
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
+      - name: Run updateHelloWorld.js
+        run: node updateHelloWorld.js
 
-      - name: Copy new file to gh-pages
+      - name: Commit and push changes if modified
         run: |
-          cp -r temp/* gh-pages/
-          cd gh-pages
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git pull
           git add .
-          git commit -m "Add hello-world.txt" || echo "No changes to commit"
-          git push origin gh-pages
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update hello-world.txt via GitHub Action"
+            git push origin HEAD:${{ github.ref }}
+          fi
