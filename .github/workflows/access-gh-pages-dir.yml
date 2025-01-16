@@ -24,13 +24,7 @@ jobs:
           echo "GH-Pages directory: ${{ env.GH_PAGES_DIR }}"
           ls -la ${{ env.GH_PAGES_DIR }}
 
-      # Example of how to use the directory in subsequent steps
-      - name: Process files
+      - name: Print Directory
         run: |
-          if [ -d "${{ env.GH_PAGES_DIR }}" ]; then
-            echo "Processing files in ${{ env.GH_PAGES_DIR }}"
-            # Add your file processing commands here
-          else
-            echo "Directory not found!"
-            exit 1
-          fi
+          echo "Directory listing of GH-Pages:"
+          find ${{ env.GH_PAGES_DIR }} -type f -print
