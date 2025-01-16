@@ -150,32 +150,28 @@ async function fetchPlaylistsData() {
       version: 'v3',
       auth: process.env.YOUTUBE_API_KEY
     });
-    console.log("A");
-    console.log("Full path: ", path.join(__dirname, '../gh-pages/playlists.json'));
-    console.log("CHECKING GH-PAGES ",fs.existsSync(path.join(__dirname, '../gh-pages/playlists.json')));
-    console.log("B");
-    const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
-    console.log('Found channel ID:', channelId);
-
-    const playlistResponse = await youtube.playlists.list({
-      part: 'snippet,contentDetails',
-      channelId: channelId,
-      maxResults: 50
-    });
-
-    if (!playlistResponse.data.items) {
-      throw new Error('No playlists found');
-    }
-
-    console.log(`Found ${playlistResponse.data.items.length} playlists`);
-
-    const outputPath = path.join(__dirname, 'playlists.json');
-    let existingPlaylists = [];
 
     // Retrieve playlists.json from gh-pages if it exists
     try {
       const ghPagesPath = path.join(__dirname, '../gh-pages/playlists.json'); // Adjust this path if needed
       if (fs.existsSync(ghPagesPath)) {
+        const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
+        console.log('Found channel ID:', channelId);
+    
+        const playlistResponse = await youtube.playlists.list({
+          part: 'snippet,contentDetails',
+          channelId: channelId,
+          maxResults: 50
+        });
+    
+        if (!playlistResponse.data.items) {
+          throw new Error('No playlists found');
+        }
+    
+        console.log(`Found ${playlistResponse.data.items.length} playlists`);
+    
+        const outputPath = path.join(__dirname, 'playlists.json');
+        let existingPlaylists = [];        
         await new Promise(resolve => {
           fs.createReadStream(ghPagesPath)
             .pipe(JSONStream.parse('*'))
