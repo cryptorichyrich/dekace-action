@@ -39,6 +39,7 @@ jobs:
           cd gh-pages
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
+          git pull
           git add .
           git commit -m "Add hello-world.txt" || echo "No changes to commit"
           git push origin gh-pages
