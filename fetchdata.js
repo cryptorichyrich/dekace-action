@@ -3,7 +3,7 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 const axios = require('axios');
 const { google } = require('googleapis');
-const JSONStream = require('jsonstream');
+const JSONStream = require('JSONStream');
 const es = require('event-stream');
 require('dotenv').config();
 
