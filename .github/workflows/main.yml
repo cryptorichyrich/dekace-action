@@ -1,0 +1,33 @@
+name: Fetch Data and Push to gh-pages
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # This runs the workflow every 30 minutes
+
+jobs:
+  fetch-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14' # or whatever version you need
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run fetchdata script
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          # Add here any other environment variables your script needs
+        run: node fetchdata.js
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Assuming your script outputs directly to the root
+          force_orphan: true # This creates a clean branch if it doesn't exist
