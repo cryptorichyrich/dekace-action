@@ -3,6 +3,17 @@ name: Fetch Data and Push to gh-pages
 on:
   schedule:
     - cron: '*/30 * * * *' # This runs the workflow every 30 minutes
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 
 jobs:
   fetch-and-push:
