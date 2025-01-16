@@ -28,7 +28,12 @@ jobs:
           node-version: '14' # or whatever version you need
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm init -y
+          npm install googleapis@126.0.1
+          npm install JSONStream
+          npm install event-stream
+          npm install dotenv
 
       - name: Run fetchdata script
         env:
