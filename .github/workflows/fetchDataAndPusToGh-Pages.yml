@@ -25,6 +25,7 @@ jobs:
           npm install event-stream
           npm install dotenv
           npm install jsdom
+          npm install axios
 
       - name: Run fetchdata script
         env:
