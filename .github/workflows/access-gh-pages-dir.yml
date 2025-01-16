@@ -1,4 +1,4 @@
-name: Access GH-Pages Directory
+name: Generate and Push JSON to GH-Pages
 
 on:
   workflow_dispatch:  # Allows manual trigger
@@ -10,21 +10,50 @@ env:
   GH_PAGES_DIR: 'gh-pages'  # Default value
 
 jobs:
-  access-gh-pages:
+  generate-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: gh-pages  # Checkout the gh-pages branch
-          path: ${{ env.GH_PAGES_DIR }}
+          fetch-depth: 0  # Fetch all history for all branches and tags.
 
-      - name: List files in GH-Pages directory
-        run: |
-          echo "GH-Pages directory: ${{ env.GH_PAGES_DIR }}"
-          ls -la ${{ env.GH_PAGES_DIR }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # Use the version of Node.js you need
 
-      - name: Print Directory
+      - name: Execute JavaScript to Generate JSON
         run: |
-          echo "Directory listing of GH-Pages:"
-          find ${{ env.GH_PAGES_DIR }} -type f -print
+          node <<EOF
+          const fs = require('fs');
+          const data = { "message": "Hello from GitHub Actions!" };
+          fs.writeFileSync('test.json', JSON.stringify(data, null, 2));
+          EOF
+
+      - name: Checkout GH-Pages branch
+        run: |
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git reset --hard
+          git clean -fd
+
+      - name: Copy JSON to GH-Pages directory
+        run: |
+          mkdir -p ${{ env.GH_PAGES_DIR }}
+          cp test.json ${{ env.GH_PAGES_DIR }}/
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Commit and Push Changes to GH-Pages
+        run: |
+          cd ${{ env.GH_PAGES_DIR }}
+          git add .
+          if git status | grep -q "Changes to be committed"; then
+            git commit -m "Update JSON file"
+            git push origin gh-pages
+          else
+            echo "No changes to commit"
+          fi
