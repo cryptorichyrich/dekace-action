@@ -16,12 +16,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for all branches and tags.
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'  # Use the version of Node.js you need
+          node-version: '14'
 
       - name: Execute JavaScript to Generate JSON
         run: |
@@ -36,16 +36,29 @@ jobs:
           }
           EOF
 
+      - name: Verify test.json Exists
+        run: |
+          ls -la
+          if [ -f test.json ]; then
+            echo "test.json exists"
+          else
+            echo "test.json does NOT exist"
+          fi
+
+      - name: Copy JSON to GH-Pages directory
+        run: |
+          mkdir -p ${{ env.GH_PAGES_DIR }}
+          if [ -f test.json ]; then
+            cp test.json ${{ env.GH_PAGES_DIR }}/
+          else
+            echo "test.json was not found; cannot copy."
+          fi
+
       - name: Checkout GH-Pages branch
         run: |
           git checkout gh-pages || git checkout --orphan gh-pages
           git reset --hard
           git clean -fd
-
-      - name: Copy JSON to GH-Pages directory
-        run: |
-          mkdir -p ${{ env.GH_PAGES_DIR }}
-          cp test.json ${{ env.GH_PAGES_DIR }}/
 
       - name: Configure Git
         run: |
