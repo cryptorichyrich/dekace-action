@@ -151,41 +151,48 @@ async function fetchPlaylistsData() {
       auth: process.env.YOUTUBE_API_KEY
     });
 
-    // Retrieve playlists.json from gh-pages if it exists
-    try {
-      const ghPagesPath = path.join(__dirname, '../gh-pages/playlists.json'); // Adjust this path if needed
-      if (fs.existsSync(ghPagesPath)) {
-        const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
-        console.log('Found channel ID:', channelId);
-    
-        const playlistResponse = await youtube.playlists.list({
-          part: 'snippet,contentDetails',
-          channelId: channelId,
-          maxResults: 50
-        });
-    
-        if (!playlistResponse.data.items) {
-          throw new Error('No playlists found');
-        }
-    
-        console.log(`Found ${playlistResponse.data.items.length} playlists`);
-    
-        const outputPath = path.join(__dirname, 'playlists.json');
-        let existingPlaylists = [];        
-        await new Promise(resolve => {
+    // Initialize variables outside try block to make them accessible throughout the function
+    let existingPlaylists = [];
+    const outputPath = path.join(__dirname, 'playlists.json');
+    const ghPagesPath = path.join(__dirname, '../gh-pages/playlists.json');
+
+    // Get channel ID first
+    const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
+    console.log('Found channel ID:', channelId);
+
+    // Fetch playlist data from YouTube
+    const playlistResponse = await youtube.playlists.list({
+      part: 'snippet,contentDetails',
+      channelId: channelId,
+      maxResults: 50
+    });
+
+    if (!playlistResponse.data.items) {
+      throw new Error('No playlists found');
+    }
+
+    console.log(`Found ${playlistResponse.data.items.length} playlists`);
+
+    // Try to load existing playlists if available
+    if (fs.existsSync(ghPagesPath)) {
+      try {
+        await new Promise((resolve, reject) => {
           fs.createReadStream(ghPagesPath)
             .pipe(JSONStream.parse('*'))
             .pipe(es.mapSync(playlist => existingPlaylists.push(playlist)))
-            .on('end', resolve);
+            .on('end', resolve)
+            .on('error', reject);
         });
         console.log('Existing playlists loaded from gh-pages.');
-      } else {
-        console.log('No existing playlists.json found in gh-pages, starting from scratch.');
+      } catch (err) {
+        console.log('Error reading existing playlists, starting from scratch:', err.message);
+        existingPlaylists = [];
       }
-    } catch (err) {
-      logError('Failed to load existing playlists from gh-pages:', err);
+    } else {
+      console.log('No existing playlists.json found in gh-pages, starting from scratch.');
     }
 
+    // Update playlists with new data
     const playlists = await Promise.all(
       playlistResponse.data.items.map(async (playlist) => {
         const existingPlaylist = existingPlaylists.find(p => p.id === playlist.id);
@@ -193,9 +200,11 @@ async function fetchPlaylistsData() {
       })
     );
 
+    // Save updated playlists
     fs.writeFileSync(outputPath, JSON.stringify(playlists, null, 2));
     console.log(`Successfully updated playlists data to ${outputPath}`);
     return playlists;
+
   } catch (error) {
     logError('Error fetching playlists:', error);
     process.exit(1);
