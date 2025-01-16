@@ -1,75 +1,44 @@
-name: Edit and Push to GH-Pages
+name: Generate and Deploy Hello World
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - main  # or master, depending on your default branch
 
 jobs:
-  edit-and-push:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
 
-      - name: Install dependencies
-        run: npm install simple-git
-
-      - name: Configure Git
+      - name: Create hello-world.txt
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
+          mkdir -p temp
+          node -e "
+            const fs = require('fs');
+            const content = 'Hello World! Generated at: ' + new Date().toISOString();
+            fs.writeFileSync('temp/hello-world.txt', content);
+          "
 
-      - name: Edit and push to gh-pages
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Copy new file to gh-pages
         run: |
-          node <<EOF
-          const fs = require('fs');
-          const simpleGit = require('simple-git');
-
-          async function main() {
-            try {
-              // Initialize git
-              const git = simpleGit();
-
-              // Switch to gh-pages branch
-              await git.checkout('gh-pages');
-              console.log('Switched to gh-pages branch');
-
-              // Check if hello-world.txt exists
-              if (fs.existsSync('hello-world.txt')) {
-                let content = fs.readFileSync('hello-world.txt', 'utf8');
-                content += '\nEdited at ' + new Date().toISOString();
-                fs.writeFileSync('hello-world.txt', content, 'utf8');
-                console.log('File "hello-world.txt" has been edited.');
-                
-                // Add changes
-                await git.add('hello-world.txt');
-                console.log('Changes added to git');
-
-                // Commit changes
-                await git.commit('Edit hello-world.txt in gh-pages branch');
-                console.log('Changes committed');
-
-                // Push to gh-pages branch
-                await git.push('origin', 'gh-pages', { '--force': true });
-                console.log('Pushed to gh-pages branch');
-              } else {
-                console.log('File "hello-world.txt" does not exist in gh-pages.');
-              }
-            } catch (error) {
-              console.error('An error occurred:', error.message);
-            }
-          }
-
-          main();
-          EOF
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          cp -r temp/* gh-pages/
+          cd gh-pages
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add .
+          git commit -m "Add hello-world.txt" || echo "No changes to commit"
+          git push origin gh-pages
