@@ -1,45 +1,67 @@
-name: Fetch Data and Push to gh-pages
+name: Read and Update Content
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # or master, depending on your default branch
 
 jobs:
-  fetch-and-push:
+  read-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
         with:
-          node-version: '16' # Update to at least 15.0.0; here I've used 16 for stability
+          ref: gh-pages
 
-      - name: Install dependencies
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Read and Update Content
         run: |
-          npm init -y
-          npm install googleapis@126.0.1
-          npm install JSONStream
-          npm install event-stream
-          npm install dotenv
-          npm install jsdom
-          npm install axios
+          # Read and print existing content
+          if [ -f hello-world.txt ]; then
+            echo "Current content of hello-world.txt:"
+            cat hello-world.txt
+            echo "-------------------"
+          else
+            echo "hello-world.txt does not exist yet"
+            echo "Initializing hello-world.txt"
+            echo "Hello World! Generated at: $(date -u)" > hello-world.txt
+          fi
 
-      - name: Get current year
-        id: get_year
-        run: echo "::set-output name=year::$(date +'%Y')"
-        
-      - name: Run fetchdata script
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          YEAR: ${{ steps.get_year.outputs.year }}
-        run: node fetchdata.js ${{ steps.get_year.outputs.year }}
+          # Generate random paragraph using Node.js
+          node -e "
+            const fs = require('fs');
+            
+            const paragraphs = [
+              'The sun sets on the horizon, painting the sky in brilliant hues of orange and purple.',
+              'In the depths of the forest, a gentle breeze rustles through the ancient trees.',
+              'Waves crash against the rocky shore, their rhythmic sound echoing through the air.',
+              'High in the mountains, snow-capped peaks pierce the clouds like ancient sentinels.',
+              'The city comes alive at night, its lights twinkling like earthbound stars.'
+            ];
+            
+            const randomParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
+            const timestamp = new Date().toISOString();
+            
+            const existingContent = fs.readFileSync('hello-world.txt', 'utf8');
+            const newContent = existingContent + '\n\n' + 
+              '=== New Update (' + timestamp + ') ===\n' +
+              randomParagraph;
+            
+            fs.writeFileSync('hello-world.txt', newContent);
+          "
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          force_orphan: true
+          echo "\nUpdated content of hello-world.txt:"
+          cat hello-world.txt
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add hello-world.txt
+          git commit -m "Update hello-world.txt with new paragraph" || echo "No changes to commit"
+          git push origin gh-pages
