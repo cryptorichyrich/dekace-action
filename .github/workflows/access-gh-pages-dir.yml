@@ -47,12 +47,40 @@ jobs:
 
       - name: Copy JSON to GH-Pages directory
         run: |
-          mkdir -p ${{ env.GH_PAGES_DIR }}
+          mkdir -p ${{ env.GH_PAGES_DIR }}  # Ensure directory exists
           if [ -f test.json ]; then
             cp test.json ${{ env.GH_PAGES_DIR }}/
           else
             echo "test.json was not found; cannot copy."
           fi
+
+      - name: Checkout GH-Pages branch
+        run: |
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git reset --hard
+          git clean -fd
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Commit and Push Changes to GH-Pages
+        run: |
+          # Use the full path to the directory
+          if [ -d "${{ env.GH_PAGES_DIR }}" ]; then
+            cd ${{ env.GH_PAGES_DIR }}
+            git add .
+            if git status | grep -q "Changes to be committed"; then
+              git commit -m "Update JSON file"
+              git push origin gh-pages
+            else
+              echo "No changes to commit"
+            fi
+          else
+            echo "Directory ${{ env.GH_PAGES_DIR }} does not exist."
+          fi
+
 
       - name: Checkout GH-Pages branch
         run: |
