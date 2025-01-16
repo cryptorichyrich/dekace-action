@@ -28,7 +28,12 @@ jobs:
           node <<EOF
           const fs = require('fs');
           const data = { "message": "Hello from GitHub Actions!" };
-          fs.writeFileSync('test.json', JSON.stringify(data, null, 2));
+          try {
+            fs.writeFileSync('test.json', JSON.stringify(data, null, 2));
+            console.log('File test.json has been created successfully.');
+          } catch (err) {
+            console.error('Failed to write file:', err);
+          }
           EOF
 
       - name: Checkout GH-Pages branch
