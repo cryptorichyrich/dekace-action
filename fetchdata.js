@@ -1,16 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const { JSDOM } = require('jsdom');
+const axios = require('axios');
 const { google } = require('googleapis');
-require('dotenv').config();
-const JSONStream = require('JSONStream');
+const JSONStream = require('jsonstream');
 const es = require('event-stream');
+require('dotenv').config();
 
-// Check for all required environment variables
-if (!process.env.YOUTUBE_API_KEY) {
-  throw new Error('YOUTUBE_API_KEY environment variable is not set');
-}
-
-// Error logging helper function
+// Helper functions for error logging
 function logError(message, error) {
   console.error(message, error.message);
   if (error.response) {
@@ -18,7 +15,27 @@ function logError(message, error) {
   }
 }
 
-// Convert @ handle to channel ID using YouTube Data API
+// Function for fetching and saving Catholic calendar data
+async function fetchAndSaveCatholicCalendarData(year) {
+    for (let month = 1; month <= 12; month++) {
+        const url = `https://www.imankatolik.or.id/kalender.php?b=${month}&t=${year}`;
+        try {
+            const response = await axios.get(url);
+            const dom = new JSDOM(response.data);
+            const content = dom.window.document.querySelector('.k_tbl').outerHTML;
+
+            // Save the extracted HTML directly in the root directory
+            const fileName = `${month}-${year}.html`;
+            const filePath = path.join(__dirname, fileName);
+            fs.writeFileSync(filePath, content);
+            console.log(`Saved: ${fileName}`);
+        } catch (error) {
+            logError(`Error fetching data for month ${month}:`, error);
+        }
+    }
+}
+
+// YouTube related functions
 async function getChannelId(handle) {
   try {
     const youtube = google.youtube({
@@ -124,6 +141,10 @@ async function updatePlaylistData(youtube, playlist, existingVideos) {
 async function fetchPlaylistsData() {
   console.log("YOUTUBE_API_KEY:", process.env.YOUTUBE_API_KEY);
   try {
+    if (!process.env.YOUTUBE_API_KEY) {
+      throw new Error('YOUTUBE_API_KEY environment variable is not set');
+    }
+
     const youtube = google.youtube({
       version: 'v3',
       auth: process.env.YOUTUBE_API_KEY
@@ -144,8 +165,9 @@ async function fetchPlaylistsData() {
 
     console.log(`Found ${playlistResponse.data.items.length} playlists`);
 
-    const OUTPUT_DIR = 'assets/data';
-    const outputPath = path.join(OUTPUT_DIR, 'playlists.json');
+    // Save directly to root directory
+    const rootPath = __dirname;
+    const outputPath = path.join(rootPath, 'playlists.json');
     let existingPlaylists = [];
 
     // Check if the file exists and read it using streams
@@ -165,11 +187,6 @@ async function fetchPlaylistsData() {
       })
     );
 
-    // Ensure output directory exists
-    if (!fs.existsSync(OUTPUT_DIR)) {
-      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-    }
-
     fs.writeFileSync(outputPath, JSON.stringify(playlists, null, 2));
     console.log(`Successfully updated playlists data to ${outputPath}`);
     return playlists;
@@ -179,4 +196,17 @@ async function fetchPlaylistsData() {
   }
 }
 
-fetchPlaylistsData();
+// Main execution
+(async () => {
+  // Check if year argument is provided for Catholic calendar data
+  const year = process.argv[2];
+  if (year && !isNaN(year)) {
+    await fetchAndSaveCatholicCalendarData(parseInt(year, 10));
+  } else if (year) {
+    console.error('Please provide a valid year as an argument for Catholic calendar data.');
+    process.exit(1);
+  }
+
+  // Always fetch YouTube playlists data
+  await fetchPlaylistsData();
+})();
