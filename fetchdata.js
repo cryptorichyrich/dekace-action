@@ -150,7 +150,9 @@ async function fetchPlaylistsData() {
       version: 'v3',
       auth: process.env.YOUTUBE_API_KEY
     });
+    console.log("A");
     console.log("CHECKING GH-PAGES ",fs.existsSyncpath.join(__dirname, '../gh-pages/playlists.json'));
+    console.log("B");
     const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
     console.log('Found channel ID:', channelId);
 
