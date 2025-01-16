@@ -14,11 +14,14 @@ const timestamp = new Date().toISOString();
 let existingContent = '';
 try {
   existingContent = fs.readFileSync('hello-world.txt', 'utf8');
+  console.log("\nCurrent content of hello-world.txt:");
+  console.log(existingContent);
 } catch (error) {
   if (error.code === 'ENOENT') {
     console.log("hello-world.txt does not exist yet. Initializing...");
     existingContent = "Hello World! Generated at: " + new Date().toISOString();
     fs.writeFileSync('hello-world.txt', existingContent);
+    // No need to log here since it's just been created with initial content
   } else {
     console.error("Error reading file:", error);
     process.exit(1);
