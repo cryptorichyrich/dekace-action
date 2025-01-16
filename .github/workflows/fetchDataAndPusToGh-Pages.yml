@@ -2,18 +2,8 @@ name: Fetch Data and Push to gh-pages
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # This runs the workflow every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'     
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
 
 jobs:
   fetch-and-push:
@@ -25,26 +15,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14' # or whatever version you need
+          node-version: '16' # Update to at least 15.0.0; here I've used 16 for stability
 
       - name: Install dependencies
-        run: |
-          npm init -y
-          npm install googleapis@126.0.1
-          npm install JSONStream
-          npm install event-stream
-          npm install dotenv
-          npm install jsdom
+        run: npm install
 
       - name: Run fetchdata script
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          # Add here any other environment variables your script needs
         run: node fetchdata.js
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Assuming your script outputs directly to the root
-          force_orphan: true # This creates a clean branch if it doesn't exist
+          publish_dir: ./
+          force_orphan: true
