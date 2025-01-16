@@ -7,6 +7,7 @@ const JSONStream = require('JSONStream');
 const es = require('event-stream');
 require('dotenv').config();
 
+
 // Helper functions for error logging
 function logError(message, error) {
   console.error(message, error.message);
@@ -149,7 +150,7 @@ async function fetchPlaylistsData() {
       version: 'v3',
       auth: process.env.YOUTUBE_API_KEY
     });
-
+    console.log("CHECKING GH-PAGES ",fs.existsSyncpath.join(__dirname, '../gh-pages/playlists.json'));
     const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
     console.log('Found channel ID:', channelId);
 
