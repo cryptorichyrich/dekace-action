@@ -28,43 +28,37 @@ jobs:
           node <<EOF
           const fs = require('fs');
           const simpleGit = require('simple-git');
-
+          
           async function main() {
             try {
-              // Initialize git
               const git = simpleGit();
-
+              
+              // Ensure gitignore has node_modules and package-lock.json
+              if (fs.existsSync('.gitignore')) {
+                let ignoreContent = fs.readFileSync('.gitignore', 'utf8');
+                if (!ignoreContent.includes('node_modules/')) {
+                  fs.appendFileSync('.gitignore', '\nnode_modules/\npackage-lock.json');
+                }
+              } else {
+                fs.writeFileSync('.gitignore', 'node_modules/\npackage-lock.json');
+              }
+              await git.add('.gitignore');
+              await git.commit('Add node_modules to .gitignore');
+          
+              // Stash changes
+              await git.stash();
+          
               // Switch to gh-pages branch
               await git.checkout('gh-pages');
               console.log('Switched to gh-pages branch');
-
-              // Check if hello-world.txt exists
-              if (fs.existsSync('hello-world.txt')) {
-                let content = fs.readFileSync('hello-world.txt', 'utf8');
-                // Append or modify the content
-                content += '\nEdited at ' + new Date().toISOString();
-                fs.writeFileSync('hello-world.txt', content, 'utf8');
-                console.log('File "hello-world.txt" has been edited.');
-                
-                // Add changes
-                await git.add('hello-world.txt');
-                console.log('Changes added to git');
-
-                // Commit changes
-                await git.commit('Edit hello-world.txt in gh-pages branch');
-                console.log('Changes committed');
-
-                // Push to gh-pages branch
-                await git.push('origin', 'gh-pages', { '--force': true });
-                console.log('Pushed to gh-pages branch');
-              } else {
-                console.log('File "hello-world.txt" does not exist in gh-pages.');
-              }
+          
+              // ... rest of your script for editing and pushing
+          
             } catch (error) {
               console.error('An error occurred:', error.message);
             }
           }
-
+          
           main();
           EOF
         env:
