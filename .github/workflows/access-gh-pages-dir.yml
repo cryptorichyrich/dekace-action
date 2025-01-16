@@ -1,0 +1,36 @@
+name: Access GH-Pages Directory
+
+on:
+  workflow_dispatch:  # Allows manual trigger
+  push:
+    branches:
+      - main  # Or your default branch
+
+env:
+  GH_PAGES_DIR: 'gh-pages'  # Default value
+
+jobs:
+  access-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages  # Checkout the gh-pages branch
+          path: ${{ env.GH_PAGES_DIR }}
+
+      - name: List files in GH-Pages directory
+        run: |
+          echo "GH-Pages directory: ${{ env.GH_PAGES_DIR }}"
+          ls -la ${{ env.GH_PAGES_DIR }}
+
+      # Example of how to use the directory in subsequent steps
+      - name: Process files
+        run: |
+          if [ -d "${{ env.GH_PAGES_DIR }}" ]; then
+            echo "Processing files in ${{ env.GH_PAGES_DIR }}"
+            # Add your file processing commands here
+          else
+            echo "Directory not found!"
+            exit 1
+          fi
