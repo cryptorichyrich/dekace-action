@@ -34,6 +34,7 @@ jobs:
           npm install JSONStream
           npm install event-stream
           npm install dotenv
+          npm install jsdom
 
       - name: Run fetchdata script
         env:
