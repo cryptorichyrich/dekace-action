@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install  # If your script requires additional npm packages, install them here
+      # - name: Install dependencies
+      #   run: npm install  # If your script requires additional npm packages, install them here
 
       - name: Run updateHelloWorld.js
         run: node updateHelloWorld.js
