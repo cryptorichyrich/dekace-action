@@ -1,50 +1,45 @@
-name: Deploy Liturgy Table Data to GitHub Pages
+name: Fetch Data and Push to gh-pages
 
 on:
   schedule:
-    - cron: '0 0 1 * *'  # Runs at 12:00 AM on the 1st of every month
-  push:
-    branches:
-      - main
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
+  fetch-and-push:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Update to at least 15.0.0; here I've used 16 for stability
 
-    - name: Create directories
-      run: |
-        mkdir -p _site/assets/data
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install googleapis@126.0.1
+          npm install JSONStream
+          npm install event-stream
+          npm install dotenv
+          npm install jsdom
+          npm install axios
 
-    - name: Install dependencies
-      run: |
-        npm init -y
-        npm install jsdom
-        npm install axios
+      - name: Get current year
+        id: get_year
+        run: echo "::set-output name=year::$(date +'%Y')"
 
-    - name: Get current year
-      id: get_year
-      run: echo "::set-output name=year::$(date +'%Y')"
+      - name: Run fetchdata script
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YEAR: ${{ steps.get_year.outputs.year }}
+        run: node fetchdata.js ${{ steps.get_year.outputs.year }}
 
-    - name: Run fetch liturgi kalendar
-      run: node fetchAndSaveLiturgyTable.js ${{ steps.get_year.outputs.year }}
-      env:
-        YEAR: ${{ steps.get_year.outputs.year }}
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./assets/data
-        # Add this to ensure we don't clean the existing content
-        keep_history: true
-        # Optionally, if you want to commit only the changes in ./assets/data
-        # external_repository: cryptorichyrich/dekace-action
-        # publish_branch: gh-pages
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          force_orphan: true
