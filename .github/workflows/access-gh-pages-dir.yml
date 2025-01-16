@@ -1,4 +1,4 @@
-name: Generate and Push JSON to GH-Pages
+name: Access GH-Pages Directory
 
 on:
   workflow_dispatch:  # Allows manual trigger
@@ -10,96 +10,27 @@ env:
   GH_PAGES_DIR: 'gh-pages'  # Default value
 
 jobs:
-  generate-and-push:
+  access-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: gh-pages  # Checkout the gh-pages branch
+          path: ${{ env.GH_PAGES_DIR }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-
-      - name: Execute JavaScript to Generate JSON
+      - name: List files in GH-Pages directory
         run: |
-          node <<EOF
-          const fs = require('fs');
-          const data = { "message": "Hello from GitHub Actions!" };
-          try {
-            fs.writeFileSync('test.json', JSON.stringify(data, null, 2));
-            console.log('File test.json has been created successfully.');
-          } catch (err) {
-            console.error('Failed to write file:', err);
-          }
-          EOF
+          echo "GH-Pages directory: ${{ env.GH_PAGES_DIR }}"
+          ls -la ${{ env.GH_PAGES_DIR }}
 
-      - name: Verify test.json Exists
+      # Example of how to use the directory in subsequent steps
+      - name: Process files
         run: |
-          ls -la
-          if [ -f test.json ]; then
-            echo "test.json exists"
-          else
-            echo "test.json does NOT exist"
-          fi
-
-      - name: Copy JSON to GH-Pages directory
-        run: |
-          mkdir -p ${{ env.GH_PAGES_DIR }}  # Ensure directory exists
-          if [ -f test.json ]; then
-            cp test.json ${{ env.GH_PAGES_DIR }}/
-          else
-            echo "test.json was not found; cannot copy."
-          fi
-
-      - name: Checkout GH-Pages branch
-        run: |
-          git checkout gh-pages || git checkout --orphan gh-pages
-          git reset --hard
-          git clean -fd
-
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-      - name: Commit and Push Changes to GH-Pages
-        run: |
-          # Use the full path to the directory
           if [ -d "${{ env.GH_PAGES_DIR }}" ]; then
-            cd ${{ env.GH_PAGES_DIR }}
-            git add .
-            if git status | grep -q "Changes to be committed"; then
-              git commit -m "Update JSON file"
-              git push origin gh-pages
-            else
-              echo "No changes to commit"
-            fi
+            echo "Processing files in ${{ env.GH_PAGES_DIR }}"
+            # Add your file processing commands here
           else
-            echo "Directory ${{ env.GH_PAGES_DIR }} does not exist."
-          fi
-
-
-      - name: Checkout GH-Pages branch
-        run: |
-          git checkout gh-pages || git checkout --orphan gh-pages
-          git reset --hard
-          git clean -fd
-
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-      - name: Commit and Push Changes to GH-Pages
-        run: |
-          cd ${{ env.GH_PAGES_DIR }}
-          git add .
-          if git status | grep -q "Changes to be committed"; then
-            git commit -m "Update JSON file"
-            git push origin gh-pages
-          else
-            echo "No changes to commit"
+            echo "Directory not found!"
+            exit 1
           fi
