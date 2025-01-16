@@ -1,4 +1,4 @@
-name: Access GH-Pages Directory
+name: Edit and Push to GH-Pages
 
 on:
   workflow_dispatch:  # Allows manual trigger
@@ -6,31 +6,66 @@ on:
     branches:
       - main  # Or your default branch
 
-env:
-  GH_PAGES_DIR: 'gh-pages'  # Default value
-
 jobs:
-  access-gh-pages:
+  edit-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: gh-pages  # Checkout the gh-pages branch
-          path: ${{ env.GH_PAGES_DIR }}
+          fetch-depth: 0  # Fetch all history for all branches and tags.
 
-      - name: List files in GH-Pages directory
-        run: |
-          echo "GH-Pages directory: ${{ env.GH_PAGES_DIR }}"
-          ls -la ${{ env.GH_PAGES_DIR }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # Choose a Node.js version
 
-      # Example of how to use the directory in subsequent steps
-      - name: Process files
+      - name: Install dependencies
+        run: npm install simple-git
+
+      - name: Edit and push to gh-pages
         run: |
-          if [ -d "${{ env.GH_PAGES_DIR }}" ]; then
-            echo "Processing files in ${{ env.GH_PAGES_DIR }}"
-            # Add your file processing commands here
-          else
-            echo "Directory not found!"
-            exit 1
-          fi
+          node <<EOF
+          const fs = require('fs');
+          const simpleGit = require('simple-git');
+
+          async function main() {
+            try {
+              // Initialize git
+              const git = simpleGit();
+
+              // Switch to gh-pages branch
+              await git.checkout('gh-pages');
+              console.log('Switched to gh-pages branch');
+
+              // Check if hello-world.txt exists
+              if (fs.existsSync('hello-world.txt')) {
+                let content = fs.readFileSync('hello-world.txt', 'utf8');
+                // Append or modify the content
+                content += '\nEdited at ' + new Date().toISOString();
+                fs.writeFileSync('hello-world.txt', content, 'utf8');
+                console.log('File "hello-world.txt" has been edited.');
+                
+                // Add changes
+                await git.add('hello-world.txt');
+                console.log('Changes added to git');
+
+                // Commit changes
+                await git.commit('Edit hello-world.txt in gh-pages branch');
+                console.log('Changes committed');
+
+                // Push to gh-pages branch
+                await git.push('origin', 'gh-pages', { '--force': true });
+                console.log('Pushed to gh-pages branch');
+              } else {
+                console.log('File "hello-world.txt" does not exist in gh-pages.');
+              }
+            } catch (error) {
+              console.error('An error occurred:', error.message);
+            }
+          }
+
+          main();
+          EOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
