@@ -1,41 +1,67 @@
-name: Update JSON Content
+name: Read and Update Content
 
 on:
   push:
     branches:
-      - main
+      - main  # or master, depending on your default branch
 
 jobs:
-  update-json:
+  read-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main branch
+      - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
-          path: main-branch
+          ref: gh-pages
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Copy and run update script
+      - name: Read and Update Content
         run: |
-          cp main-branch/update-json.js gh-pages/
-          cd gh-pages
-          node update-json.js
+          # Read and print existing content
+          if [ -f assets/data/hello-world.txt ]; then
+            echo "Current content of assets/data/hello-world.txt:"
+            cat assets/data/hello-world.txt
+            echo "-------------------"
+          else
+            echo "assets/data/hello-world.txt does not exist yet"
+            echo "Initializing assets/data/hello-world.txt"
+            echo "Hello World! Generated at: $(date -u)" > assets/data/hello-world.txt
+          fi
+
+          # Generate random paragraph using Node.js
+          node -e "
+            const fs = require('fs');
+            
+            const paragraphs = [
+              'The sun sets on the horizon, painting the sky in brilliant hues of orange and purple.',
+              'In the depths of the forest, a gentle breeze rustles through the ancient trees.',
+              'Waves crash against the rocky shore, their rhythmic sound echoing through the air.',
+              'High in the mountains, snow-capped peaks pierce the clouds like ancient sentinels.',
+              'The city comes alive at night, its lights twinkling like earthbound stars.'
+            ];
+            
+            const randomParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
+            const timestamp = new Date().toISOString();
+            
+            const existingContent = fs.readFileSync('assets/data/hello-world.txt', 'utf8');
+            const newContent = existingContent + '\n\n' + 
+              '=== New Update (' + timestamp + ') ===\n' +
+              randomParagraph;
+            
+            fs.writeFileSync('assets/data/hello-world.txt', newContent);
+          "
+
+          echo "\nUpdated content of assets/data/hello-world.txt:"
+          cat assets/data/hello-world.txt
 
       - name: Commit and push changes
         run: |
-          cd gh-pages
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git add assets/data/youtube.json
-          git commit -m "Update youtube.json with new content" || echo "No changes to commit"
+          git add assets/data/hello-world.txt
+          git commit -m "Update assets/data/hello-world.txt with new paragraph" || echo "No changes to commit"
           git push origin gh-pages
