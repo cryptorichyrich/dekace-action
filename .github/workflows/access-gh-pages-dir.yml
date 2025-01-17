@@ -1,6 +1,7 @@
 name: Read and Update Content
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main  # or master, depending on your default branch
@@ -19,24 +20,22 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install googleapis@126.0.1 jsdom axios event-stream JSONStream     
+
+      - name: Get today's year
+        run: echo "YEAR=$(date +%Y)" >> 
+
       - name: Read and Update Content
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}      
         run: |
           # Read and print existing content
-          if [ -f assets/data/hello-world.txt ]; then
-            echo "Current content of assets/data/hello-world.txt:"
-            cat assets/data/hello-world.txt
-            echo "-------------------"
-          else
-            echo "assets/data/hello-world.txt does not exist yet"
-            echo "Initializing assets/data/hello-world.txt"
-            echo "Hello World! Generated at: $(date -u)" > assets/data/hello-world.txt
-          fi
 
           # Generate random paragraph using Node.js
-          node updateHelloWorld.js          
-
-          echo "\nUpdated content of assets/data/hello-world.txt:"
-          cat assets/data/hello-world.txt
+          node updateHelloWorld.js $YEAR
 
       - name: Commit and push changes
         run: |
