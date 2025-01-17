@@ -117,6 +117,7 @@ async function checkLiveStatus(channelId) {
     if (error.response) {
       console.error('API Response Error:', error.response.data);
     }
+    console.log('NO LIVE AT THE MOMENT');
     return false;
   }
 }
