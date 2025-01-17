@@ -155,8 +155,8 @@ async function fetchPlaylistsData() {
 
     // Initialize variables outside try block to make them accessible throughout the function
     let existingPlaylists = [];
-    const outputPath = path.join(__dirname, 'playlists.json');
-    const ghPagesPath = path.join(__dirname, 'playlists.json');
+    const outputPath = 'playlists.json';
+    const ghPagesPath = 'playlists.json';
 
     // Get channel ID first
     const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
