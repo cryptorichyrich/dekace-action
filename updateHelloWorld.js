@@ -16,12 +16,6 @@ function logError(message, error) {
   }
 }
 
-// Function for fetching and saving Catholic calendar data
-const axios = require('axios');
-const { JSDOM } = require('jsdom');
-const fs = require('fs');
-const path = require('path');
-
 async function fetchAndSaveCatholicCalendarData(year) {
     for (let month = 1; month <= 12; month++) {
         const url = `https://www.imankatolik.or.id/kalender.php?b=${month}&t=${year}`;
