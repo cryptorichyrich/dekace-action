@@ -2,9 +2,6 @@ name: Read and Update Content
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main  # or master, depending on your default branch
 
 jobs:
   read-and-update:
