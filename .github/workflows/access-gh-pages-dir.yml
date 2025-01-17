@@ -1,38 +1,41 @@
-name: Run updateHelloWorld Script
+name: Update JSON Content
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - main  # or master, or whatever your default branch is
+      - main
 
 jobs:
-  run-js:
+  update-json:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout main branch
         uses: actions/checkout@v4
+        with:
+          path: main-branch
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # - name: Install dependencies
-      #   run: npm install  # If your script requires additional npm packages, install them here
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
 
-      - name: Run updateHelloWorld.js
-        run: node updateHelloWorld.js
-
-      - name: Commit and push changes if modified
+      - name: Copy and run update script
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git pull
-          git add .
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update hello-world.txt via GitHub Action"
-            git push origin HEAD:${{ github.ref }}
-          fi
+          cp main-branch/update-json.js gh-pages/
+          cd gh-pages
+          node updateHelloWorld.js
+
+      - name: Commit and push changes
+        run: |
+          cd gh-pages
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add assets/data/youtube.json
+          git commit -m "Update youtube.json with new content" || echo "No changes to commit"
+          git push origin gh-pages
