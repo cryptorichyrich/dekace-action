@@ -141,6 +141,8 @@ async function updatePlaylistData(youtube, playlist, existingVideos) {
 
 async function fetchPlaylistsData() {
   console.log("YOUTUBE_API_KEY:", process.env.YOUTUBE_API_KEY);
+  console.log("fs.existsSync(ghPagesPath)",fs.existsSync(ghPagesPath));
+  return;
   try {
     if (!process.env.YOUTUBE_API_KEY) {
       throw new Error('YOUTUBE_API_KEY environment variable is not set');
@@ -153,8 +155,8 @@ async function fetchPlaylistsData() {
 
     // Initialize variables outside try block to make them accessible throughout the function
     let existingPlaylists = [];
-    const outputPath = 'playlists.json';
-    const ghPagesPath = 'playlists.json';
+    const outputPath = path.join(__dirname, 'playlists.json');
+    const ghPagesPath = path.join(__dirname, 'playlists.json');
 
     // Get channel ID first
     const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
@@ -218,7 +220,7 @@ async function fetchPlaylistsData() {
   console.log("TAHUN: ", year);
   if (year && !isNaN(year)) {
     console.log("FETCH CATHOLIC CALENDAR");
-    await fetchAndSaveCatholicCalendarData(parseInt(year, 10));
+    // await fetchAndSaveCatholicCalendarData(parseInt(year, 10));
   } else if (year) {
     console.error('Please provide a valid year as an argument for Catholic calendar data.');
     process.exit(1);
