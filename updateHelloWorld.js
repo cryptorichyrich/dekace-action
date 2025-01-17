@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 const paragraphs = [
   'The sun sets on the horizon, painting the sky in brilliant hues of orange and purple.',
@@ -10,10 +11,17 @@ const paragraphs = [
 
 const randomParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
 const timestamp = new Date().toISOString();
+const filePath = path.join('/assets/data', 'youtube.json');
+
+// Ensure the directory exists
+const dir = path.dirname(filePath);
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir, { recursive: true });
+}
 
 let existingContent = {};
 try {
-  existingContent = JSON.parse(fs.readFileSync('/assets/data/youtube.json', 'utf8'));
+  existingContent = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   console.log("\nCurrent content of youtube.json:");
   console.log(JSON.stringify(existingContent, null, 2));
 } catch (error) {
@@ -32,6 +40,11 @@ try {
 existingContent[timestamp] = randomParagraph;
 
 // Write the updated content back to the file
-fs.writeFileSync('/assets/data/youtube.json', JSON.stringify(existingContent, null, 2));
-console.log("\nUpdated content of youtube.json:");
-console.log(fs.readFileSync('/assets/data/youtube.json', 'utf8'));
+try {
+  fs.writeFileSync(filePath, JSON.stringify(existingContent, null, 2));
+  console.log("\nUpdated content of youtube.json:");
+  console.log(fs.readFileSync(filePath, 'utf8'));
+} catch (error) {
+  console.error("Error writing to file:", error);
+  process.exit(1);
+}
