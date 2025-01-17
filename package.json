@@ -1,7 +1,6 @@
 {
   "name": "dekace-action",
   "version": "1.0.0",
-  "description": "",
   "main": "fetch-playlists.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +23,6 @@
     "googleapis": "^126.0.1",
     "jsdom": "^26.0.0",
     "JSONStream": "^1.3.5"
-  }
+  },
+  "description": ""
 }
