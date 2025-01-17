@@ -4,8 +4,9 @@ const { google } = require('googleapis');
 require('dotenv').config();
 
 // Configuration
+// damaikasihchannel9153
 const CONFIG = {
-  channelUsername: 'damaikasihchannel9153',
+  channelUsername: 'kompascom',
   outputFile: 'live.json'
 };
 
