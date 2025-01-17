@@ -32,6 +32,6 @@ try {
 existingContent[timestamp] = randomParagraph;
 
 // Write the updated content back to the file
-fs.writeFileSync('/asset/data/youtube.json', JSON.stringify(existingContent, null, 2));
+fs.writeFileSync('/assets/data/youtube.json', JSON.stringify(existingContent, null, 2));
 console.log("\nUpdated content of youtube.json:");
 console.log(fs.readFileSync('/asset/data/youtube.json', 'utf8'));
