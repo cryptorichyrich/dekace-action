@@ -26,14 +26,15 @@ jobs:
           npm install googleapis@126.0.1 jsdom axios event-stream JSONStream     
 
       - name: Get today's year
-        run: echo "YEAR=$(date +%Y)" >> 
-
+        run: |
+          echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
+      
       - name: Read and Update Content
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}      
         run: |
           # Read and print existing content
-
+      
           # Generate random paragraph using Node.js
           node updateHelloWorld.js $YEAR
 
