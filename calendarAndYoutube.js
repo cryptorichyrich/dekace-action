@@ -130,42 +130,115 @@ async function* fetchVideos(youtube, playlistId) {
   } while (nextPageToken);
 }
 
-async function updatePlaylistData(youtube, playlist, existingVideos) {
-  let videos = existingVideos || [];
-  const existingVideoIds = new Set(videos.map(v => v.id));
-
-  console.log(`Fetching new videos for playlist: ${playlist.snippet.title}`);
-  
-  for await (const item of fetchVideos(youtube, playlist.id)) {
-    const videoId = item.contentDetails.videoId;
-    if (!existingVideoIds.has(videoId)) {
-      const baseVideo = {
-        id: videoId,
-        title: item.snippet.title,
-        description: item.snippet.description,
-        thumbnail: item.snippet.thumbnails.medium?.url || '',
-        publishedAt: item.snippet.publishedAt
-      };
-      const extraDetails = await fetchVideoDetails(videoId);
-      videos.push({ ...baseVideo, ...extraDetails });
-      existingVideoIds.add(videoId);
-    } else {
-      break; // Stop if we've encountered all new videos
-    }
+// Helper functions for error logging
+function logError(message, error) {
+  console.error(message, error.message);
+  if (error.response) {
+    console.error('Response data:', error.response.data);
   }
+}
 
-  return {
-    id: playlist.id,
-    title: playlist.snippet.title,
-    description: playlist.snippet.description,
-    thumbnail: playlist.snippet.thumbnails.medium?.url || '',
-    videoCount: videos.length,
-    videos: videos
-  };
+async function* fetchVideos(youtube, playlistId) {
+  let nextPageToken = null;
+  do {
+    try {
+      const response = await youtube.playlistItems.list({
+        part: 'snippet,contentDetails',
+        playlistId: playlistId,
+        maxResults: 50,
+        pageToken: nextPageToken
+      });
+      
+      if (response.data.items) {
+        yield* response.data.items;
+      }
+      
+      nextPageToken = response.data.nextPageToken;
+    } catch (error) {
+      logError(`Error fetching playlist items for ${playlistId}:`, error);
+      break;
+    }
+  } while (nextPageToken);
+}
+
+async function updatePlaylistData(youtube, playlist, existingVideos) {
+  let videos = [];
+  const existingVideoIds = new Set(existingVideos?.map(v => v.id) || []);
+  let hasNewVideos = true;
+
+  console.log(`Fetching videos for playlist: ${playlist.snippet.title}`);
+  
+  // If we have no existing videos, fetch all videos
+  const shouldFetchAll = !existingVideos || existingVideos.length === 0;
+  
+  try {
+    for await (const item of fetchVideos(youtube, playlist.id)) {
+      const videoId = item.contentDetails.videoId;
+      
+      // If we're fetching all videos or if this is a new video
+      if (shouldFetchAll || !existingVideoIds.has(videoId)) {
+        console.log(`Processing video: ${item.snippet.title}`);
+        
+        const baseVideo = {
+          id: videoId,
+          title: item.snippet.title,
+          description: item.snippet.description,
+          thumbnail: item.snippet.thumbnails.medium?.url || '',
+          publishedAt: item.snippet.publishedAt
+        };
+        
+        const extraDetails = await fetchVideoDetails(videoId);
+        
+        if (shouldFetchAll) {
+          // For complete fetch, add all videos
+          videos.push({ ...baseVideo, ...extraDetails });
+        } else {
+          // For incremental update, add to existing videos
+          videos = [...existingVideos, { ...baseVideo, ...extraDetails }];
+        }
+        
+        existingVideoIds.add(videoId);
+      } else {
+        // If we found an existing video and we're not doing a complete fetch,
+        // we can use the existing videos as is
+        if (!shouldFetchAll) {
+          videos = existingVideos;
+          hasNewVideos = false;
+          break;
+        }
+      }
+    }
+
+    // Sort videos by published date (newest first)
+    videos.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+    return {
+      id: playlist.id,
+      title: playlist.snippet.title,
+      description: playlist.snippet.description,
+      thumbnail: playlist.snippet.thumbnails.medium?.url || '',
+      videoCount: videos.length,
+      videos: videos,
+      lastUpdated: new Date().toISOString()
+    };
+  } catch (error) {
+    logError(`Error updating playlist ${playlist.id}:`, error);
+    // Return existing data if there's an error
+    return {
+      id: playlist.id,
+      title: playlist.snippet.title,
+      description: playlist.snippet.description,
+      thumbnail: playlist.snippet.thumbnails.medium?.url || '',
+      videoCount: existingVideos?.length || 0,
+      videos: existingVideos || [],
+      lastUpdated: new Date().toISOString(),
+      error: error.message
+    };
+  }
 }
 
 async function fetchPlaylistsData() {
-  console.log("YOUTUBE_API_KEY:", process.env.YOUTUBE_API_KEY);
+  console.log("Starting playlist data fetch...");
   try {
     if (!process.env.YOUTUBE_API_KEY) {
       throw new Error('YOUTUBE_API_KEY environment variable is not set');
@@ -176,16 +249,29 @@ async function fetchPlaylistsData() {
       auth: process.env.YOUTUBE_API_KEY
     });
 
-    // Initialize variables outside try block to make them accessible throughout the function
     let existingPlaylists = [];
     const outputPath = 'playlists.json';
     const ghPagesPath = 'playlists.json';
 
-    // Get channel ID first
+    // Get channel ID
     const channelId = process.env.CHANNEL_ID || await getChannelId('damaikasihchannel9153');
-    console.log('Found channel ID:', channelId);
+    console.log('Using channel ID:', channelId);
 
-    // Fetch playlist data from YouTube
+    // Load existing playlists if available
+    if (fs.existsSync(ghPagesPath)) {
+      try {
+        const fileContent = fs.readFileSync(ghPagesPath, 'utf8');
+        existingPlaylists = JSON.parse(fileContent);
+        console.log(`Loaded ${existingPlaylists.length} existing playlists`);
+      } catch (err) {
+        console.log('Error reading existing playlists, starting fresh:', err.message);
+        existingPlaylists = [];
+      }
+    } else {
+      console.log('No existing playlists.json found, starting fresh');
+    }
+
+    // Fetch all playlists from the channel
     const playlistResponse = await youtube.playlists.list({
       part: 'snippet,contentDetails',
       channelId: channelId,
@@ -196,32 +282,14 @@ async function fetchPlaylistsData() {
       throw new Error('No playlists found');
     }
 
-    console.log(`Found ${playlistResponse.data.items.length} playlists`);
+    console.log(`Found ${playlistResponse.data.items.length} playlists on the channel`);
 
-    // Try to load existing playlists if available
-    if (fs.existsSync(ghPagesPath)) {
-      try {
-        await new Promise((resolve, reject) => {
-          fs.createReadStream(ghPagesPath)
-            .pipe(JSONStream.parse('*'))
-            .pipe(es.mapSync(playlist => existingPlaylists.push(playlist)))
-            .on('end', resolve)
-            .on('error', reject);
-        });
-        console.log('Existing playlists loaded from gh-pages.');
-      } catch (err) {
-        console.log('Error reading existing playlists, starting from scratch:', err.message);
-        existingPlaylists = [];
-      }
-    } else {
-      console.log('No existing playlists.json found in gh-pages, starting from scratch.');
-    }
-
-    // Update playlists with new data
+    // Update each playlist
     const playlists = await Promise.all(
       playlistResponse.data.items.map(async (playlist) => {
         const existingPlaylist = existingPlaylists.find(p => p.id === playlist.id);
-        return updatePlaylistData(youtube, playlist, existingPlaylist ? existingPlaylist.videos : []);
+        console.log(`Processing playlist: ${playlist.snippet.title}`);
+        return updatePlaylistData(youtube, playlist, existingPlaylist?.videos);
       })
     );
 
@@ -231,7 +299,7 @@ async function fetchPlaylistsData() {
     return playlists;
 
   } catch (error) {
-    logError('Error fetching playlists:', error);
+    logError('Error in fetchPlaylistsData:', error);
     process.exit(1);
   }
 }
