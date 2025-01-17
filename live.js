@@ -5,7 +5,7 @@ require('dotenv').config();
 
 // Configuration
 const CONFIG = {
-  channelId: 'damaikasihchannel9153', // Replace with actual channel ID
+  channelUsername: 'damaikasihchannel9153',
   outputFile: 'live.json'
 };
 
@@ -14,6 +14,26 @@ const youtube = google.youtube({
   version: 'v3',
   auth: process.env.YOUTUBE_API_KEY
 });
+
+/**
+ * Get channel ID from username
+ * @param {string} username - YouTube channel username
+ * @returns {Promise<string>} Channel ID
+ */
+async function getChannelId(username) {
+  const response = await youtube.search.list({
+    part: ['snippet'],
+    q: username,
+    type: 'channel',
+    maxResults: 1
+  });
+
+  if (response.data.items.length === 0) {
+    throw new Error('Channel not found');
+  }
+
+  return response.data.items[0].snippet.channelId;
+}
 
 /**
  * Get detailed live stream information
@@ -55,13 +75,14 @@ async function getLiveStreamDetails(videoId) {
 
 /**
  * Check if channel is live and update status file
+ * @param {string} channelId - YouTube channel ID
  */
-async function checkLiveStatus() {
+async function checkLiveStatus(channelId) {
   try {
     // Search for live streams
     const searchResponse = await youtube.search.list({
       part: ['snippet'],
-      channelId: CONFIG.channelId,
+      channelId: channelId,
       eventType: 'live',
       type: 'video',
       maxResults: 1
@@ -104,19 +125,23 @@ async function checkLiveStatus() {
  * Initialize and run the check
  */
 async function main() {
-  // Validate configuration
-  if (!process.env.YOUTUBE_API_KEY) {
-    console.error('Error: YOUTUBE_API_KEY not found in environment variables');
+  try {
+    // Validate configuration
+    if (!process.env.YOUTUBE_API_KEY) {
+      console.error('Error: YOUTUBE_API_KEY not found in environment variables');
+      process.exit(1);
+    }
+
+    console.log('Finding channel ID...');
+    const channelId = await getChannelId(CONFIG.channelUsername);
+    console.log(`Channel ID found: ${channelId}`);
+
+    // Run the check once
+    await checkLiveStatus(channelId);
+  } catch (error) {
+    console.error('Error:', error.message);
     process.exit(1);
   }
-
-  if (!CONFIG.channelId || CONFIG.channelId === 'UC-YOUR-ACTUAL-CHANNEL-ID') {
-    console.error('Error: Please set a valid YouTube channel ID in the configuration');
-    process.exit(1);
-  }
-
-  // Run the check once
-  await checkLiveStatus();
 }
 
 // Run the application
