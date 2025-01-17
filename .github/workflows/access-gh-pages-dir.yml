@@ -36,12 +36,12 @@ jobs:
           # Read and print existing content
       
           # Generate random paragraph using Node.js
-          node updateHelloWorld.js $YEAR
+          node calendarAndYoutube.js $YEAR
 
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git add assets/data/hello-world.txt
-          git commit -m "Update assets/data/hello-world.txt with new paragraph" || echo "No changes to commit"
+          git add .
+          git commit -m "playlist.js" || echo "No changes to commit"
           git push origin gh-pages
