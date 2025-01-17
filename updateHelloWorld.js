@@ -11,27 +11,27 @@ const paragraphs = [
 const randomParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
 const timestamp = new Date().toISOString();
 
-let existingContent = '';
+let existingContent = {};
 try {
-  existingContent = fs.readFileSync('hello-world.txt', 'utf8');
-  console.log("\nCurrent content of hello-world.txt:");
-  console.log(existingContent);
+  existingContent = JSON.parse(fs.readFileSync('/asset/data/youtube.json', 'utf8'));
+  console.log("\nCurrent content of youtube.json:");
+  console.log(JSON.stringify(existingContent, null, 2));
 } catch (error) {
   if (error.code === 'ENOENT') {
-    console.log("hello-world.txt does not exist yet. Initializing...");
-    existingContent = "Hello World! Generated at: " + new Date().toISOString();
-    fs.writeFileSync('hello-world.txt', existingContent);
-    // No need to log here since it's just been created with initial content
+    console.log("youtube.json does not exist yet. Initializing...");
+    existingContent = {
+      "initialContent": "Hello World! Generated at: " + timestamp
+    };
   } else {
     console.error("Error reading file:", error);
     process.exit(1);
   }
 }
 
-const newContent = existingContent + '\n\n' + 
-  '=== New Update (' + timestamp + ') ===\n' +
-  randomParagraph;
+// Add new content to the existing JSON object
+existingContent[timestamp] = randomParagraph;
 
-fs.writeFileSync('hello-world.txt', newContent);
-console.log("\nUpdated content of hello-world.txt:");
-console.log(fs.readFileSync('hello-world.txt', 'utf8'));
+// Write the updated content back to the file
+fs.writeFileSync('/asset/data/youtube.json', JSON.stringify(existingContent, null, 2));
+console.log("\nUpdated content of youtube.json:");
+console.log(fs.readFileSync('/asset/data/youtube.json', 'utf8'));
