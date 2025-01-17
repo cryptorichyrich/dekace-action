@@ -13,7 +13,7 @@ const timestamp = new Date().toISOString();
 
 let existingContent = {};
 try {
-  existingContent = JSON.parse(fs.readFileSync('/asset/data/youtube.json', 'utf8'));
+  existingContent = JSON.parse(fs.readFileSync('/assets/data/youtube.json', 'utf8'));
   console.log("\nCurrent content of youtube.json:");
   console.log(JSON.stringify(existingContent, null, 2));
 } catch (error) {
@@ -34,4 +34,4 @@ existingContent[timestamp] = randomParagraph;
 // Write the updated content back to the file
 fs.writeFileSync('/assets/data/youtube.json', JSON.stringify(existingContent, null, 2));
 console.log("\nUpdated content of youtube.json:");
-console.log(fs.readFileSync('/asset/data/youtube.json', 'utf8'));
+console.log(fs.readFileSync('/assets/data/youtube.json', 'utf8'));
