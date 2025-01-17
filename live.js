@@ -6,7 +6,7 @@ require('dotenv').config();
 // Configuration
 // damaikasihchannel9153
 const CONFIG = {
-  channelUsername: 'cnnnews18',
+  channelUsername: 'damaikasihchannel9153',
   outputFile: 'live.json'
 };
 
