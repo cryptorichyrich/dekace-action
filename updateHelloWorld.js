@@ -61,9 +61,6 @@ async function runIfOneDayBeforeNewYear() {
     }
 }
 
-// Execute the function
-runIfOneDayBeforeNewYear();
-
 // YouTube related functions
 async function getChannelId(handle) {
   try {
