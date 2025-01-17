@@ -40,5 +40,5 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add .
-          git commit -m "playlist.js" || echo "No changes to commit"
+          git commit -m "playlists.json" || echo "No changes to commit"
           git push origin gh-pages
