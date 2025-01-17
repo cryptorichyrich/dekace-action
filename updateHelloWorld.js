@@ -242,13 +242,8 @@ async function fetchPlaylistsData() {
 // Main execution
 (async () => {
   // Check if year argument is provided for Catholic calendar data
-  if (year && !isNaN(year)) {
-    console.log("FETCH CATHOLIC CALENDAR");
-    await runIfOneDayBeforeNewYear();
-  } else if (year) {
-    console.error('Please provide a valid year as an argument for Catholic calendar data.');
-    process.exit(1);
-  }
+  console.log("FETCH CATHOLIC CALENDAR");
+  await runIfOneDayBeforeNewYear();
 
   // Always fetch YouTube playlists data
   await fetchPlaylistsData();
