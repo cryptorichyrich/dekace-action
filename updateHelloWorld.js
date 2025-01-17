@@ -12,8 +12,6 @@ const paragraphs = [
 
 const randomParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
 const timestamp = new Date().toISOString();
-
-// Using relative path instead of absolute path
 const filePath = path.join('assets', 'data', 'youtube.json');
 
 // Ensure the directory exists
@@ -22,32 +20,28 @@ if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
 }
 
-let existingContent = {};
 try {
-    existingContent = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    console.log("\nCurrent content of youtube.json:");
-    console.log(JSON.stringify(existingContent, null, 2));
-} catch (error) {
-    if (error.code === 'ENOENT') {
+    let existingContent = {};
+    
+    // Try to read existing content
+    try {
+        const fileContent = fs.readFileSync(filePath, 'utf8');
+        existingContent = JSON.parse(fileContent);
+        console.log("\nCurrent content of youtube.json:", JSON.stringify(existingContent, null, 2));
+    } catch (error) {
+        if (error.code !== 'ENOENT') {
+            throw error;
+        }
         console.log("youtube.json does not exist yet. Initializing...");
-        existingContent = {
-            "initialContent": "Hello World! Generated at: " + timestamp
-        };
-    } else {
-        console.error("Error reading file:", error);
-        process.exit(1);
     }
-}
 
-// Add new content to the existing JSON object
-existingContent[timestamp] = randomParagraph;
+    // Add new content
+    existingContent[timestamp] = randomParagraph;
 
-// Write the updated content back to the file
-try {
+    // Write updated content
     fs.writeFileSync(filePath, JSON.stringify(existingContent, null, 2));
-    console.log("\nUpdated content of youtube.json:");
-    console.log(fs.readFileSync(filePath, 'utf8'));
+    console.log("\nUpdated content of youtube.json:", JSON.stringify(existingContent, null, 2));
 } catch (error) {
-    console.error("Error writing to file:", error);
+    console.error("Error:", error);
     process.exit(1);
 }
