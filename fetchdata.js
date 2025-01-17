@@ -220,7 +220,7 @@ async function fetchPlaylistsData() {
   console.log("TAHUN: ", year);
   if (year && !isNaN(year)) {
     console.log("FETCH CATHOLIC CALENDAR");
-    await fetchAndSaveCatholicCalendarData(parseInt(year, 10));
+    // await fetchAndSaveCatholicCalendarData(parseInt(year, 10));
   } else if (year) {
     console.error('Please provide a valid year as an argument for Catholic calendar data.');
     process.exit(1);
