@@ -141,8 +141,6 @@ async function updatePlaylistData(youtube, playlist, existingVideos) {
 
 async function fetchPlaylistsData() {
   console.log("YOUTUBE_API_KEY:", process.env.YOUTUBE_API_KEY);
-  console.log("fs.existsSync(ghPagesPath)",fs.existsSync('playlists.json'));
-  return;
   try {
     if (!process.env.YOUTUBE_API_KEY) {
       throw new Error('YOUTUBE_API_KEY environment variable is not set');
