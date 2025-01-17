@@ -9,11 +9,6 @@ jobs:
   update-json:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main branch
-        uses: actions/checkout@v4
-        with:
-          path: main-branch
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -27,7 +22,6 @@ jobs:
 
       - name: Copy and run update script
         run: |
-          cp main-branch/update-json.js gh-pages/
           cd gh-pages
           node updateHelloWorld.js
 
