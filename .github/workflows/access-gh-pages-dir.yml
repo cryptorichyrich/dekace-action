@@ -9,21 +9,23 @@ jobs:
   update-json:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20'        
+
+      - name: Copy and run update script
+        run: |
+          node updateHelloWorld.js
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
           ref: gh-pages
-          path: gh-pages
-
-      - name: Copy and run update script
-        run: |
-          cd gh-pages
-          node updateHelloWorld.js
+          path: gh-pages          
 
       - name: Commit and push changes
         run: |
