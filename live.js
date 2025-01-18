@@ -107,4 +107,5 @@ async function main() {
 }
 
 // Run the main function
+getVideoDetails("https://www.youtube.com/watch?v=DHzd-_OjE-Q");
 main();
