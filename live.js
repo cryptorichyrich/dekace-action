@@ -70,7 +70,7 @@ async function getVideoDetails(videoUrl) {
             concurrentViewers: (video.views || 0).toString(),
             link: `https://www.youtube.com/watch?v=${videoId}`,
             statistics: {
-                viewCount: (video.views || 0).toString(),
+                viewCount: (video.views.text || 0).toString(),
                 likeCount: (video.likes || 0).toString(),
                 commentCount: '0'
             }
