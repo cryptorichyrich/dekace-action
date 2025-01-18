@@ -58,7 +58,7 @@ async function getVideoDetails(videoUrl) {
         return {
             id: video.id,
             title: video.title || 'Untitled',
-            description: video.description || '',
+            description: video.shortDescription || '',
             thumbnails: {
                 default: (video.thumbnail?.url || '').replace(/maxresdefault/, 'default'),
                 medium: (video.thumbnail?.url || '').replace(/maxresdefault/, 'mqdefault'),
@@ -66,6 +66,7 @@ async function getVideoDetails(videoUrl) {
                 maxres: video.thumbnail?.url || ''
             },
             channelTitle: video.channel?.name || 'Unknown Channel',
+            channelId: video.channel?.id || 'Unknown Channel',
             startTime: video.uploaded || new Date().toISOString(),
             concurrentViewers: (video.views || 0).toString(),
             link: `https://www.youtube.com/watch?v=${videoId}`,
