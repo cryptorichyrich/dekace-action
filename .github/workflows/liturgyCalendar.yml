@@ -1,5 +1,4 @@
-name: Read and Update Content
-
+name: Update Liturg Calendar
 on:
   workflow_dispatch:
 
