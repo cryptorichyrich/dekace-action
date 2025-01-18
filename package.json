@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cryptorichyrich/dekace-action#readme",
   "dependencies": {
+    "@uranashel/youtubesearch": "^1.0.5",
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "event-stream": "^4.0.1",
