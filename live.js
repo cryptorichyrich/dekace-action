@@ -3,6 +3,8 @@ const YouTube = require('youtube-sr').default;
 const fs = require('fs').promises;
 const ytext = require("youtube-ext");
 
+const playlistUrl = 'https://www.youtube.com/playlist?v=amKYMW6oBtQ&list=PLJXpIEBKOlej3o6Thmh7pHwF8znFEjMCG'; // Example URL
+
 async function getPlaylistVideos(playlistUrl) {
     try {
       const playlistInfo = await ytext.playlistInfo(playlistUrl);
