@@ -43,17 +43,7 @@ async function getVideoDetails(videoUrl) {
         // Add delay to respect rate limits
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        // Set up YouTube-sr options
-        YouTube.setScrapeConfig({
-            requestOptions: {
-                headers: {
-                    // Add basic headers to mimic browser request
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-                    'Accept-Language': 'en-US,en;q=0.9',
-                }
-            }
-        });
-
+        // Use the correct youtube-sr method
         const video = await YouTube.getVideo(videoId);
         
         // Add validation
@@ -61,6 +51,8 @@ async function getVideoDetails(videoUrl) {
             console.error(`No video data returned for ID ${videoId}`);
             return null;
         }
+
+        console.log('Raw video data:', JSON.stringify(video, null, 2)); // Debug log
 
         return {
             id: video.id,
@@ -84,8 +76,19 @@ async function getVideoDetails(videoUrl) {
         };
     } catch (error) {
         console.error(`Error fetching details for video ${videoUrl}:`, error);
-        console.error('Full error object:', JSON.stringify(error, null, 2));
+        console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
         return null;
+    }
+}
+
+async function deleteLiveJsonFile() {
+    try {
+        await fs.unlink('liveDetails.json');
+        console.log("Existing liveDetails.json file has been deleted.");
+    } catch (error) {
+        if (error.code !== 'ENOENT') {
+            console.error('Error deleting liveDetails.json:', error);
+        }
     }
 }
 
@@ -103,7 +106,6 @@ async function main() {
     
     const page = await browser.newPage();
     try {
-        // Set a longer timeout and add retry logic
         await page.setDefaultNavigationTimeout(30000);
         await page.setDefaultTimeout(30000);
 
@@ -122,7 +124,7 @@ async function main() {
             } catch (error) {
                 retryCount++;
                 console.log(`Attempt ${retryCount} failed. Retrying...`);
-                await new Promise(resolve => setTimeout(resolve, 5000)); // Wait 5 seconds before retry
+                await new Promise(resolve => setTimeout(resolve, 5000));
                 if (retryCount === maxRetries) throw error;
             }
         }
@@ -150,7 +152,7 @@ async function main() {
         }
     } catch (error) {
         console.error('An error occurred:', error);
-        throw error; // Re-throw to ensure GitHub Action fails properly
+        throw error;
     } finally {
         await browser.close();
     }
