@@ -68,10 +68,7 @@ async function deleteLiveJsonFile() {
 }
 
 async function main() {
-    const browser = await puppeteer.launch({ 
-        headless: "new", 
-        args: ['--no-sandbox'] 
-    });
+    const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
 
     try {
