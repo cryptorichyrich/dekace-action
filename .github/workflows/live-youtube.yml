@@ -22,7 +22,8 @@ jobs:
       - name: Install dependencies
         run: |
           npm init -y
-          npm install puppeteer youtube-sr
+          npm install youtube-sr 
+          npx puppeteer browsers install chrome               
       
       - name: Read and Update Content  
         run: |
