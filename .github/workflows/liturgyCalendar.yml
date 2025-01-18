@@ -1,4 +1,4 @@
-name: Update Liturg Calendar
+name: Update Liturgy Calendar
 on:
   workflow_dispatch:
 
