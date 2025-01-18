@@ -1,153 +1,106 @@
+const puppeteer = require('puppeteer');
+const YouTube = require('youtube-sr').default;
 const fs = require('fs').promises;
-const path = require('path');
-const { google } = require('googleapis');
-require('dotenv').config();
 
-// Configuration
-// damaikasihchannel9153
-const CONFIG = {
-  channelUsername: 'damaikasihchannel9153',
-  outputFile: 'live.json'
-};
+async function findLiveBadges(page) {
+    return await page.evaluate(() => {
+        let contentElement = document.getElementById('content');
+        
+        if (!contentElement) return [];
 
-// Initialize YouTube API
-const youtube = google.youtube({
-  version: 'v3',
-  auth: process.env.YOUTUBE_API_KEY
-});
+        let liveBadges = contentElement.querySelectorAll('.badge-shape-wiz--thumbnail-live');
+        let liveUrls = [];
 
-/**
- * Get channel ID from username
- * @param {string} username - YouTube channel username
- * @returns {Promise<string>} Channel ID
- */
-async function getChannelId(username) {
-  const response = await youtube.search.list({
-    part: ['snippet'],
-    q: username,
-    type: 'channel',
-    maxResults: 1
-  });
-
-  if (response.data.items.length === 0) {
-    throw new Error('Channel not found');
-  }
-
-  return response.data.items[0].snippet.channelId;
-}
-
-/**
- * Get detailed live stream information
- * @param {string} videoId - YouTube video ID
- * @returns {Promise<Object>} Detailed video information
- */
-async function getLiveStreamDetails(videoId) {
-  const response = await youtube.videos.list({
-    part: ['snippet', 'statistics', 'liveStreamingDetails'],
-    id: [videoId]
-  });
-
-  if (response.data.items.length === 0) {
-    throw new Error('Video details not found');
-  }
-
-  const video = response.data.items[0];
-  return {
-    id: videoId,
-    title: video.snippet.title,
-    description: video.snippet.description,
-    thumbnails: {
-      default: video.snippet.thumbnails.default?.url,
-      medium: video.snippet.thumbnails.medium?.url,
-      high: video.snippet.thumbnails.high?.url,
-      maxres: video.snippet.thumbnails.maxres?.url
-    },
-    channelTitle: video.snippet.channelTitle,
-    startTime: video.liveStreamingDetails?.actualStartTime,
-    concurrentViewers: video.liveStreamingDetails?.concurrentViewers,
-    link: `https://www.youtube.com/watch?v=${videoId}`,
-    statistics: {
-      viewCount: video.statistics?.viewCount,
-      likeCount: video.statistics?.likeCount,
-      commentCount: video.statistics?.commentCount
-    }
-  };
-}
-
-/**
- * Check if channel is live and update status file
- * @param {string} channelId - YouTube channel ID
- */
-async function checkLiveStatus(channelId) {
-  try {
-    // Search for live streams
-    const searchResponse = await youtube.search.list({
-      part: ['snippet'],
-      channelId: channelId,
-      eventType: 'live',
-      type: 'video',
-      maxResults: 1
-    });
-
-    const outputPath = path.join(__dirname, CONFIG.outputFile);
-
-    if (searchResponse.data.items.length > 0) {
-      const liveVideo = searchResponse.data.items[0];
-      
-      // Get detailed information about the live stream
-      const liveData = await getLiveStreamDetails(liveVideo.id.videoId);
-      
-      // Write data to file
-      await fs.writeFile(outputPath, JSON.stringify(liveData, null, 2));
-      console.log(`Live status updated: Channel is live - ${liveData.title}`);
-      return true;
-    } else {
-      // Remove live.json if it exists
-      try {
-        await fs.unlink(outputPath);
-        console.log('Live status updated: Channel is not live, live.json removed');
-      } catch (err) {
-        if (err.code !== 'ENOENT') { // Ignore error if file doesn't exist
-          throw err;
+        if (liveBadges.length > 0) {
+            liveBadges.forEach((badge) => {
+                let parentThumbnail = badge.closest('ytd-thumbnail');
+                if (parentThumbnail) {
+                    let videoLink = parentThumbnail.querySelector('a.yt-simple-endpoint');
+                    if (videoLink) {
+                        liveUrls.push(videoLink.href);
+                    }
+                }
+            });
         }
-      }
-      return false;
-    }
-  } catch (error) {
-    console.error('Error checking live status:', error.message);
-    if (error.response) {
-      console.error('API Response Error:', error.response.data);
-    }
-    console.log('NO LIVE AT THE MOMENT');
-    return false;
-  }
+        return liveUrls;
+    });
 }
 
-/**
- * Initialize and run the check
- */
+async function getVideoDetails(videoId) {
+    try {
+        const video = await YouTube.getVideo(videoId);
+        return {
+            id: video.id,
+            title: video.title,
+            description: video.description,
+            thumbnails: {
+                default: video.thumbnail.url.replace(/maxresdefault/, 'default'),
+                medium: video.thumbnail.url.replace(/maxresdefault/, 'mqdefault'),
+                high: video.thumbnail.url.replace(/maxresdefault/, 'hqdefault'),
+                maxres: video.thumbnail.url
+            },
+            channelTitle: video.channel.name,
+            startTime: video.uploadedAt,
+            concurrentViewers: video.views.toString(),
+            link: `https://www.youtube.com/watch?v=${video.id}`,
+            statistics: {
+                viewCount: video.views.toString(),
+                likeCount: video.likes.toString(),
+                commentCount: '0'
+            }
+        };
+    } catch (error) {
+        console.error(`Error fetching details for video ${videoId}:`, error.message);
+        return null;
+    }
+}
+
+async function deleteLiveJsonFile() {
+    try {
+        await fs.unlink('liveDetails.json');
+        console.log("Existing liveDetails.json file has been deleted.");
+    } catch (error) {
+        // If the file doesn't exist, that's fine, we just won't do anything
+        if (error.code !== 'ENOENT') {
+            console.error('Error deleting liveDetails.json:', error);
+        }
+    }
+}
+
 async function main() {
-  try {
-    // Validate configuration
-    if (!process.env.YOUTUBE_API_KEY) {
-      console.error('Error: YOUTUBE_API_KEY not found in environment variables');
-      process.exit(1);
+    const browser = await puppeteer.launch({ headless: "new" });
+    const page = await browser.newPage();
+
+    try {
+        await page.goto('https://www.youtube.com/@Catholic_Hymn6/streams', { waitUntil: 'networkidle2' });
+        await page.waitForSelector('#content', { timeout: 10000 });
+
+        let liveStreamLinks = await findLiveBadges(page);
+
+        if (liveStreamLinks.length > 0) {
+            let liveDetails = await Promise.all(liveStreamLinks.map(async link => {
+                return await getVideoDetails(link);
+            }));
+
+            liveDetails = liveDetails.filter(detail => detail !== null); // Filter out any null entries
+
+            if (liveDetails.length > 0) {
+                await fs.writeFile('liveDetails.json', JSON.stringify(liveDetails[0], null, 2)); // Writing only the first valid live stream
+                console.log("Live Stream Details written to liveDetails.json");
+            } else {
+                console.log("No valid live stream details to write.");
+                await deleteLiveJsonFile();
+            }
+        } else {
+            console.log("No live streams found.");
+            await deleteLiveJsonFile();
+        }
+    } catch (error) {
+        console.error('An error occurred:', error);
+    } finally {
+        await browser.close();
     }
-
-    console.log('Finding channel ID...');
-    const channelId = await getChannelId(CONFIG.channelUsername);
-    console.log(`Channel ID found: ${channelId}`);
-
-    // Run the check once
-    await checkLiveStatus(channelId);
-  } catch (error) {
-    console.error('Error:', error.message);
-    process.exit(1);
-  }
 }
 
-// Run the application
-main().catch(error => {
-  console.error('Application failed to run:', error);
-  process.exit(1);
-});
+// Run the main function
+main();
