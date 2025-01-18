@@ -3,14 +3,24 @@ const YouTube = require('youtube-sr').default;
 const fs = require('fs').promises;
 const ytext = require("youtube-ext");
 
-const videoUrl = 'https://www.youtube.com/watch?v=DHzd-_OjE-Q'; // Example URL
-
-ytext.videoInfo(videoUrl).then(videoInfo => {
-    console.log(videoInfo);
-}).catch(error => {
-    console.error('Failed to fetch video info:', error);
-});
-
+async function getPlaylistVideos(playlistUrl) {
+    try {
+      const playlistInfo = await ytext.playlistInfo(playlistUrl);
+      for (const video of playlistInfo.videos) {
+        const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
+        try {
+          const videoInfo = await ytext.videoInfo(videoUrl);
+          console.log(videoInfo);
+        } catch (error) {
+          console.error(`Failed to fetch video info for ${videoUrl}:`, error);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to fetch playlist info:', error);
+    }
+  }
+  
+  getPlaylistVideos(playlistUrl);
 // // Helper function to extract video ID from URL
 // function extractVideoId(url) {
 //     const regex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/;
