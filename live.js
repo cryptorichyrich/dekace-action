@@ -29,7 +29,7 @@ async function findLiveBadges(page) {
 async function getVideoDetails(videoId) {
     try {
         const video = await YouTube.getVideo(videoId);
-        console.log(video);
+        console.log(videoId);
         return {
             id: video.id,
             title: video.title,
