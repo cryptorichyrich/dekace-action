@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install youtube-sr puppeteer
-          npm i @uranashel/youtubesearch
+          npm i @uranashel/youtubesearch youtube-ext
           npx puppeteer browsers install chrome            
       
       - name: Read and Update Content  
