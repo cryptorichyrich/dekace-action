@@ -2,15 +2,20 @@ const puppeteer = require('puppeteer');
 const YouTube = require('youtube-sr').default;
 const fs = require('fs').promises;
 
+// Helper function to extract video ID from URL
+function extractVideoId(url) {
+    const regex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+}
+
 async function findLiveBadges(page) {
     return await page.evaluate(() => {
         let contentElement = document.getElementById('content');
         
         if (!contentElement) return [];
-
         let liveBadges = contentElement.querySelectorAll('.badge-shape-wiz--thumbnail-live');
         let liveUrls = [];
-
         if (liveBadges.length > 0) {
             liveBadges.forEach((badge) => {
                 let parentThumbnail = badge.closest('ytd-thumbnail');
@@ -26,70 +31,114 @@ async function findLiveBadges(page) {
     });
 }
 
-async function getVideoDetails(videoId) {
+async function getVideoDetails(videoUrl) {
     try {
+        // Extract video ID from URL
+        const videoId = extractVideoId(videoUrl);
+        if (!videoId) {
+            console.error('Invalid YouTube URL:', videoUrl);
+            return null;
+        }
+
+        // Add delay to respect rate limits
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Set up YouTube-sr options
+        YouTube.setScrapeConfig({
+            requestOptions: {
+                headers: {
+                    // Add basic headers to mimic browser request
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                }
+            }
+        });
+
         const video = await YouTube.getVideo(videoId);
-        console.log(videoId);
+        
+        // Add validation
+        if (!video || !video.id) {
+            console.error(`No video data returned for ID ${videoId}`);
+            return null;
+        }
+
         return {
             id: video.id,
-            title: video.title,
-            description: video.description,
+            title: video.title || 'Untitled',
+            description: video.description || '',
             thumbnails: {
-                default: video.thumbnail.url.replace(/maxresdefault/, 'default'),
-                medium: video.thumbnail.url.replace(/maxresdefault/, 'mqdefault'),
-                high: video.thumbnail.url.replace(/maxresdefault/, 'hqdefault'),
-                maxres: video.thumbnail.url
+                default: (video.thumbnail?.url || '').replace(/maxresdefault/, 'default'),
+                medium: (video.thumbnail?.url || '').replace(/maxresdefault/, 'mqdefault'),
+                high: (video.thumbnail?.url || '').replace(/maxresdefault/, 'hqdefault'),
+                maxres: video.thumbnail?.url || ''
             },
-            channelTitle: video.channel.name,
-            startTime: video.uploadedAt,
-            concurrentViewers: video.views.toString(),
-            link: `https://www.youtube.com/watch?v=${video.id}`,
+            channelTitle: video.channel?.name || 'Unknown Channel',
+            startTime: video.uploadedAt || new Date().toISOString(),
+            concurrentViewers: (video.views || 0).toString(),
+            link: `https://www.youtube.com/watch?v=${videoId}`,
             statistics: {
-                viewCount: video.views.toString(),
-                likeCount: video.likes.toString(),
+                viewCount: (video.views || 0).toString(),
+                likeCount: (video.likes || 0).toString(),
                 commentCount: '0'
             }
         };
     } catch (error) {
-        console.error(`Error fetching details for video ${videoId}:`, error.message);
+        console.error(`Error fetching details for video ${videoUrl}:`, error);
+        console.error('Full error object:', JSON.stringify(error, null, 2));
         return null;
-    }
-}
-
-async function deleteLiveJsonFile() {
-    try {
-        await fs.unlink('liveDetails.json');
-        console.log("Existing liveDetails.json file has been deleted.");
-    } catch (error) {
-        // If the file doesn't exist, that's fine, we just won't do anything
-        if (error.code !== 'ENOENT') {
-            console.error('Error deleting liveDetails.json:', error);
-        }
     }
 }
 
 async function main() {
     const browser = await puppeteer.launch({ 
-        headless: "new", 
-        args: ['--no-sandbox'] 
+        headless: "new",
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--disable-gpu'
+        ]
     });
+    
     const page = await browser.newPage();
-
     try {
-        await page.goto('https://www.youtube.com/@Catholic_Hymn6/streams', { waitUntil: 'networkidle2' });
-        await page.waitForSelector('#content', { timeout: 10000 });
+        // Set a longer timeout and add retry logic
+        await page.setDefaultNavigationTimeout(30000);
+        await page.setDefaultTimeout(30000);
+
+        const maxRetries = 3;
+        let retryCount = 0;
+        let success = false;
+
+        while (!success && retryCount < maxRetries) {
+            try {
+                await page.goto('https://www.youtube.com/@Catholic_Hymn6/streams', { 
+                    waitUntil: 'networkidle2',
+                    timeout: 30000
+                });
+                await page.waitForSelector('#content', { timeout: 30000 });
+                success = true;
+            } catch (error) {
+                retryCount++;
+                console.log(`Attempt ${retryCount} failed. Retrying...`);
+                await new Promise(resolve => setTimeout(resolve, 5000)); // Wait 5 seconds before retry
+                if (retryCount === maxRetries) throw error;
+            }
+        }
 
         let liveStreamLinks = await findLiveBadges(page);
+        console.log('Found live streams:', liveStreamLinks);
 
         if (liveStreamLinks.length > 0) {
             let liveDetails = await Promise.all(liveStreamLinks.map(async link => {
                 return await getVideoDetails(link);
             }));
-
-            liveDetails = liveDetails.filter(detail => detail !== null); // Filter out any null entries
-
+            
+            liveDetails = liveDetails.filter(detail => detail !== null);
+            
             if (liveDetails.length > 0) {
-                await fs.writeFile('liveDetails.json', JSON.stringify(liveDetails[0], null, 2)); // Writing only the first valid live stream
+                await fs.writeFile('liveDetails.json', JSON.stringify(liveDetails[0], null, 2));
                 console.log("Live Stream Details written to liveDetails.json");
             } else {
                 console.log("No valid live stream details to write.");
@@ -101,11 +150,24 @@ async function main() {
         }
     } catch (error) {
         console.error('An error occurred:', error);
+        throw error; // Re-throw to ensure GitHub Action fails properly
     } finally {
         await browser.close();
     }
 }
 
-// Run the main function
-getVideoDetails("https://www.youtube.com/watch?v=DHzd-_OjE-Q");
-main();
+// Test a specific video first
+async function test() {
+    try {
+        const result = await getVideoDetails("https://www.youtube.com/watch?v=DHzd-_OjE-Q");
+        console.log('Test result:', JSON.stringify(result, null, 2));
+    } catch (error) {
+        console.error('Test failed:', error);
+    }
+}
+
+// Run the test first, then the main function
+(async () => {
+    await test();
+    await main();
+})();
