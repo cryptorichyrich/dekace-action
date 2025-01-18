@@ -18,19 +18,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
+          
       - name: Install dependencies
         run: |
           npm init -y
-          npm install googleapis@126.0.1 jsdom axios event-stream JSONStream     
+          npm install puppeteer youtube-sr
       
-      - name: Read and Update Content
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}      
+      - name: Read and Update Content  
         run: |
-          # Read and print existing content
-      
-          # Generate random paragraph using Node.js
           node live.js
 
       - name: Commit and push changes
