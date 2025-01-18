@@ -34,6 +34,7 @@ jobs:
       
           # Generate random paragraph using Node.js
           node calendarAndYoutube.js $YEAR
+          node live.js
 
       - name: Commit and push changes
         run: |
