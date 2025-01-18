@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const YouTube = require('youtube-sr').default;
+const YouTube = require('youtubesearch').default;
 const fs = require('fs').promises;
 
 async function findLiveBadges(page) {
