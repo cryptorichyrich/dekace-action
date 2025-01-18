@@ -25,6 +25,7 @@
     "jsdom": "^26.0.0",
     "JSONStream": "^1.3.5",
     "puppeteer": "^24.1.0",
+    "youtube-ext": "^1.1.25",
     "youtube-sr": "^4.3.11"
   },
   "description": ""
