@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm init -y
-          npm install googleapis@126.0.1 jsdom axios event-stream JSONStream     
+          npm install jsdom axios event-stream JSONStream     
 
       - name: Get today's year
         run: |
