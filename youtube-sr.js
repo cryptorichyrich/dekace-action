@@ -1,67 +1,78 @@
 const puppeteer = require('puppeteer');
-const fs = require('fs').promises; // Use promises for easier async handling
+const fs = require('fs');
 const YouTube = require('youtube-sr').default;
 
-async function main() {
-    const browser = await puppeteer.launch({ headless: "new" ,
-    args: ["--no-sandbox"]});
-    const page = await browser.newPage();
+function main() {
+    puppeteer.launch({ headless: "new", args: ["--no-sandbox"] }).then(browser => {
+        browser.newPage().then(page => {
+            page.goto('https://www.youtube.com/@damaikasihchannel9153/playlists', { waitUntil: 'networkidle2' })
+                .then(() => page.waitForSelector('ytd-two-column-browse-results-renderer', { timeout: 10000 }))
+                .then(() => {
+                    return page.evaluate(() => {
+                        let playlistElements = Array.from(document.querySelectorAll('yt-lockup-view-model'));
+                        return playlistElements.map(pl => ({
+                            title: pl.querySelector('h3')?.textContent.trim() || '',
+                            url: pl.querySelector('a')?.href || ''
+                        }));
+                    });
+                })
+                .then(playlists => {
+                    let allPlaylistsData = [];
 
-    try {
-        await page.goto('https://www.youtube.com/@damaikasihchannel9153/playlists', { waitUntil: 'networkidle2' });
-        await page.waitForSelector('ytd-two-column-browse-results-renderer', { timeout: 10000 });
-
-        let playlists = await page.evaluate(() => {
-            let playlistElements = Array.from(document.querySelectorAll('yt-lockup-view-model'));
-            return playlistElements.map(pl => ({
-                title: pl.querySelector('h3')?.textContent.trim() || '',
-                url: pl.querySelector('a')?.href || ''
-            }));
-        });
-
-        let allPlaylistsData = [];
-
-        for (const playlist of playlists) {
-            try {
-                // Extract playlist ID from URL
-                const playlistId = new URL(playlist.url).searchParams.get('list');
-                console.log("playlistId",playlistId);
-                if (playlistId) {
-                    const playlistData = await YouTube.getPlaylist(playlistId);
-                    // Here we assume that 'videos' array contains video objects
-                    const videoPromises = playlistData.videos.map(async video => {
-                        try {
-                            console.log(`Fetching video: ${video.id}`);
-                            const videoInfo = await YouTube.getVideo(`https://www.youtube.com/watch?v=${video.id}`);
-                            console.log(`Successfully fetched video: ${video.id}`);
-                            return videoInfo;
-                        } catch (error) {
-                            console.error(`Error fetching video ${video.id}:`, error);
-                            return null;
+                    function processNextPlaylist() {
+                        if (playlists.length === 0) {
+                            fs.writeFile('dkcPlaylists.json', JSON.stringify(allPlaylistsData, null, 2), err => {
+                                if (err) {
+                                    console.error('Error writing file:', err);
+                                }
+                                browser.close();
+                            });
+                            return;
                         }
-                    });
-                    
-                    const detailedVideos = await Promise.all(videoPromises);
 
-                    allPlaylistsData.push({
-                        title: playlist.title,
-                        url: playlist.url,
-                        videos: detailedVideos.filter(v => v !== null) // Filter out any null entries
-                    });
-                }
-            } catch (error) {
-                console.error(`Error processing playlist ${playlist.title}:`, error);
-            }
-        }
+                        const playlist = playlists.shift();
+                        const playlistId = new URL(playlist.url).searchParams.get('list');
+                        console.log("playlistId", playlistId);
 
-        // Write the data to a JSON file
-        await fs.writeFile('dkcPlaylists.json', JSON.stringify(allPlaylistsData, null, 2));
+                        if (playlistId) {
+                            YouTube.getPlaylist(playlistId).then(playlistData => {
+                                const videoPromises = playlistData.videos.map(video => 
+                                    YouTube.getVideo(`https://www.youtube.com/watch?v=${video.id}`)
+                                        .then(videoInfo => ({
+                                            success: true,
+                                            video: videoInfo
+                                        }))
+                                        .catch(error => {
+                                            console.error(`Error fetching video ${video.id}:`, error);
+                                            return { success: false, error: error };
+                                        })
+                                );
 
-    } catch (error) {
-        console.error('An error occurred while scraping:', error);
-    } finally {
-        await browser.close();
-    }
+                                Promise.all(videoPromises).then(detailedVideos => {
+                                    allPlaylistsData.push({
+                                        title: playlist.title,
+                                        url: playlist.url,
+                                        videos: detailedVideos.filter(v => v.success).map(v => v.video)
+                                    });
+                                    processNextPlaylist();
+                                });
+                            }).catch(error => {
+                                console.error(`Error processing playlist ${playlist.title}:`, error);
+                                processNextPlaylist(); // Continue to next playlist even if one fails
+                            });
+                        } else {
+                            processNextPlaylist(); // If no playlist ID, continue to next playlist
+                        }
+                    }
+
+                    processNextPlaylist();
+                })
+                .catch(error => {
+                    console.error('An error occurred while scraping:', error);
+                    browser.close();
+                });
+        });
+    });
 }
 
 main();
