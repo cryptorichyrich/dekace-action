@@ -1,4 +1,4 @@
-name: YOUTUBE PLAYLIST
+name: FULL RESYNC YOUTUBE PLAYLIST
 on:
   workflow_dispatch:
   schedule:
@@ -30,7 +30,7 @@ jobs:
           # Read and print existing content
       
           # Generate random paragraph using Node.js
-          node youtubePlaylistGoogleapi.js
+          node youtubeFullResyncPlaylistGoogleapi.js
 
       - name: Commit and push changes
         run: |
