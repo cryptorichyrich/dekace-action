@@ -1,4 +1,4 @@
-name: Playlist Youtube Update
+name: YOUTUBE PLAYLIST
 on:
   workflow_dispatch:
   schedule:
