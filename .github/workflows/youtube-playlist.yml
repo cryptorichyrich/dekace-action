@@ -30,7 +30,7 @@ jobs:
           # Read and print existing content
       
           # Generate random paragraph using Node.js
-          node fetch-playlists.js
+          node youtubePlaylistGoogleapi.js
 
       - name: Commit and push changes
         run: |
