@@ -1,9 +1,8 @@
-name: YOUTUBE PLAYLIST
-
+name: Playlist Youtube Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0 * * *"  
 
 jobs:
   read-and-update:
@@ -17,23 +16,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.12.0'
-          
+          node-version: '20'
+
       - name: Install dependencies
         run: |
-          npm install youtube-sr puppeteer
-          npm i youtube-sr
-          npx puppeteer browsers install chrome            
+          npm init -y
+          npm install googleapis   
       
-      - name: Read and Update Content  
+      - name: Read and Update Content
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}      
         run: |
-          node youtube-sr.js
+          # Read and print existing content
+      
+          # Generate random paragraph using Node.js
+          node fetch-playlists.js
 
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          git pull
           git add .
-          git commit -m "dkcPlaylists.json" || echo "No changes to commit"
+          git commit -m "playlists.json" || echo "No changes to commit"
           git push origin gh-pages
