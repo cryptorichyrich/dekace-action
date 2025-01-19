@@ -1,5 +1,4 @@
 const puppeteer = require("puppeteer");
-const YouTube = require("youtube-sr").default;
 const fs = require("fs").promises;
 const ytext = require("youtube-ext");
 
