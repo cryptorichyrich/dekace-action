@@ -4,11 +4,65 @@ const { google } = require('googleapis');
 
 // Previous helper functions remain the same
 async function getChannelId(handle) {
-  // ... existing getChannelId function ...
+  try {
+    const youtube = google.youtube({
+      version: 'v3',
+      auth: process.env.YOUTUBE_API_KEY
+    });
+
+    const response = await youtube.search.list({
+      part: 'snippet',
+      q: handle,
+      type: 'channel',
+      maxResults: 1
+    });
+
+    if (response.data.items && response.data.items.length > 0) {
+      return response.data.items[0].snippet.channelId;
+    }
+    throw new Error('Channel not found');
+  } catch (error) {
+    console.error('Error getting channel ID:', error);
+    throw error;
+  }
 }
 
 async function fetchVideoDetails(videoId) {
-  // ... existing fetchVideoDetails function ...
+  const youtube = google.youtube({
+    version: 'v3',
+    auth: process.env.YOUTUBE_API_KEY
+  });
+
+  let videoDetails = {};
+  
+  try {
+    const [contentDetailsResponse, statisticsResponse] = await Promise.all([
+      youtube.videos.list({
+        part: 'contentDetails',
+        id: videoId
+      }),
+      youtube.videos.list({
+        part: 'statistics',
+        id: videoId
+      })
+    ]);
+
+    if (contentDetailsResponse.data.items && contentDetailsResponse.data.items.length > 0) {
+      videoDetails.duration = contentDetailsResponse.data.items[0].contentDetails.duration;
+    }
+
+    if (statisticsResponse.data.items && statisticsResponse.data.items.length > 0) {
+      const stats = statisticsResponse.data.items[0].statistics;
+      videoDetails.viewCount = stats.viewCount;
+      videoDetails.likeCount = stats.likeCount || 'N/A';
+      videoDetails.commentCount = stats.commentCount;
+      videoDetails.favoriteCount = stats.favoriteCount || 'N/A';
+    }
+  } catch (error) {
+    console.error(`Error fetching video details for ${videoId}:`, error.message);
+  }
+
+  return videoDetails;
 }
 
 async function getLatestVideosForPlaylist(youtube, playlistId, afterDate) {
