@@ -136,18 +136,8 @@ async function fetchPlaylistsData() {
       })
     );
 
-    // Ensure output directory exists
-    const OUTPUT_DIR = 'assets/data';
-    if (!fs.existsSync(OUTPUT_DIR)) {
-      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-    }
-
-    // Write to JSON file, overwriting if it exists
-    const outputPath = path.join(OUTPUT_DIR, 'playlists.json');
-    fs.writeFileSync(
-      outputPath,
-      JSON.stringify(playlists, null, 2)
-    );
+const outputPath = 'playlists.json';
+fs.writeFileSync(outputPath, JSON.stringify(playlists, null, 2));
 
     console.log(`Successfully saved playlists data to ${outputPath}`);
     return playlists;
