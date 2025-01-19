@@ -25,10 +25,12 @@ async function main() {
             try {
                 // Extract playlist ID from URL
                 const playlistId = new URL(playlist.url).searchParams.get('list');
-                
+                console.log("playlistId",playlistId);
                 if (playlistId) {
                     const playlistData = await YouTube.getPlaylist(playlistId);
                     // Here we assume that 'videos' array contains video objects
+                    console.log(`https://www.youtube.com/watch?v=${video.id}`);
+                    console.log(video.title);
                     const detailedVideos = await Promise.all(playlistData.videos.map(video => 
                         YouTube.getVideo(`https://www.youtube.com/watch?v=${video.id}`)
                         .catch(error => {
