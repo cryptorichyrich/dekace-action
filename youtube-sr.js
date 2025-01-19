@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises; // Use promises for easier async handling
-const ytpl = require('ytpl');
 const YouTube = require('youtube-sr').default;
 
 async function main() {
