@@ -29,15 +29,19 @@ async function main() {
                 if (playlistId) {
                     const playlistData = await YouTube.getPlaylist(playlistId);
                     // Here we assume that 'videos' array contains video objects
-                    console.log(`https://www.youtube.com/watch?v=${video.id}`);
-                    console.log(video.title);
-                    const detailedVideos = await Promise.all(playlistData.videos.map(video => 
-                        YouTube.getVideo(`https://www.youtube.com/watch?v=${video.id}`)
-                        .catch(error => {
+                    const videoPromises = playlistData.videos.map(async video => {
+                        try {
+                            console.log(`Fetching video: ${video.id}`);
+                            const videoInfo = await YouTube.getVideo(`https://www.youtube.com/watch?v=${video.id}`);
+                            console.log(`Successfully fetched video: ${video.id}`);
+                            return videoInfo;
+                        } catch (error) {
                             console.error(`Error fetching video ${video.id}:`, error);
-                            return null; // Return null if there's an error fetching the video
-                        })
-                    ));
+                            return null;
+                        }
+                    });
+                    
+                    const detailedVideos = await Promise.all(videoPromises);
 
                     allPlaylistsData.push({
                         title: playlist.title,
