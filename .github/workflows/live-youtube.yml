@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
+  repository_dispatch:
+    types: [live_youtube]     
 
 jobs:
   read-and-update:
