@@ -119,7 +119,7 @@ async function main() {
       ).filter((detail) => detail !== null);
 
       if (liveDetails.length > 0) {
-        await fs.writeFile("liveDetails.json", JSON.stringify(liveDetails, null, 2));
+        await fs.writeFile("live.json", JSON.stringify(liveDetails, null, 2));
         console.log("All Live Stream Details written to liveDetails.json");
       } else {
         console.log("No valid live stream details to write.");
