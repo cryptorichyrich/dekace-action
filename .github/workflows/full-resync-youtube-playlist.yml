@@ -37,5 +37,5 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add .
-          git commit -m "playlist.json" || echo "No changes to commit"
+          git commit -m "full resync playlists.json" || echo "No changes to commit"
           git push origin gh-pages
