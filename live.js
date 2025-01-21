@@ -66,11 +66,11 @@ async function getVideoDetails(videoUrl) {
 
 async function deleteLiveJsonFile() {
   try {
-    await fs.unlink("liveDetails.json");
-    console.log("Existing liveDetails.json file has been deleted.");
+    await fs.unlink("live.json");
+    console.log("Existing live.json file has been deleted.");
   } catch (error) {
     if (error.code !== "ENOENT") {
-      console.error("Error deleting liveDetails.json:", error);
+      console.error("Error deleting live.json:", error);
     }
   }
 }
@@ -114,13 +114,13 @@ async function main() {
     console.log("Found live streams:", liveStreamLinks);
 
     if (liveStreamLinks.length > 0) {
-      const liveDetails = (
+      const live = (
         await Promise.all(liveStreamLinks.map((link) => getVideoDetails(link)))
       ).filter((detail) => detail !== null);
 
-      if (liveDetails.length > 0) {
-        await fs.writeFile("live.json", JSON.stringify(liveDetails, null, 2));
-        console.log("All Live Stream Details written to liveDetails.json");
+      if (live.length > 0) {
+        await fs.writeFile("live.json", JSON.stringify(live, null, 2));
+        console.log("All Live Stream Details written to live.json");
       } else {
         console.log("No valid live stream details to write.");
         await deleteLiveJsonFile();
