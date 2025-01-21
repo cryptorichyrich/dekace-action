@@ -98,7 +98,7 @@ async function main() {
 
     while (!success && retryCount < maxRetries) {
       try {
-        await page.goto("https://www.youtube.com/@Catholic_Hymn6/streams", {
+        await page.goto("https://www.youtube.com/@damaikasihchannel9153/streams", {
           waitUntil: "domcontentloaded",
         });
         await page.waitForSelector("#content", { timeout: 15000 });
