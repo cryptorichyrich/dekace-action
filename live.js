@@ -42,10 +42,10 @@ async function getVideoDetails(videoUrl) {
       title: video.title || "Untitled",
       description: video.shortDescription || "",
       thumbnails: {
-        default: (video.thumbnail?.url || "").replace(/maxresdefault/, "default"),
-        medium: (video.thumbnail?.url || "").replace(/maxresdefault/, "mqdefault"),
-        high: (video.thumbnail?.url || "").replace(/maxresdefault/, "hqdefault"),
-        maxres: video.thumbnail?.url || "",
+        default: "https://img.youtube.com/vi/"+video.id+"/maxresdefault.jpg",
+        medium: "https://img.youtube.com/vi/"+video.id+"/mqdefault",
+        high: "https://img.youtube.com/vi/"+video.id+"/hqdefault",
+        maxres: "https://img.youtube.com/vi/"+video.id+"/maxresdefault.jpg",
       },
       channelTitle: video.channel?.name || "Unknown Channel",
       channelId: video.channel?.id || "Unknown Channel",
@@ -98,7 +98,7 @@ async function main() {
 
     while (!success && retryCount < maxRetries) {
       try {
-        await page.goto("https://www.youtube.com/@damaikasihchannel9153/streams", {
+        await page.goto("https://www.youtube.com/@Catholic_Hymn6/streams", {
           waitUntil: "domcontentloaded",
         });
         await page.waitForSelector("#content", { timeout: 15000 });
