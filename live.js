@@ -97,7 +97,7 @@ function main() {
           return;
         }
 
-        page.goto("https://www.youtube.com/@Catholic_Hymn6/streams", { waitUntil: "load" })
+        page.goto("https://www.youtube.com/@damaikasihchannel9153/streams", { waitUntil: "load" })
           .then(() => page.waitForSelector("#content", { timeout: 15000 }))
           .then(() => callback(null, page))
           .catch(error => {
