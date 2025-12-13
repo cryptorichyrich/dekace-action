@@ -839,8 +839,15 @@
     "title": "Diskusi/Dialog",
     "description": "",
     "thumbnail": "https://i.ytimg.com/vi/Wr_0M7NQ0RE/mqdefault.jpg",
-    "videoCount": 650,
+    "videoCount": 651,
     "videos": [
+      {
+        "id": "V7xVdlrf1uI",
+        "title": "Deleted video",
+        "description": "This video is unavailable.",
+        "thumbnail": "",
+        "publishedAt": "2025-12-13T09:14:09Z"
+      },
       {
         "id": "Wr_0M7NQ0RE",
         "title": "DISKUSI BERSAMA ORTODOKS (APOLOGET KATOLIK DENGAN ROMO YOHANES FRANSISKUS DARI ORTODOKS",
@@ -13761,7 +13768,7 @@
     "title": "Menanggapi dari Channel lain",
     "description": "",
     "thumbnail": "https://i.ytimg.com/vi/bcW3P1Tl9MA/mqdefault.jpg",
-    "videoCount": 390,
+    "videoCount": 391,
     "videos": [
       {
         "id": "bcW3P1Tl9MA",
