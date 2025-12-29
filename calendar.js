@@ -41,7 +41,8 @@ async function runIfOneDayBeforeNewYear() {
     const month = today.getMonth() + 1; // getMonth() returns 0-11, so we add 1
     const day = today.getDate();
 
-    if (month === 12 && day === 31) { // December 31st
+    //if (month === 12 && day === 31) { // December 31st
+      if (month === 12) {
         const nextYear = today.getFullYear() + 1;
         
         // Check if any of the next year's files already exist
