@@ -74,7 +74,7 @@
         "publishedAt": "2024-04-12T04:33:01Z",
         "duration": "PT13S",
         "viewCount": "130",
-        "likeCount": "13",
+        "likeCount": "0",
         "commentCount": "0",
         "favoriteCount": "0"
       },
@@ -206,8 +206,8 @@
         "publishedAt": "2024-04-12T06:59:49Z",
         "duration": "PT48S",
         "viewCount": "546",
-        "likeCount": "31",
-        "commentCount": "7",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       }
     ]
@@ -226,7 +226,7 @@
         "thumbnail": "https://i.ytimg.com/vi/jYwYRejQpHg/mqdefault.jpg",
         "publishedAt": "2022-09-26T09:54:21Z",
         "duration": "PT5H11M42S",
-        "viewCount": "3692",
+        "viewCount": "3693",
         "likeCount": "221",
         "commentCount": "12",
         "favoriteCount": "0"
@@ -382,7 +382,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uJVAry9zF2c/mqdefault.jpg",
         "publishedAt": "2024-12-18T10:10:04Z",
         "duration": "PT5H11M10S",
-        "viewCount": "8509",
+        "viewCount": "8510",
         "likeCount": "323",
         "commentCount": "107",
         "favoriteCount": "0"
@@ -535,7 +535,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uwKjRz_pVtU/mqdefault.jpg",
         "publishedAt": "2024-08-03T17:28:08Z",
         "duration": "PT2H47M47S",
-        "viewCount": "8569",
+        "viewCount": "8570",
         "likeCount": "398",
         "commentCount": "303",
         "favoriteCount": "0"
@@ -556,7 +556,7 @@
         "thumbnail": "https://i.ytimg.com/vi/BsJXlMfDMNc/mqdefault.jpg",
         "publishedAt": "2022-05-25T15:23:40Z",
         "duration": "PT3H38M2S",
-        "viewCount": "4803",
+        "viewCount": "4806",
         "likeCount": "245",
         "commentCount": "4",
         "favoriteCount": "0"
@@ -568,7 +568,7 @@
         "thumbnail": "https://i.ytimg.com/vi/nQ3aMa55ldI/mqdefault.jpg",
         "publishedAt": "2022-06-01T16:54:08Z",
         "duration": "PT2H58M9S",
-        "viewCount": "3904",
+        "viewCount": "3905",
         "likeCount": "149",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -580,7 +580,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tPIQblOGOKE/mqdefault.jpg",
         "publishedAt": "2022-08-27T17:55:10Z",
         "duration": "PT1H43M50S",
-        "viewCount": "2075",
+        "viewCount": "2076",
         "likeCount": "136",
         "commentCount": "2",
         "favoriteCount": "0"
@@ -664,7 +664,7 @@
         "thumbnail": "https://i.ytimg.com/vi/QytxMfiKlsE/mqdefault.jpg",
         "publishedAt": "2023-12-18T12:35:52Z",
         "duration": "PT2H9M10S",
-        "viewCount": "1007",
+        "viewCount": "1008",
         "likeCount": "88",
         "commentCount": "2",
         "favoriteCount": "0"
@@ -676,7 +676,7 @@
         "thumbnail": "https://i.ytimg.com/vi/x7JAzV8XcqM/mqdefault.jpg",
         "publishedAt": "2024-01-08T18:32:21Z",
         "duration": "PT3H13M15S",
-        "viewCount": "1672",
+        "viewCount": "1673",
         "likeCount": "150",
         "commentCount": "18",
         "favoriteCount": "0"
@@ -688,7 +688,7 @@
         "thumbnail": "https://i.ytimg.com/vi/XKuSOJxuDak/mqdefault.jpg",
         "publishedAt": "2024-03-27T17:49:46Z",
         "duration": "PT4H45M52S",
-        "viewCount": "2331",
+        "viewCount": "2332",
         "likeCount": "153",
         "commentCount": "661",
         "favoriteCount": "0"
@@ -712,7 +712,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zqRpgPc2Vj4/mqdefault.jpg",
         "publishedAt": "2024-04-02T06:59:21Z",
         "duration": "PT3H5M24S",
-        "viewCount": "29825",
+        "viewCount": "29833",
         "likeCount": "751",
         "commentCount": "725",
         "favoriteCount": "0"
@@ -767,7 +767,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7d69-TSyk7s/mqdefault.jpg",
         "publishedAt": "2025-03-11T10:11:33Z",
         "duration": "PT3H35M26S",
-        "viewCount": "2821",
+        "viewCount": "2822",
         "likeCount": "199",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -848,7 +848,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Wr_0M7NQ0RE/mqdefault.jpg",
         "publishedAt": "2022-05-13T00:51:20Z",
         "duration": "PT5H12M20S",
-        "viewCount": "10473",
+        "viewCount": "10480",
         "likeCount": "412",
         "commentCount": "130",
         "favoriteCount": "0"
@@ -860,7 +860,7 @@
         "thumbnail": "https://i.ytimg.com/vi/9TQobnih7vQ/mqdefault.jpg",
         "publishedAt": "2022-05-13T00:51:44Z",
         "duration": "PT3H51M25S",
-        "viewCount": "15587",
+        "viewCount": "15588",
         "likeCount": "647",
         "commentCount": "544",
         "favoriteCount": "0"
@@ -872,7 +872,7 @@
         "thumbnail": "https://i.ytimg.com/vi/L2IPHlJ1cZw/mqdefault.jpg",
         "publishedAt": "2022-05-13T00:51:56Z",
         "duration": "PT4H17M41S",
-        "viewCount": "17058",
+        "viewCount": "17062",
         "likeCount": "666",
         "commentCount": "953",
         "favoriteCount": "0"
@@ -884,7 +884,7 @@
         "thumbnail": "https://i.ytimg.com/vi/KYlqmOj6CQM/mqdefault.jpg",
         "publishedAt": "2022-05-13T00:52:09Z",
         "duration": "PT4H50M42S",
-        "viewCount": "18011",
+        "viewCount": "18015",
         "likeCount": "825",
         "commentCount": "179",
         "favoriteCount": "0"
@@ -980,7 +980,7 @@
         "thumbnail": "https://i.ytimg.com/vi/90OnkEVbiCU/mqdefault.jpg",
         "publishedAt": "2022-05-17T15:42:55Z",
         "duration": "PT4H7M12S",
-        "viewCount": "9534",
+        "viewCount": "9535",
         "likeCount": "443",
         "commentCount": "93",
         "favoriteCount": "0"
@@ -992,7 +992,7 @@
         "thumbnail": "https://i.ytimg.com/vi/cwopbrMefsU/mqdefault.jpg",
         "publishedAt": "2022-05-18T13:58:45Z",
         "duration": "PT2H24M14S",
-        "viewCount": "13406",
+        "viewCount": "13409",
         "likeCount": "550",
         "commentCount": "397",
         "favoriteCount": "0"
@@ -1196,7 +1196,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tlIwW7H37uQ/mqdefault.jpg",
         "publishedAt": "2022-10-28T18:12:59Z",
         "duration": "PT5H48M11S",
-        "viewCount": "6920",
+        "viewCount": "6925",
         "likeCount": "306",
         "commentCount": "101",
         "favoriteCount": "0"
@@ -1292,7 +1292,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tH3ZbcqaFQo/mqdefault.jpg",
         "publishedAt": "2023-01-21T17:51:14Z",
         "duration": "PT5H47M",
-        "viewCount": "1818",
+        "viewCount": "1819",
         "likeCount": "132",
         "commentCount": "1",
         "favoriteCount": "0"
@@ -1461,8 +1461,8 @@
         "publishedAt": "2023-08-01T16:44:50Z",
         "duration": "PT3H19M2S",
         "viewCount": "2477",
-        "likeCount": "146",
-        "commentCount": "12",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -1484,7 +1484,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HJgY49av1FM/mqdefault.jpg",
         "publishedAt": "2023-08-04T18:42:17Z",
         "duration": "PT5H36M34S",
-        "viewCount": "5432",
+        "viewCount": "5440",
         "likeCount": "299",
         "commentCount": "138",
         "favoriteCount": "0"
@@ -1756,8 +1756,8 @@
         "publishedAt": "2023-09-22T17:13:43Z",
         "duration": "PT2H52M45S",
         "viewCount": "872",
-        "likeCount": "87",
-        "commentCount": "4",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -1779,7 +1779,7 @@
         "thumbnail": "https://i.ytimg.com/vi/qK8mYjsBL-w/mqdefault.jpg",
         "publishedAt": "2023-09-26T16:04:53Z",
         "duration": "PT5H12M59S",
-        "viewCount": "2056",
+        "viewCount": "2057",
         "likeCount": "125",
         "commentCount": "108",
         "favoriteCount": "0"
@@ -1888,8 +1888,8 @@
         "publishedAt": "2023-10-09T08:15:36Z",
         "duration": "PT25M15S",
         "viewCount": "2022",
-        "likeCount": "120",
-        "commentCount": "284",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -1935,7 +1935,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bX3TYKeEPqM/mqdefault.jpg",
         "publishedAt": "2023-10-11T10:30:40Z",
         "duration": "PT3H59M36S",
-        "viewCount": "13349",
+        "viewCount": "13351",
         "likeCount": "451",
         "commentCount": "607",
         "favoriteCount": "0"
@@ -2055,7 +2055,7 @@
         "thumbnail": "https://i.ytimg.com/vi/6gzEFOXODB8/mqdefault.jpg",
         "publishedAt": "2023-10-27T09:01:21Z",
         "duration": "PT2H7M18S",
-        "viewCount": "2479",
+        "viewCount": "2480",
         "likeCount": "125",
         "commentCount": "158",
         "favoriteCount": "0"
@@ -2140,8 +2140,8 @@
         "publishedAt": "2023-11-06T06:55:02Z",
         "duration": "PT6H4M26S",
         "viewCount": "1722",
-        "likeCount": "115",
-        "commentCount": "40",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -2151,7 +2151,7 @@
         "thumbnail": "https://i.ytimg.com/vi/jxELi4afcxQ/mqdefault.jpg",
         "publishedAt": "2023-11-07T05:32:22Z",
         "duration": "PT3H56M25S",
-        "viewCount": "9452",
+        "viewCount": "9454",
         "likeCount": "360",
         "commentCount": "243",
         "favoriteCount": "0"
@@ -2175,7 +2175,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OZ6Od3hek3c/mqdefault.jpg",
         "publishedAt": "2023-11-09T10:26:25Z",
         "duration": "PT5H9M58S",
-        "viewCount": "4228",
+        "viewCount": "4231",
         "likeCount": "211",
         "commentCount": "90",
         "favoriteCount": "0"
@@ -2279,8 +2279,8 @@
         "publishedAt": "2023-11-19T17:54:36Z",
         "duration": "PT3H8M11S",
         "viewCount": "3052",
-        "likeCount": "197",
-        "commentCount": "46",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -2430,8 +2430,8 @@
         "publishedAt": "2023-12-08T20:06:09Z",
         "duration": "PT4H11M43S",
         "viewCount": "2584",
-        "likeCount": "154",
-        "commentCount": "35",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -2489,7 +2489,7 @@
         "thumbnail": "https://i.ytimg.com/vi/QytxMfiKlsE/mqdefault.jpg",
         "publishedAt": "2023-12-18T12:35:52Z",
         "duration": "PT2H9M10S",
-        "viewCount": "1007",
+        "viewCount": "1008",
         "likeCount": "88",
         "commentCount": "2",
         "favoriteCount": "0"
@@ -2585,7 +2585,7 @@
         "thumbnail": "https://i.ytimg.com/vi/YRFZWykyYtk/mqdefault.jpg",
         "publishedAt": "2024-01-08T13:23:40Z",
         "duration": "PT2H16M19S",
-        "viewCount": "5252",
+        "viewCount": "5254",
         "likeCount": "257",
         "commentCount": "53",
         "favoriteCount": "0"
@@ -2597,7 +2597,7 @@
         "thumbnail": "https://i.ytimg.com/vi/x7JAzV8XcqM/mqdefault.jpg",
         "publishedAt": "2024-01-08T18:32:21Z",
         "duration": "PT3H13M15S",
-        "viewCount": "1672",
+        "viewCount": "1673",
         "likeCount": "150",
         "commentCount": "18",
         "favoriteCount": "0"
@@ -2609,7 +2609,7 @@
         "thumbnail": "https://i.ytimg.com/vi/B-v78UkYq6w/mqdefault.jpg",
         "publishedAt": "2024-01-09T09:20:38Z",
         "duration": "PT2H40M23S",
-        "viewCount": "2688",
+        "viewCount": "2689",
         "likeCount": "125",
         "commentCount": "32",
         "favoriteCount": "0"
@@ -2633,9 +2633,9 @@
         "thumbnail": "https://i.ytimg.com/vi/973Jj-0Phio/mqdefault.jpg",
         "publishedAt": "2024-01-12T16:53:00Z",
         "duration": "PT1H58M22S",
-        "viewCount": "4865",
-        "likeCount": "255",
-        "commentCount": "265",
+        "viewCount": "4866",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -2796,7 +2796,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ydjdDaPjKbA/mqdefault.jpg",
         "publishedAt": "2024-01-24T17:51:45Z",
         "duration": "PT3H19M58S",
-        "viewCount": "1694",
+        "viewCount": "1695",
         "likeCount": "122",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -2881,8 +2881,8 @@
         "publishedAt": "2024-01-29T07:01:40Z",
         "duration": "PT4H42M49S",
         "viewCount": "2454",
-        "likeCount": "177",
-        "commentCount": "190",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -2904,7 +2904,7 @@
         "thumbnail": "https://i.ytimg.com/vi/9OJID_ySuVU/mqdefault.jpg",
         "publishedAt": "2024-01-31T16:44:34Z",
         "duration": "PT4H23M14S",
-        "viewCount": "1667",
+        "viewCount": "1669",
         "likeCount": "132",
         "commentCount": "12",
         "favoriteCount": "0"
@@ -2928,7 +2928,7 @@
         "thumbnail": "https://i.ytimg.com/vi/VOyheqWU15Q/mqdefault.jpg",
         "publishedAt": "2024-02-03T01:06:45Z",
         "duration": "PT2H58M24S",
-        "viewCount": "1544",
+        "viewCount": "1545",
         "likeCount": "111",
         "commentCount": "24",
         "favoriteCount": "0"
@@ -3085,8 +3085,8 @@
         "publishedAt": "2024-02-11T20:27:07Z",
         "duration": "PT4H24M48S",
         "viewCount": "4808",
-        "likeCount": "258",
-        "commentCount": "106",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -3097,8 +3097,8 @@
         "publishedAt": "2024-02-12T18:09:35Z",
         "duration": "PT59M51S",
         "viewCount": "876",
-        "likeCount": "96",
-        "commentCount": "11",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -3144,7 +3144,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lBI7Z_KQPZE/mqdefault.jpg",
         "publishedAt": "2024-02-17T06:21:24Z",
         "duration": "PT4H56M35S",
-        "viewCount": "3043",
+        "viewCount": "3044",
         "likeCount": "186",
         "commentCount": "141",
         "favoriteCount": "0"
@@ -3192,7 +3192,7 @@
         "thumbnail": "https://i.ytimg.com/vi/txtrJQ0Z40Q/mqdefault.jpg",
         "publishedAt": "2024-02-19T16:09:49Z",
         "duration": "PT3H44M3S",
-        "viewCount": "2466",
+        "viewCount": "2472",
         "likeCount": "160",
         "commentCount": "125",
         "favoriteCount": "0"
@@ -3349,8 +3349,8 @@
         "publishedAt": "2024-03-03T07:38:47Z",
         "duration": "PT5H40M43S",
         "viewCount": "1282",
-        "likeCount": "101",
-        "commentCount": "28",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -3384,7 +3384,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Nk5xizMZepM/mqdefault.jpg",
         "publishedAt": "2024-03-05T16:57:39Z",
         "duration": "PT4H8M5S",
-        "viewCount": "1885",
+        "viewCount": "1886",
         "likeCount": "149",
         "commentCount": "121",
         "favoriteCount": "0"
@@ -3456,7 +3456,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uvvFvsYg5EI/mqdefault.jpg",
         "publishedAt": "2024-03-12T15:50:51Z",
         "duration": "PT3H10M14S",
-        "viewCount": "4562",
+        "viewCount": "4564",
         "likeCount": "243",
         "commentCount": "112",
         "favoriteCount": "0"
@@ -3517,8 +3517,8 @@
         "publishedAt": "2024-03-17T16:59:52Z",
         "duration": "PT1H15M30S",
         "viewCount": "3916",
-        "likeCount": "244",
-        "commentCount": "465",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -3541,8 +3541,8 @@
         "publishedAt": "2024-03-18T13:39:35Z",
         "duration": "PT3H44M13S",
         "viewCount": "3150",
-        "likeCount": "192",
-        "commentCount": "150",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -3624,7 +3624,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JCypK68JX38/mqdefault.jpg",
         "publishedAt": "2024-03-23T07:56:03Z",
         "duration": "PT2H13M",
-        "viewCount": "2055",
+        "viewCount": "2056",
         "likeCount": "154",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -3696,7 +3696,7 @@
         "thumbnail": "https://i.ytimg.com/vi/XKuSOJxuDak/mqdefault.jpg",
         "publishedAt": "2024-03-27T13:02:38Z",
         "duration": "PT4H45M52S",
-        "viewCount": "2331",
+        "viewCount": "2332",
         "likeCount": "153",
         "commentCount": "661",
         "favoriteCount": "0"
@@ -3733,8 +3733,8 @@
         "publishedAt": "2024-03-31T15:36:22Z",
         "duration": "PT7H25M54S",
         "viewCount": "3573",
-        "likeCount": "192",
-        "commentCount": "297",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -3744,7 +3744,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HcOixmZq36c/mqdefault.jpg",
         "publishedAt": "2024-04-01T12:14:41Z",
         "duration": "PT5H2M22S",
-        "viewCount": "4837",
+        "viewCount": "4840",
         "likeCount": "218",
         "commentCount": "274",
         "favoriteCount": "0"
@@ -3768,7 +3768,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zqRpgPc2Vj4/mqdefault.jpg",
         "publishedAt": "2024-04-02T06:59:21Z",
         "duration": "PT3H5M24S",
-        "viewCount": "29825",
+        "viewCount": "29833",
         "likeCount": "751",
         "commentCount": "725",
         "favoriteCount": "0"
@@ -3865,7 +3865,7 @@
         "publishedAt": "2024-04-09T09:09:15Z",
         "duration": "PT6H58M14S",
         "viewCount": "4231",
-        "likeCount": "263",
+        "likeCount": "264",
         "commentCount": "118",
         "favoriteCount": "0"
       },
@@ -3888,7 +3888,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Xa8ZYSXw7Fw/mqdefault.jpg",
         "publishedAt": "2024-04-12T05:59:44Z",
         "duration": "PT6H7M30S",
-        "viewCount": "5843",
+        "viewCount": "5845",
         "likeCount": "325",
         "commentCount": "321",
         "favoriteCount": "0"
@@ -3936,7 +3936,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JoN4978Bmn8/mqdefault.jpg",
         "publishedAt": "2024-04-14T22:08:22Z",
         "duration": "PT3H40M48S",
-        "viewCount": "12679",
+        "viewCount": "12683",
         "likeCount": "466",
         "commentCount": "297",
         "favoriteCount": "0"
@@ -4009,8 +4009,8 @@
         "publishedAt": "2024-04-19T05:11:50Z",
         "duration": "PT6H6M",
         "viewCount": "3344",
-        "likeCount": "211",
-        "commentCount": "322",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -4056,7 +4056,7 @@
         "thumbnail": "https://i.ytimg.com/vi/66Wu7YQjfLQ/mqdefault.jpg",
         "publishedAt": "2024-04-25T04:29:25Z",
         "duration": "PT4H58M41S",
-        "viewCount": "20017",
+        "viewCount": "20019",
         "likeCount": "688",
         "commentCount": "445",
         "favoriteCount": "0"
@@ -4140,7 +4140,7 @@
         "thumbnail": "https://i.ytimg.com/vi/_k0cPerm3pM/mqdefault.jpg",
         "publishedAt": "2024-05-06T11:44:29Z",
         "duration": "PT6H4M13S",
-        "viewCount": "3743",
+        "viewCount": "3746",
         "likeCount": "207",
         "commentCount": "202",
         "favoriteCount": "0"
@@ -4164,7 +4164,7 @@
         "thumbnail": "https://i.ytimg.com/vi/3LXRUkN0pls/mqdefault.jpg",
         "publishedAt": "2024-05-08T06:12:19Z",
         "duration": "PT4H38M23S",
-        "viewCount": "6921",
+        "viewCount": "6924",
         "likeCount": "291",
         "commentCount": "224",
         "favoriteCount": "0"
@@ -4189,8 +4189,8 @@
         "publishedAt": "2024-05-09T17:00:25Z",
         "duration": "PT3M49S",
         "viewCount": "499",
-        "likeCount": "62",
-        "commentCount": "2",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -4260,7 +4260,7 @@
         "thumbnail": "https://i.ytimg.com/vi/FJhC7u70A9w/mqdefault.jpg",
         "publishedAt": "2024-05-16T10:48:36Z",
         "duration": "PT2H23M7S",
-        "viewCount": "6603",
+        "viewCount": "6605",
         "likeCount": "296",
         "commentCount": "397",
         "favoriteCount": "0"
@@ -4296,8 +4296,8 @@
         "thumbnail": "https://i.ytimg.com/vi/K9rcZ5zI2qw/mqdefault.jpg",
         "publishedAt": "2024-05-19T12:11:14Z",
         "duration": "PT3H24M52S",
-        "viewCount": "1632",
-        "likeCount": "128",
+        "viewCount": "1635",
+        "likeCount": "129",
         "commentCount": "12",
         "favoriteCount": "0"
       },
@@ -4465,8 +4465,8 @@
         "publishedAt": "2024-06-13T09:52:12Z",
         "duration": "PT1H38M11S",
         "viewCount": "2703",
-        "likeCount": "201",
-        "commentCount": "82",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -4560,7 +4560,7 @@
         "thumbnail": "https://i.ytimg.com/vi/w91IaZrIM9w/mqdefault.jpg",
         "publishedAt": "2024-06-19T17:13:50Z",
         "duration": "PT4H16M37S",
-        "viewCount": "2854",
+        "viewCount": "2855",
         "likeCount": "210",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -4668,7 +4668,7 @@
         "thumbnail": "https://i.ytimg.com/vi/M96O-fA4rRM/mqdefault.jpg",
         "publishedAt": "2024-06-27T07:24:35Z",
         "duration": "PT5H21M12S",
-        "viewCount": "3100",
+        "viewCount": "3101",
         "likeCount": "209",
         "commentCount": "65",
         "favoriteCount": "0"
@@ -4692,7 +4692,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Qoot8KrtTZo/mqdefault.jpg",
         "publishedAt": "2024-06-30T10:55:44Z",
         "duration": "PT1H31M32S",
-        "viewCount": "4038",
+        "viewCount": "4039",
         "likeCount": "192",
         "commentCount": "58",
         "favoriteCount": "0"
@@ -4716,7 +4716,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Lv-J0zCA6sk/mqdefault.jpg",
         "publishedAt": "2024-07-01T08:28:34Z",
         "duration": "PT4H2M49S",
-        "viewCount": "2685",
+        "viewCount": "2686",
         "likeCount": "161",
         "commentCount": "18",
         "favoriteCount": "0"
@@ -4740,7 +4740,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bqqgY9mLN8M/mqdefault.jpg",
         "publishedAt": "2024-07-02T21:17:57Z",
         "duration": "PT9H15M38S",
-        "viewCount": "3929",
+        "viewCount": "3930",
         "likeCount": "228",
         "commentCount": "55",
         "favoriteCount": "0"
@@ -4908,7 +4908,7 @@
         "thumbnail": "https://i.ytimg.com/vi/sYDeWJYN5lg/mqdefault.jpg",
         "publishedAt": "2024-07-12T20:42:11Z",
         "duration": "PT31M44S",
-        "viewCount": "8072",
+        "viewCount": "8076",
         "likeCount": "346",
         "commentCount": "123",
         "favoriteCount": "0"
@@ -4944,7 +4944,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Zra5zzvdmA0/mqdefault.jpg",
         "publishedAt": "2024-07-15T16:13:28Z",
         "duration": "PT3H47M38S",
-        "viewCount": "4923",
+        "viewCount": "4924",
         "likeCount": "273",
         "commentCount": "180",
         "favoriteCount": "0"
@@ -4956,7 +4956,7 @@
         "thumbnail": "https://i.ytimg.com/vi/qijAu_qb1FQ/mqdefault.jpg",
         "publishedAt": "2024-07-16T17:58:45Z",
         "duration": "PT4H58M",
-        "viewCount": "17450",
+        "viewCount": "17459",
         "likeCount": "686",
         "commentCount": "352",
         "favoriteCount": "0"
@@ -4980,7 +4980,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uEQ6nejE1Rg/mqdefault.jpg",
         "publishedAt": "2024-07-18T03:50:24Z",
         "duration": "PT5H47M15S",
-        "viewCount": "9945",
+        "viewCount": "9949",
         "likeCount": "560",
         "commentCount": "452",
         "favoriteCount": "0"
@@ -5064,7 +5064,7 @@
         "thumbnail": "https://i.ytimg.com/vi/k5-o0xykb0o/mqdefault.jpg",
         "publishedAt": "2024-07-23T11:59:46Z",
         "duration": "PT3H8M16S",
-        "viewCount": "4542",
+        "viewCount": "4545",
         "likeCount": "281",
         "commentCount": "60",
         "favoriteCount": "0"
@@ -5076,7 +5076,7 @@
         "thumbnail": "https://i.ytimg.com/vi/DUL7qSBQ24w/mqdefault.jpg",
         "publishedAt": "2024-07-24T08:07:59Z",
         "duration": "PT2H33M30S",
-        "viewCount": "15312",
+        "viewCount": "15314",
         "likeCount": "536",
         "commentCount": "403",
         "favoriteCount": "0"
@@ -5088,7 +5088,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OPWi9-JD-Vk/mqdefault.jpg",
         "publishedAt": "2024-07-24T09:26:23Z",
         "duration": "PT3H48M21S",
-        "viewCount": "10142",
+        "viewCount": "10144",
         "likeCount": "420",
         "commentCount": "194",
         "favoriteCount": "0"
@@ -5124,7 +5124,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Rr7QPq38wKk/mqdefault.jpg",
         "publishedAt": "2024-07-26T08:31:23Z",
         "duration": "PT2H8M9S",
-        "viewCount": "6484",
+        "viewCount": "6486",
         "likeCount": "285",
         "commentCount": "174",
         "favoriteCount": "0"
@@ -5136,7 +5136,7 @@
         "thumbnail": "https://i.ytimg.com/vi/avXj8-uia5s/mqdefault.jpg",
         "publishedAt": "2024-07-26T19:47:23Z",
         "duration": "PT2H41M2S",
-        "viewCount": "17300",
+        "viewCount": "17301",
         "likeCount": "495",
         "commentCount": "794",
         "favoriteCount": "0"
@@ -5268,9 +5268,9 @@
         "thumbnail": "https://i.ytimg.com/vi/bWAQPkPOc4U/mqdefault.jpg",
         "publishedAt": "2024-08-01T06:33:13Z",
         "duration": "PT4H9M46S",
-        "viewCount": "4682",
-        "likeCount": "305",
-        "commentCount": "206",
+        "viewCount": "4683",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -5281,8 +5281,8 @@
         "publishedAt": "2024-08-02T06:29:28Z",
         "duration": "PT4H20M39S",
         "viewCount": "3787",
-        "likeCount": "221",
-        "commentCount": "104",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -5328,7 +5328,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uwKjRz_pVtU/mqdefault.jpg",
         "publishedAt": "2024-08-03T17:28:08Z",
         "duration": "PT2H47M47S",
-        "viewCount": "8569",
+        "viewCount": "8570",
         "likeCount": "398",
         "commentCount": "303",
         "favoriteCount": "0"
@@ -5340,7 +5340,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HR5kLjRuoUQ/mqdefault.jpg",
         "publishedAt": "2024-08-05T16:03:45Z",
         "duration": "PT2H3M25S",
-        "viewCount": "2309",
+        "viewCount": "2310",
         "likeCount": "173",
         "commentCount": "75",
         "favoriteCount": "0"
@@ -5389,8 +5389,8 @@
         "publishedAt": "2024-08-07T10:24:55Z",
         "duration": "PT5H9M11S",
         "viewCount": "3947",
-        "likeCount": "235",
-        "commentCount": "63",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -5401,8 +5401,8 @@
         "publishedAt": "2024-08-08T15:56:45Z",
         "duration": "PT54M2S",
         "viewCount": "1129",
-        "likeCount": "123",
-        "commentCount": "46",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -5424,7 +5424,7 @@
         "thumbnail": "https://i.ytimg.com/vi/j1FkMp7xKqo/mqdefault.jpg",
         "publishedAt": "2024-08-10T07:58:23Z",
         "duration": "PT2H50M28S",
-        "viewCount": "3116",
+        "viewCount": "3117",
         "likeCount": "185",
         "commentCount": "48",
         "favoriteCount": "0"
@@ -5520,7 +5520,7 @@
         "thumbnail": "https://i.ytimg.com/vi/1ge_urzw-BE/mqdefault.jpg",
         "publishedAt": "2024-08-15T11:17:12Z",
         "duration": "PT4H44M50S",
-        "viewCount": "4140",
+        "viewCount": "4142",
         "likeCount": "254",
         "commentCount": "64",
         "favoriteCount": "0"
@@ -5557,8 +5557,8 @@
         "publishedAt": "2024-08-17T13:54:42Z",
         "duration": "PT2H38M42S",
         "viewCount": "1661",
-        "likeCount": "125",
-        "commentCount": "14",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -5581,8 +5581,8 @@
         "publishedAt": "2024-08-20T07:25:38Z",
         "duration": "PT4H41M30S",
         "viewCount": "2000",
-        "likeCount": "143",
-        "commentCount": "12",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -5760,7 +5760,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ZBqVryz3mfU/mqdefault.jpg",
         "publishedAt": "2024-09-02T11:53:39Z",
         "duration": "PT5H2M33S",
-        "viewCount": "9218",
+        "viewCount": "9223",
         "likeCount": "399",
         "commentCount": "106",
         "favoriteCount": "0"
@@ -5772,7 +5772,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wkSvLlaeA-w/mqdefault.jpg",
         "publishedAt": "2024-09-03T08:30:43Z",
         "duration": "PT3H54M41S",
-        "viewCount": "5514",
+        "viewCount": "5516",
         "likeCount": "313",
         "commentCount": "121",
         "favoriteCount": "0"
@@ -5786,7 +5786,7 @@
         "duration": "PT3H42M",
         "viewCount": "9571",
         "likeCount": "396",
-        "commentCount": "368",
+        "commentCount": "369",
         "favoriteCount": "0"
       },
       {
@@ -5820,7 +5820,7 @@
         "thumbnail": "https://i.ytimg.com/vi/5_aHKJMEmzM/mqdefault.jpg",
         "publishedAt": "2024-09-08T07:23:36Z",
         "duration": "PT5H24M17S",
-        "viewCount": "7990",
+        "viewCount": "7991",
         "likeCount": "297",
         "commentCount": "217",
         "favoriteCount": "0"
@@ -5916,7 +5916,7 @@
         "thumbnail": "https://i.ytimg.com/vi/TWtbshSUz4c/mqdefault.jpg",
         "publishedAt": "2024-09-16T10:43:13Z",
         "duration": "PT3H3M16S",
-        "viewCount": "4268",
+        "viewCount": "4269",
         "likeCount": "266",
         "commentCount": "39",
         "favoriteCount": "0"
@@ -5928,7 +5928,7 @@
         "thumbnail": "https://i.ytimg.com/vi/RUo6faAZH0s/mqdefault.jpg",
         "publishedAt": "2024-09-16T15:44:16Z",
         "duration": "PT3H50M46S",
-        "viewCount": "7266",
+        "viewCount": "7268",
         "likeCount": "316",
         "commentCount": "271",
         "favoriteCount": "0"
@@ -5952,7 +5952,7 @@
         "thumbnail": "https://i.ytimg.com/vi/0Cw68xpkvlI/mqdefault.jpg",
         "publishedAt": "2024-09-20T06:00:02Z",
         "duration": "PT4H34M41S",
-        "viewCount": "12073",
+        "viewCount": "12075",
         "likeCount": "608",
         "commentCount": "326",
         "favoriteCount": "0"
@@ -6175,7 +6175,7 @@
         "thumbnail": "https://i.ytimg.com/vi/E41-1JLeGPc/mqdefault.jpg",
         "publishedAt": "2024-10-11T06:15:45Z",
         "duration": "PT4H15M8S",
-        "viewCount": "4960",
+        "viewCount": "4962",
         "likeCount": "338",
         "commentCount": "16",
         "favoriteCount": "0"
@@ -6211,7 +6211,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tepdnPJZ0WU/mqdefault.jpg",
         "publishedAt": "2024-10-12T16:46:42Z",
         "duration": "PT2H21M26S",
-        "viewCount": "4208",
+        "viewCount": "4210",
         "likeCount": "211",
         "commentCount": "128",
         "favoriteCount": "0"
@@ -6224,8 +6224,8 @@
         "publishedAt": "2024-10-17T11:30:10Z",
         "duration": "PT4H38M41S",
         "viewCount": "2612",
-        "likeCount": "188",
-        "commentCount": "2",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6235,7 +6235,7 @@
         "thumbnail": "https://i.ytimg.com/vi/GULRrOukEaA/mqdefault.jpg",
         "publishedAt": "2024-11-21T17:39:01Z",
         "duration": "PT2H58M27S",
-        "viewCount": "3368",
+        "viewCount": "3372",
         "likeCount": "210",
         "commentCount": "79",
         "favoriteCount": "0"
@@ -6260,8 +6260,8 @@
         "publishedAt": "2024-11-24T06:22:28Z",
         "duration": "PT4H19M17S",
         "viewCount": "4144",
-        "likeCount": "215",
-        "commentCount": "110",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6272,8 +6272,8 @@
         "publishedAt": "2024-11-27T08:55:18Z",
         "duration": "PT6H2M51S",
         "viewCount": "4644",
-        "likeCount": "220",
-        "commentCount": "57",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6344,8 +6344,8 @@
         "publishedAt": "2024-12-05T16:58:37Z",
         "duration": "PT4H6M15S",
         "viewCount": "3117",
-        "likeCount": "193",
-        "commentCount": "87",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6367,7 +6367,7 @@
         "thumbnail": "https://i.ytimg.com/vi/YWR7QqoFLp8/mqdefault.jpg",
         "publishedAt": "2024-12-11T15:33:16Z",
         "duration": "PT4H3M22S",
-        "viewCount": "2818",
+        "viewCount": "2819",
         "likeCount": "182",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -6391,7 +6391,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uJVAry9zF2c/mqdefault.jpg",
         "publishedAt": "2024-12-18T10:10:04Z",
         "duration": "PT5H11M10S",
-        "viewCount": "8509",
+        "viewCount": "8510",
         "likeCount": "323",
         "commentCount": "107",
         "favoriteCount": "0"
@@ -6488,8 +6488,8 @@
         "publishedAt": "2025-01-06T10:28:56Z",
         "duration": "PT4H57M30S",
         "viewCount": "13715",
-        "likeCount": "507",
-        "commentCount": "197",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6511,7 +6511,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bd1elkFDnrY/mqdefault.jpg",
         "publishedAt": "2025-01-09T10:15:10Z",
         "duration": "PT4H54M29S",
-        "viewCount": "7527",
+        "viewCount": "7528",
         "likeCount": "332",
         "commentCount": "114",
         "favoriteCount": "0"
@@ -6572,8 +6572,8 @@
         "publishedAt": "2025-01-18T10:23:13Z",
         "duration": "PT5H30M55S",
         "viewCount": "2783",
-        "likeCount": "169",
-        "commentCount": "15",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6595,7 +6595,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zXeQCoJN0dM/mqdefault.jpg",
         "publishedAt": "2025-01-21T10:24:50Z",
         "duration": "PT3H50M34S",
-        "viewCount": "17063",
+        "viewCount": "17070",
         "likeCount": "611",
         "commentCount": "288",
         "favoriteCount": "0"
@@ -6655,7 +6655,7 @@
         "thumbnail": "https://i.ytimg.com/vi/duxBlwapg4g/mqdefault.jpg",
         "publishedAt": "2025-01-27T10:31:58Z",
         "duration": "PT5H20M11S",
-        "viewCount": "5785",
+        "viewCount": "5786",
         "likeCount": "282",
         "commentCount": "106",
         "favoriteCount": "0"
@@ -6667,7 +6667,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7P1Or1erdg8/mqdefault.jpg",
         "publishedAt": "2025-01-29T08:35:52Z",
         "duration": "PT4H45M58S",
-        "viewCount": "47719",
+        "viewCount": "47722",
         "likeCount": "1132",
         "commentCount": "582",
         "favoriteCount": "0"
@@ -6692,8 +6692,8 @@
         "publishedAt": "2025-02-05T09:40:12Z",
         "duration": "PT3H41M25S",
         "viewCount": "5689",
-        "likeCount": "260",
-        "commentCount": "198",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6715,7 +6715,7 @@
         "thumbnail": "https://i.ytimg.com/vi/GdBvWscP5mc/mqdefault.jpg",
         "publishedAt": "2025-02-08T10:02:30Z",
         "duration": "PT4H13M20S",
-        "viewCount": "7828",
+        "viewCount": "7832",
         "likeCount": "285",
         "commentCount": "88",
         "favoriteCount": "0"
@@ -6727,7 +6727,7 @@
         "thumbnail": "https://i.ytimg.com/vi/INVtFin6YY0/mqdefault.jpg",
         "publishedAt": "2025-02-10T08:13:39Z",
         "duration": "PT3H55M51S",
-        "viewCount": "4539",
+        "viewCount": "4540",
         "likeCount": "206",
         "commentCount": "192",
         "favoriteCount": "0"
@@ -6739,7 +6739,7 @@
         "thumbnail": "https://i.ytimg.com/vi/BOg-kKVkoTI/mqdefault.jpg",
         "publishedAt": "2025-02-11T10:43:21Z",
         "duration": "PT5H59M3S",
-        "viewCount": "4475",
+        "viewCount": "4476",
         "likeCount": "220",
         "commentCount": "53",
         "favoriteCount": "0"
@@ -6764,8 +6764,8 @@
         "publishedAt": "2025-02-14T07:55:11Z",
         "duration": "PT29M14S",
         "viewCount": "5132",
-        "likeCount": "253",
-        "commentCount": "359",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6787,7 +6787,7 @@
         "thumbnail": "https://i.ytimg.com/vi/THucTeVnaKg/mqdefault.jpg",
         "publishedAt": "2025-02-15T08:37:44Z",
         "duration": "PT1H5M34S",
-        "viewCount": "3939",
+        "viewCount": "3942",
         "likeCount": "204",
         "commentCount": "70",
         "favoriteCount": "0"
@@ -6800,8 +6800,8 @@
         "publishedAt": "2025-02-18T09:29:11Z",
         "duration": "PT2H29M",
         "viewCount": "2361",
-        "likeCount": "153",
-        "commentCount": "30",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -6811,8 +6811,8 @@
         "thumbnail": "https://i.ytimg.com/vi/kcPaSFTX5fc/mqdefault.jpg",
         "publishedAt": "2025-02-19T09:24:23Z",
         "duration": "PT2H44M34S",
-        "viewCount": "10527",
-        "likeCount": "390",
+        "viewCount": "10537",
+        "likeCount": "389",
         "commentCount": "146",
         "favoriteCount": "0"
       },
@@ -6823,7 +6823,7 @@
         "thumbnail": "https://i.ytimg.com/vi/EZWBo37QBw8/mqdefault.jpg",
         "publishedAt": "2025-02-21T10:04:22Z",
         "duration": "PT2H57M56S",
-        "viewCount": "5484",
+        "viewCount": "5485",
         "likeCount": "283",
         "commentCount": "79",
         "favoriteCount": "0"
@@ -6871,7 +6871,7 @@
         "thumbnail": "https://i.ytimg.com/vi/n8rGkn1_yU8/mqdefault.jpg",
         "publishedAt": "2025-03-01T09:33:37Z",
         "duration": "PT2H57M11S",
-        "viewCount": "2006",
+        "viewCount": "2007",
         "likeCount": "176",
         "commentCount": "10",
         "favoriteCount": "0"
@@ -6883,7 +6883,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rcM1JjhN41g/mqdefault.jpg",
         "publishedAt": "2025-03-03T11:15:44Z",
         "duration": "PT2H45M45S",
-        "viewCount": "46069",
+        "viewCount": "46085",
         "likeCount": "1219",
         "commentCount": "389",
         "favoriteCount": "0"
@@ -6943,7 +6943,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7d69-TSyk7s/mqdefault.jpg",
         "publishedAt": "2025-03-11T10:11:33Z",
         "duration": "PT3H35M26S",
-        "viewCount": "2821",
+        "viewCount": "2822",
         "likeCount": "199",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -6967,7 +6967,7 @@
         "thumbnail": "https://i.ytimg.com/vi/t2sFuf1Lo9E/mqdefault.jpg",
         "publishedAt": "2025-03-12T09:58:59Z",
         "duration": "PT4H26M41S",
-        "viewCount": "3904",
+        "viewCount": "3905",
         "likeCount": "198",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -7015,7 +7015,7 @@
         "thumbnail": "https://i.ytimg.com/vi/TOj0SypfwhE/mqdefault.jpg",
         "publishedAt": "2025-03-19T10:14:38Z",
         "duration": "PT2H37M25S",
-        "viewCount": "1213",
+        "viewCount": "1215",
         "likeCount": "117",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -7123,8 +7123,8 @@
         "thumbnail": "https://i.ytimg.com/vi/wJKOGo-Nx3o/mqdefault.jpg",
         "publishedAt": "2025-04-11T07:25:14Z",
         "duration": "PT3H35S",
-        "viewCount": "8071",
-        "likeCount": "441",
+        "viewCount": "8073",
+        "likeCount": "442",
         "commentCount": "141",
         "favoriteCount": "0"
       },
@@ -7219,7 +7219,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ROTuuhCt2MA/mqdefault.jpg",
         "publishedAt": "2025-05-10T08:07:27Z",
         "duration": "PT2H58M40S",
-        "viewCount": "6322",
+        "viewCount": "6325",
         "likeCount": "290",
         "commentCount": "64",
         "favoriteCount": "0"
@@ -7267,7 +7267,7 @@
         "thumbnail": "https://i.ytimg.com/vi/euXYlU_7Qmg/mqdefault.jpg",
         "publishedAt": "2025-05-20T09:32:56Z",
         "duration": "PT2H25M11S",
-        "viewCount": "4936",
+        "viewCount": "4937",
         "likeCount": "209",
         "commentCount": "196",
         "favoriteCount": "0"
@@ -7291,7 +7291,7 @@
         "thumbnail": "https://i.ytimg.com/vi/2gaL3VynXfE/mqdefault.jpg",
         "publishedAt": "2025-05-23T11:08:38Z",
         "duration": "PT4H10M35S",
-        "viewCount": "3427",
+        "viewCount": "3429",
         "likeCount": "218",
         "commentCount": "42",
         "favoriteCount": "0"
@@ -7351,7 +7351,7 @@
         "thumbnail": "https://i.ytimg.com/vi/_tm88z_BP68/mqdefault.jpg",
         "publishedAt": "2025-06-02T10:04:44Z",
         "duration": "PT3H59M58S",
-        "viewCount": "1305",
+        "viewCount": "1306",
         "likeCount": "99",
         "commentCount": "21",
         "favoriteCount": "0"
@@ -7424,8 +7424,8 @@
         "publishedAt": "2025-06-13T07:28:39Z",
         "duration": "PT3H33M47S",
         "viewCount": "4447",
-        "likeCount": "245",
-        "commentCount": "44",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7484,8 +7484,8 @@
         "publishedAt": "2025-07-01T09:09:36Z",
         "duration": "PT1H52M10S",
         "viewCount": "1384",
-        "likeCount": "121",
-        "commentCount": "22",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7507,7 +7507,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wNXq-QLPQlE/mqdefault.jpg",
         "publishedAt": "2025-07-04T09:31:27Z",
         "duration": "PT5H11M",
-        "viewCount": "25236",
+        "viewCount": "25241",
         "likeCount": "693",
         "commentCount": "485",
         "favoriteCount": "0"
@@ -7519,7 +7519,7 @@
         "thumbnail": "https://i.ytimg.com/vi/6oXmpGkpvaE/mqdefault.jpg",
         "publishedAt": "2025-07-05T09:29:32Z",
         "duration": "PT1H25M15S",
-        "viewCount": "1648",
+        "viewCount": "1651",
         "likeCount": "139",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -7532,8 +7532,8 @@
         "publishedAt": "2025-07-08T09:33:34Z",
         "duration": "PT3H27M20S",
         "viewCount": "2661",
-        "likeCount": "167",
-        "commentCount": "9",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7543,7 +7543,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JOF7ituDsxQ/mqdefault.jpg",
         "publishedAt": "2025-07-09T09:52:41Z",
         "duration": "PT1H22M15S",
-        "viewCount": "1310",
+        "viewCount": "1311",
         "likeCount": "108",
         "commentCount": "9",
         "favoriteCount": "0"
@@ -7567,9 +7567,9 @@
         "thumbnail": "https://i.ytimg.com/vi/pg5PLnpk1gI/mqdefault.jpg",
         "publishedAt": "2025-07-17T10:02:34Z",
         "duration": "PT3H35M",
-        "viewCount": "8394",
-        "likeCount": "409",
-        "commentCount": "147",
+        "viewCount": "8395",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7592,8 +7592,8 @@
         "publishedAt": "2025-07-22T09:43:56Z",
         "duration": "PT5H21M43S",
         "viewCount": "2426",
-        "likeCount": "160",
-        "commentCount": "27",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7651,8 +7651,8 @@
         "thumbnail": "https://i.ytimg.com/vi/M-FeiqPygYk/mqdefault.jpg",
         "publishedAt": "2025-08-03T12:52:38Z",
         "duration": "PT4H22M41S",
-        "viewCount": "21686",
-        "likeCount": "752",
+        "viewCount": "21690",
+        "likeCount": "753",
         "commentCount": "385",
         "favoriteCount": "0"
       },
@@ -7699,9 +7699,9 @@
         "thumbnail": "https://i.ytimg.com/vi/eV46-hmL3I4/mqdefault.jpg",
         "publishedAt": "2025-08-09T09:30:46Z",
         "duration": "PT2H51M31S",
-        "viewCount": "6868",
-        "likeCount": "304",
-        "commentCount": "71",
+        "viewCount": "6869",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7711,7 +7711,7 @@
         "thumbnail": "https://i.ytimg.com/vi/euVRvt0LqLQ/mqdefault.jpg",
         "publishedAt": "2025-08-12T10:21:39Z",
         "duration": "PT3H26M31S",
-        "viewCount": "11566",
+        "viewCount": "11567",
         "likeCount": "360",
         "commentCount": "156",
         "favoriteCount": "0"
@@ -7723,7 +7723,7 @@
         "thumbnail": "https://i.ytimg.com/vi/faD3-NWlYWc/mqdefault.jpg",
         "publishedAt": "2025-08-15T09:50:23Z",
         "duration": "PT5H7M11S",
-        "viewCount": "9464",
+        "viewCount": "9465",
         "likeCount": "295",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -7807,7 +7807,7 @@
         "thumbnail": "https://i.ytimg.com/vi/jgwxd4gf9KA/mqdefault.jpg",
         "publishedAt": "2025-08-27T10:20:54Z",
         "duration": "PT4H19M14S",
-        "viewCount": "1717",
+        "viewCount": "1718",
         "likeCount": "124",
         "commentCount": "47",
         "favoriteCount": "0"
@@ -7819,7 +7819,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rXLN6D4QYWc/mqdefault.jpg",
         "publishedAt": "2025-08-28T12:40:15Z",
         "duration": "PT4H55M24S",
-        "viewCount": "1783",
+        "viewCount": "1784",
         "likeCount": "118",
         "commentCount": "21",
         "favoriteCount": "0"
@@ -7831,7 +7831,7 @@
         "thumbnail": "https://i.ytimg.com/vi/35lgtF9knqA/mqdefault.jpg",
         "publishedAt": "2025-08-29T03:51:05Z",
         "duration": "PT3H5M15S",
-        "viewCount": "2095",
+        "viewCount": "2096",
         "likeCount": "144",
         "commentCount": "67",
         "favoriteCount": "0"
@@ -7844,8 +7844,8 @@
         "publishedAt": "2025-08-31T03:10:03Z",
         "duration": "PT1H10M46S",
         "viewCount": "3000",
-        "likeCount": "142",
-        "commentCount": "30",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7916,8 +7916,8 @@
         "publishedAt": "2025-09-03T04:00:59Z",
         "duration": "PT2H6M21S",
         "viewCount": "1298",
-        "likeCount": "111",
-        "commentCount": "29",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -7951,7 +7951,7 @@
         "thumbnail": "https://i.ytimg.com/vi/XaKfzadw9Ho/mqdefault.jpg",
         "publishedAt": "2025-09-06T03:41:52Z",
         "duration": "PT5H25M11S",
-        "viewCount": "3660",
+        "viewCount": "3661",
         "likeCount": "191",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -7976,8 +7976,8 @@
         "publishedAt": "2025-09-09T09:31:45Z",
         "duration": "PT3H17M21S",
         "viewCount": "2146",
-        "likeCount": "143",
-        "commentCount": "25",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8036,8 +8036,8 @@
         "publishedAt": "2025-09-16T11:12:05Z",
         "duration": "PT4H17M35S",
         "viewCount": "5394",
-        "likeCount": "220",
-        "commentCount": "82",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8048,8 +8048,8 @@
         "publishedAt": "2025-09-17T09:43:37Z",
         "duration": "PT1H58M10S",
         "viewCount": "1289",
-        "likeCount": "108",
-        "commentCount": "1",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8084,8 +8084,8 @@
         "publishedAt": "2025-09-20T04:17:10Z",
         "duration": "PT1H45M45S",
         "viewCount": "926",
-        "likeCount": "80",
-        "commentCount": "26",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8095,7 +8095,7 @@
         "thumbnail": "https://i.ytimg.com/vi/2y8eLHZQz_M/mqdefault.jpg",
         "publishedAt": "2025-09-20T09:40:08Z",
         "duration": "PT3H51M35S",
-        "viewCount": "8887",
+        "viewCount": "8889",
         "likeCount": "271",
         "commentCount": "221",
         "favoriteCount": "0"
@@ -8119,9 +8119,9 @@
         "thumbnail": "https://i.ytimg.com/vi/OzJOU4rWo54/mqdefault.jpg",
         "publishedAt": "2025-09-22T08:06:23Z",
         "duration": "PT7M53S",
-        "viewCount": "69250",
+        "viewCount": "69274",
         "likeCount": "499",
-        "commentCount": "891",
+        "commentCount": "890",
         "favoriteCount": "0"
       },
       {
@@ -8131,9 +8131,9 @@
         "thumbnail": "https://i.ytimg.com/vi/bOu7y56nVlE/mqdefault.jpg",
         "publishedAt": "2025-09-23T04:14:06Z",
         "duration": "PT1H55M",
-        "viewCount": "9265",
+        "viewCount": "9270",
         "likeCount": "237",
-        "commentCount": "460",
+        "commentCount": "461",
         "favoriteCount": "0"
       },
       {
@@ -8155,9 +8155,9 @@
         "thumbnail": "https://i.ytimg.com/vi/0E06jgrHgGQ/mqdefault.jpg",
         "publishedAt": "2025-09-23T16:38:21Z",
         "duration": "PT3H6M19S",
-        "viewCount": "32366",
+        "viewCount": "32373",
         "likeCount": "1113",
-        "commentCount": "719",
+        "commentCount": "718",
         "favoriteCount": "0"
       },
       {
@@ -8215,7 +8215,7 @@
         "thumbnail": "https://i.ytimg.com/vi/J7sR0LHUdiE/mqdefault.jpg",
         "publishedAt": "2025-10-04T09:05:34Z",
         "duration": "PT3H9M15S",
-        "viewCount": "10224",
+        "viewCount": "10225",
         "likeCount": "344",
         "commentCount": "118",
         "favoriteCount": "0"
@@ -8252,8 +8252,8 @@
         "publishedAt": "2025-10-11T08:41:42Z",
         "duration": "PT2H12M55S",
         "viewCount": "2455",
-        "likeCount": "156",
-        "commentCount": "24",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8312,8 +8312,8 @@
         "publishedAt": "2025-10-19T04:09:51Z",
         "duration": "PT2H48M40S",
         "viewCount": "6034",
-        "likeCount": "207",
-        "commentCount": "76",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8407,8 +8407,8 @@
         "thumbnail": "https://i.ytimg.com/vi/UxCCaj6FEek/mqdefault.jpg",
         "publishedAt": "2025-11-01T12:05:54Z",
         "duration": "PT1H55M46S",
-        "viewCount": "2471",
-        "likeCount": "191",
+        "viewCount": "2472",
+        "likeCount": "192",
         "commentCount": "43",
         "favoriteCount": "0"
       },
@@ -8431,7 +8431,7 @@
         "thumbnail": "https://i.ytimg.com/vi/55OuKujKSmw/mqdefault.jpg",
         "publishedAt": "2025-11-02T11:37:59Z",
         "duration": "PT2H51M25S",
-        "viewCount": "1287",
+        "viewCount": "1288",
         "likeCount": "96",
         "commentCount": "17",
         "favoriteCount": "0"
@@ -8455,7 +8455,7 @@
         "thumbnail": "https://i.ytimg.com/vi/j3hG04gM5IU/mqdefault.jpg",
         "publishedAt": "2025-11-05T09:02:35Z",
         "duration": "PT3H41M56S",
-        "viewCount": "5748",
+        "viewCount": "5750",
         "likeCount": "256",
         "commentCount": "112",
         "favoriteCount": "0"
@@ -8540,8 +8540,8 @@
         "publishedAt": "2025-11-19T10:39:11Z",
         "duration": "PT3H39M52S",
         "viewCount": "1080",
-        "likeCount": "78",
-        "commentCount": "5",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8551,7 +8551,7 @@
         "thumbnail": "https://i.ytimg.com/vi/W3oahl3rSrk/mqdefault.jpg",
         "publishedAt": "2025-11-21T15:23:35Z",
         "duration": "PT4H4M17S",
-        "viewCount": "978",
+        "viewCount": "980",
         "likeCount": "71",
         "commentCount": "0",
         "favoriteCount": "0"
@@ -8563,7 +8563,7 @@
         "thumbnail": "https://i.ytimg.com/vi/oQpJLY4UYNk/mqdefault.jpg",
         "publishedAt": "2025-11-22T08:48:25Z",
         "duration": "PT3H28M",
-        "viewCount": "2420",
+        "viewCount": "2421",
         "likeCount": "120",
         "commentCount": "27",
         "favoriteCount": "0"
@@ -8576,8 +8576,8 @@
         "publishedAt": "2025-11-26T09:34:27Z",
         "duration": "PT3H12M41S",
         "viewCount": "1723",
-        "likeCount": "112",
-        "commentCount": "28",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8587,7 +8587,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Y8WuqUEyxHA/mqdefault.jpg",
         "publishedAt": "2025-11-28T09:26:00Z",
         "duration": "PT3H40M11S",
-        "viewCount": "2103",
+        "viewCount": "2104",
         "likeCount": "106",
         "commentCount": "46",
         "favoriteCount": "0"
@@ -8612,8 +8612,8 @@
         "publishedAt": "2025-12-06T09:48:09Z",
         "duration": "PT2H19M35S",
         "viewCount": "1642",
-        "likeCount": "112",
-        "commentCount": "19",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8636,8 +8636,8 @@
         "publishedAt": "2025-12-16T10:34:20Z",
         "duration": "PT2H47M15S",
         "viewCount": "1493",
-        "likeCount": "97",
-        "commentCount": "24",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8659,7 +8659,7 @@
         "thumbnail": "https://i.ytimg.com/vi/c7hvmBzLY6Y/mqdefault.jpg",
         "publishedAt": "2025-12-30T09:56:58Z",
         "duration": "PT1H59M16S",
-        "viewCount": "2608",
+        "viewCount": "2611",
         "likeCount": "162",
         "commentCount": "36",
         "favoriteCount": "0"
@@ -8671,9 +8671,9 @@
         "thumbnail": "https://i.ytimg.com/vi/kt5Nxta3szY/mqdefault.jpg",
         "publishedAt": "2025-12-30T16:11:41Z",
         "duration": "PT2H2M6S",
-        "viewCount": "2818",
-        "likeCount": "114",
-        "commentCount": "68",
+        "viewCount": "2820",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8683,7 +8683,7 @@
         "thumbnail": "https://i.ytimg.com/vi/9s6aBXQtmE0/mqdefault.jpg",
         "publishedAt": "2026-01-06T09:29:34Z",
         "duration": "PT2H50M55S",
-        "viewCount": "1818",
+        "viewCount": "1819",
         "likeCount": "107",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -8719,7 +8719,7 @@
         "thumbnail": "https://i.ytimg.com/vi/1s5J0QzVZ4s/mqdefault.jpg",
         "publishedAt": "2026-01-17T09:44:24Z",
         "duration": "PT3H31M1S",
-        "viewCount": "1891",
+        "viewCount": "1895",
         "likeCount": "116",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -8732,8 +8732,8 @@
         "publishedAt": "2026-01-20T09:09:36Z",
         "duration": "PT1H32M21S",
         "viewCount": "1153",
-        "likeCount": "102",
-        "commentCount": "9",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -8779,9 +8779,9 @@
         "thumbnail": "https://i.ytimg.com/vi/9Y_w_0VFtUM/mqdefault.jpg",
         "publishedAt": "2026-01-28T09:18:42Z",
         "duration": "PT6H8M11S",
-        "viewCount": "5148",
+        "viewCount": "5156",
         "likeCount": "239",
-        "commentCount": "156",
+        "commentCount": "157",
         "favoriteCount": "0"
       },
       {
@@ -8815,7 +8815,7 @@
         "thumbnail": "https://i.ytimg.com/vi/14VnFHPbfnE/mqdefault.jpg",
         "publishedAt": "2026-01-31T09:07:28Z",
         "duration": "PT4H30M6S",
-        "viewCount": "3770",
+        "viewCount": "3771",
         "likeCount": "160",
         "commentCount": "48",
         "favoriteCount": "0"
@@ -8899,7 +8899,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lCHARZ2FYYw/mqdefault.jpg",
         "publishedAt": "2026-02-14T09:23:26Z",
         "duration": "PT4H7M36S",
-        "viewCount": "2553",
+        "viewCount": "2554",
         "likeCount": "138",
         "commentCount": "12",
         "favoriteCount": "0"
@@ -8911,7 +8911,7 @@
         "thumbnail": "https://i.ytimg.com/vi/L9Kj9cKjEUY/mqdefault.jpg",
         "publishedAt": "2026-02-16T09:21:01Z",
         "duration": "PT3H26M",
-        "viewCount": "2868",
+        "viewCount": "2869",
         "likeCount": "137",
         "commentCount": "108",
         "favoriteCount": "0"
@@ -8935,7 +8935,7 @@
         "thumbnail": "https://i.ytimg.com/vi/4tlz-CB1Jc0/mqdefault.jpg",
         "publishedAt": "2026-02-20T10:12:05Z",
         "duration": "PT3H54M46S",
-        "viewCount": "6011",
+        "viewCount": "6014",
         "likeCount": "213",
         "commentCount": "140",
         "favoriteCount": "0"
@@ -9007,7 +9007,7 @@
         "thumbnail": "https://i.ytimg.com/vi/EpnAv8loQSE/mqdefault.jpg",
         "publishedAt": "2026-02-28T08:44:49Z",
         "duration": "PT4H4M10S",
-        "viewCount": "1418",
+        "viewCount": "1421",
         "likeCount": "101",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -9067,7 +9067,7 @@
         "thumbnail": "https://i.ytimg.com/vi/8d4r7Iq2Un4/mqdefault.jpg",
         "publishedAt": "2026-03-14T09:18:45Z",
         "duration": "PT4H16M26S",
-        "viewCount": "2169",
+        "viewCount": "2172",
         "likeCount": "136",
         "commentCount": "73",
         "favoriteCount": "0"
@@ -9175,7 +9175,7 @@
         "thumbnail": "https://i.ytimg.com/vi/xTeRRslKPgo/mqdefault.jpg",
         "publishedAt": "2026-04-10T09:00:40Z",
         "duration": "PT1H58M",
-        "viewCount": "1528",
+        "viewCount": "1530",
         "likeCount": "93",
         "commentCount": "44",
         "favoriteCount": "0"
@@ -9187,7 +9187,7 @@
         "thumbnail": "https://i.ytimg.com/vi/geYeE-QRons/mqdefault.jpg",
         "publishedAt": "2026-04-11T08:48:47Z",
         "duration": "PT1H49M35S",
-        "viewCount": "1383",
+        "viewCount": "1384",
         "likeCount": "75",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -9211,7 +9211,7 @@
         "thumbnail": "https://i.ytimg.com/vi/30HyJ0YhaHE/mqdefault.jpg",
         "publishedAt": "2026-04-14T09:13:05Z",
         "duration": "PT3H17M36S",
-        "viewCount": "2100",
+        "viewCount": "2104",
         "likeCount": "107",
         "commentCount": "26",
         "favoriteCount": "0"
@@ -9235,9 +9235,9 @@
         "thumbnail": "https://i.ytimg.com/vi/ggsBhL-YcYc/mqdefault.jpg",
         "publishedAt": "2026-04-20T09:00:28Z",
         "duration": "PT2H26M35S",
-        "viewCount": "1253",
-        "likeCount": "76",
-        "commentCount": "20",
+        "viewCount": "1254",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -9247,7 +9247,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lkSICnOeiPo/mqdefault.jpg",
         "publishedAt": "2026-04-21T09:21:43Z",
         "duration": "PT2H9M35S",
-        "viewCount": "1484",
+        "viewCount": "1485",
         "likeCount": "79",
         "commentCount": "16",
         "favoriteCount": "0"
@@ -9259,7 +9259,7 @@
         "thumbnail": "https://i.ytimg.com/vi/SYqWopp3Aec/mqdefault.jpg",
         "publishedAt": "2026-04-23T11:16:51Z",
         "duration": "PT1H42M45S",
-        "viewCount": "737",
+        "viewCount": "739",
         "likeCount": "45",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -9283,7 +9283,7 @@
         "thumbnail": "https://i.ytimg.com/vi/chuBD2n1FPk/mqdefault.jpg",
         "publishedAt": "2026-04-24T16:14:21Z",
         "duration": "PT3M17S",
-        "viewCount": "398",
+        "viewCount": "404",
         "likeCount": "24",
         "commentCount": "66",
         "favoriteCount": "0"
@@ -9295,9 +9295,9 @@
         "thumbnail": "https://i.ytimg.com/vi/uk5Tv3IDC44/mqdefault.jpg",
         "publishedAt": "2026-04-27T09:19:12Z",
         "duration": "PT1H22M25S",
-        "viewCount": "1441",
+        "viewCount": "1445",
         "likeCount": "77",
-        "commentCount": "42",
+        "commentCount": "43",
         "favoriteCount": "0"
       },
       {
@@ -9307,7 +9307,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Mjhcyz-5IYA/mqdefault.jpg",
         "publishedAt": "2026-04-28T09:19:53Z",
         "duration": "PT4H9M16S",
-        "viewCount": "2711",
+        "viewCount": "2714",
         "likeCount": "105",
         "commentCount": "36",
         "favoriteCount": "0"
@@ -9331,7 +9331,7 @@
         "thumbnail": "https://i.ytimg.com/vi/GCWF0gwGtrw/mqdefault.jpg",
         "publishedAt": "2026-05-03T08:46:53Z",
         "duration": "PT1H46M21S",
-        "viewCount": "2732",
+        "viewCount": "2733",
         "likeCount": "114",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -9343,7 +9343,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zCnI5s1gDBQ/mqdefault.jpg",
         "publishedAt": "2026-05-07T08:53:54Z",
         "duration": "PT7H3M50S",
-        "viewCount": "4791",
+        "viewCount": "4794",
         "likeCount": "193",
         "commentCount": "35",
         "favoriteCount": "0"
@@ -9355,7 +9355,7 @@
         "thumbnail": "https://i.ytimg.com/vi/xxxFo9szrPI/mqdefault.jpg",
         "publishedAt": "2026-05-07T19:17:54Z",
         "duration": "PT1M1S",
-        "viewCount": "153",
+        "viewCount": "155",
         "likeCount": "24",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -9367,7 +9367,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zZVXaIgg11U/mqdefault.jpg",
         "publishedAt": "2026-05-08T09:14:05Z",
         "duration": "PT1H58M15S",
-        "viewCount": "1082",
+        "viewCount": "1085",
         "likeCount": "89",
         "commentCount": "4",
         "favoriteCount": "0"
@@ -9379,7 +9379,7 @@
         "thumbnail": "https://i.ytimg.com/vi/kGt7ojRqqA0/mqdefault.jpg",
         "publishedAt": "2026-05-09T12:54:11Z",
         "duration": "PT59S",
-        "viewCount": "214",
+        "viewCount": "216",
         "likeCount": "25",
         "commentCount": "6",
         "favoriteCount": "0"
@@ -9391,8 +9391,8 @@
         "thumbnail": "https://i.ytimg.com/vi/kredF9pjspo/mqdefault.jpg",
         "publishedAt": "2026-05-10T07:50:09Z",
         "duration": "PT4H40M46S",
-        "viewCount": "1967",
-        "likeCount": "95",
+        "viewCount": "2008",
+        "likeCount": "96",
         "commentCount": "10",
         "favoriteCount": "0"
       },
@@ -9403,7 +9403,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lwOqEjcNfrw/mqdefault.jpg",
         "publishedAt": "2026-05-10T16:50:08Z",
         "duration": "PT1M",
-        "viewCount": "176",
+        "viewCount": "182",
         "likeCount": "19",
         "commentCount": "2",
         "favoriteCount": "0"
@@ -9415,7 +9415,7 @@
         "thumbnail": "https://i.ytimg.com/vi/fPbXehpYB1s/mqdefault.jpg",
         "publishedAt": "2026-05-11T09:05:36Z",
         "duration": "PT2H50M1S",
-        "viewCount": "2559",
+        "viewCount": "2571",
         "likeCount": "128",
         "commentCount": "26",
         "favoriteCount": "0"
@@ -9427,8 +9427,8 @@
         "thumbnail": "https://i.ytimg.com/vi/C6hu58JkaUo/mqdefault.jpg",
         "publishedAt": "2026-05-12T09:08:38Z",
         "duration": "PT6H16M21S",
-        "viewCount": "7283",
-        "likeCount": "287",
+        "viewCount": "7309",
+        "likeCount": "286",
         "commentCount": "170",
         "favoriteCount": "0"
       },
@@ -9439,7 +9439,7 @@
         "thumbnail": "https://i.ytimg.com/vi/e4l6qqsFj6g/mqdefault.jpg",
         "publishedAt": "2026-05-15T02:42:48Z",
         "duration": "PT1M1S",
-        "viewCount": "207",
+        "viewCount": "212",
         "likeCount": "28",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -9451,9 +9451,9 @@
         "thumbnail": "https://i.ytimg.com/vi/kV2fUoG6pyc/mqdefault.jpg",
         "publishedAt": "2026-05-15T08:22:08Z",
         "duration": "PT1H54M15S",
-        "viewCount": "796",
-        "likeCount": "73",
-        "commentCount": "3",
+        "viewCount": "797",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -9463,7 +9463,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OMeXbf4S5Nc/mqdefault.jpg",
         "publishedAt": "2026-05-16T09:15:04Z",
         "duration": "PT2H9M55S",
-        "viewCount": "763",
+        "viewCount": "765",
         "likeCount": "70",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -9475,8 +9475,8 @@
         "thumbnail": "https://i.ytimg.com/vi/uLd6JDcmVys/mqdefault.jpg",
         "publishedAt": "2026-05-18T09:06:54Z",
         "duration": "PT3H36M36S",
-        "viewCount": "1100",
-        "likeCount": "68",
+        "viewCount": "1113",
+        "likeCount": "69",
         "commentCount": "8",
         "favoriteCount": "0"
       },
@@ -9487,8 +9487,8 @@
         "thumbnail": "https://i.ytimg.com/vi/JvKU3YUsLfA/mqdefault.jpg",
         "publishedAt": "2026-05-19T08:54:17Z",
         "duration": "PT1H55M19S",
-        "viewCount": "665",
-        "likeCount": "52",
+        "viewCount": "671",
+        "likeCount": "51",
         "commentCount": "15",
         "favoriteCount": "0"
       },
@@ -9499,8 +9499,8 @@
         "thumbnail": "https://i.ytimg.com/vi/dukIGe3UezQ/mqdefault.jpg",
         "publishedAt": "2026-05-21T08:35:35Z",
         "duration": "PT1M",
-        "viewCount": "162",
-        "likeCount": "19",
+        "viewCount": "169",
+        "likeCount": "20",
         "commentCount": "1",
         "favoriteCount": "0"
       },
@@ -9511,8 +9511,8 @@
         "thumbnail": "https://i.ytimg.com/vi/OGs5wtamwKs/mqdefault.jpg",
         "publishedAt": "2026-05-22T08:44:11Z",
         "duration": "PT59M11S",
-        "viewCount": "869",
-        "likeCount": "67",
+        "viewCount": "889",
+        "likeCount": "71",
         "commentCount": "36",
         "favoriteCount": "0"
       },
@@ -9523,8 +9523,8 @@
         "thumbnail": "https://i.ytimg.com/vi/UFgpWkkCmkg/mqdefault.jpg",
         "publishedAt": "2026-05-22T13:14:28Z",
         "duration": "PT58S",
-        "viewCount": "112",
-        "likeCount": "12",
+        "viewCount": "119",
+        "likeCount": "13",
         "commentCount": "1",
         "favoriteCount": "0"
       },
@@ -9535,9 +9535,9 @@
         "thumbnail": "https://i.ytimg.com/vi/pi2L7_TBHZg/mqdefault.jpg",
         "publishedAt": "2026-05-23T08:44:43Z",
         "duration": "PT2H39M1S",
-        "viewCount": "1321",
-        "likeCount": "74",
-        "commentCount": "9",
+        "viewCount": "1341",
+        "likeCount": "76",
+        "commentCount": "11",
         "favoriteCount": "0"
       },
       {
@@ -9547,8 +9547,8 @@
         "thumbnail": "https://i.ytimg.com/vi/7BsRuyJ3dhg/mqdefault.jpg",
         "publishedAt": "2026-05-24T13:02:22Z",
         "duration": "PT1M1S",
-        "viewCount": "84",
-        "likeCount": "18",
+        "viewCount": "95",
+        "likeCount": "19",
         "commentCount": "0",
         "favoriteCount": "0"
       },
@@ -9559,9 +9559,9 @@
         "thumbnail": "https://i.ytimg.com/vi/75OZ9aVQReQ/mqdefault.jpg",
         "publishedAt": "2026-05-25T09:13:20Z",
         "duration": "PT2H38M26S",
-        "viewCount": "1588",
-        "likeCount": "91",
-        "commentCount": "7",
+        "viewCount": "1651",
+        "likeCount": "95",
+        "commentCount": "8",
         "favoriteCount": "0"
       },
       {
@@ -9571,9 +9571,9 @@
         "thumbnail": "https://i.ytimg.com/vi/TlYFghI5Y6Y/mqdefault.jpg",
         "publishedAt": "2026-05-25T14:48:53Z",
         "duration": "PT55S",
-        "viewCount": "535",
-        "likeCount": "24",
-        "commentCount": "4",
+        "viewCount": "723",
+        "likeCount": "27",
+        "commentCount": "5",
         "favoriteCount": "0"
       },
       {
@@ -9583,9 +9583,9 @@
         "thumbnail": "https://i.ytimg.com/vi/ZBKW_ldlIfw/mqdefault.jpg",
         "publishedAt": "2026-05-26T08:27:04Z",
         "duration": "PT3H38M6S",
-        "viewCount": "2247",
-        "likeCount": "126",
-        "commentCount": "7",
+        "viewCount": "2483",
+        "likeCount": "133",
+        "commentCount": "11",
         "favoriteCount": "0"
       },
       {
@@ -9595,9 +9595,45 @@
         "thumbnail": "https://i.ytimg.com/vi/wP2uYQdUJ6o/mqdefault.jpg",
         "publishedAt": "2026-05-28T03:03:07Z",
         "duration": "PT1M1S",
-        "viewCount": "8",
-        "likeCount": "4",
+        "viewCount": "195",
+        "likeCount": "24",
+        "commentCount": "1",
+        "favoriteCount": "0"
+      },
+      {
+        "id": "C-PkPaOCQZo",
+        "title": "VIRAL!!! Sola Scriptura hanya Mitos @MuriwaliYantoMataluGKKR‬, live#63 -05-2026",
+        "description": "VIRAL!!! Sola Scriptura hanya Mitos @MuriwaliYantoMataluGKKR, live#63 -05-2026\n\nLive Streaming hari Jum'at, 29 Mei 2026, jam 19.00 WIB di kannal Youtube DAMAI KASIH CHANNEL @damaikasihchannel9153 \n\nMohon maaf apabila ada kesalahan dalam ucapan atau literasi yang kami sampaikan, mohon koreksinya, terima kasih.\n\n#gerejakatolik   #theotokos   #bundamaria #yesuskristus  #satukuduskatolikapostolik     #kredo   #tradisisuci  #purgatory  #tempatpenantian  #dialog  #gereja   #protestantisme  #protestan #katolik #apologetik #apologetics #ortodox #ortodoks #gerejaapostolik  \n\nAPOLOGETIK KRISTEN KATOLIK\n\n#dialog  \n#theotokos    \n#satukuduskatolikapostolik \n#gerejaapostolik\n#imankatolik \n#imanrasuli\n#bundamaria\n#kredo \n#tradisisuci\n#imandanperbuatan\n#kristiani\n#kristen \n#apostolik\n#kisahyesus \n#yesuskristus  \n#gerejasuarakebenaraninjil  \n#gski  \n#catholicanswers   \n#muridmartinluther \n#martinluther \n#ulrichzwingli \n#yohanescalvin \n#abadenambelas \n#bapareformator \n#reformed \n#liturgi \n#protestantisme \n#scriptura \n#solascriptura \n#solafide \n#solagratia \n#alkitab \n#injil \n#perjanjianlama \n#ritus \n#yahudi \n#mesianik \n#polemikus \n#apologetik \n#channelapologetik \n#alkitab \n#gerejakatolik \n#tradisisuci \n#pendetaprotestan \n#pgi \n#goi \n#luteran \n#protestantisme \n#baptis \n#advent \n#ortodoks \n#karismatik \n#imankatolik \n#umatkatolik \n#kwi \n#konfrensiwaligerejaindonesia \n#gerejaprotestan \n#pausroma \n#roma \n#paus \n#katolik \n#erickoklikkk \n#damaikasihchannel \n‪‪‪‪‪‪\nLink website damaikasihchannel :\nhttps://damaikasihchannel.com/ \n\n  \nDUKUNG SELALU CHANNEL APOLOGET KRISTEN KATOLIK :\n\n1. ERICK OKLIKKK\n‪‪‪‪‪‪‪@erickoklikkk8373 \n\n2. LOVLY KATOLIK\n‪‪‪‪‪‪‪@lovlykatolik3102  \n\n3. RITUS LATIN \n‪‪‪‪‪‪‪@rituslatin5678 \n\n4. 𝕯𝖜𝖎𝕾𝖆𝖞 𝕿𝖆𝖓����𝖆𝕽𝖚𝖌𝖎\n‪‪‪‪‪‪‪@anak_anak_terang \n\n5. Quovadis Channel‪‪‪‪‪‪‪‪‪ \n‪‪‪‪‪‪@Quovadis6467 \n\nCATATAN : Barang siapa yg mengambil video DAMAI KASIH CHANNEL, baik perorangan maupun organisasi, dan mengubah/mengedit vidoe tersebut bahkan membuat judul ataupun tambnel yang tidak sesuai dengan video aslinya, tanpa seijin DAMAI KASIH CHANNEL, maka kami DAMAI KASIH CHANNEL tidak bertanggung jawab lagi secara hukum.",
+        "thumbnail": "https://i.ytimg.com/vi/C-PkPaOCQZo/mqdefault.jpg",
+        "publishedAt": "2026-05-29T08:58:10Z",
+        "duration": "PT4H32M45S",
+        "viewCount": "2550",
+        "likeCount": "134",
+        "commentCount": "44",
+        "favoriteCount": "0"
+      },
+      {
+        "id": "K9yqASTVn8c",
+        "title": "Surat terbuka buat @EsraAlfredSoru untuk dialog",
+        "description": "Surat terbuka buat @EsraAlfredSoru untuk dialog",
+        "thumbnail": "https://i.ytimg.com/vi/K9yqASTVn8c/mqdefault.jpg",
+        "publishedAt": "2026-05-29T16:47:09Z",
+        "duration": "PT1M1S",
+        "viewCount": "159",
+        "likeCount": "26",
         "commentCount": "0",
+        "favoriteCount": "0"
+      },
+      {
+        "id": "gxZUhVF7uPM",
+        "title": "Surat terbuka buat @EsraAlfredSoru untuk dialog, live#64 -05-2026",
+        "description": "Surat terbuka buat @EsraAlfredSoru untuk dialog, live#64 -05-2026\n\nLive Streaming hari Sabtu, 30 Mei 2026, jam 19.00 WIB di kannal Youtube DAMAI KASIH CHANNEL @damaikasihchannel9153 \n\nMohon maaf apabila ada kesalahan dalam ucapan atau literasi yang kami sampaikan, mohon koreksinya, terima kasih.\n\n#gerejakatolik   #theotokos   #bundamaria #yesuskristus  #satukuduskatolikapostolik     #kredo   #tradisisuci  #purgatory  #tempatpenantian  #dialog  #gereja   #protestantisme  #protestan #katolik #apologetik #apologetics #ortodox #ortodoks #gerejaapostolik  \n\nAPOLOGETIK KRISTEN KATOLIK\n\n#dialog  \n#theotokos    \n#satukuduskatolikapostolik \n#gerejaapostolik\n#imankatolik \n#imanrasuli\n#bundamaria\n#kredo \n#tradisisuci\n#imandanperbuatan\n#kristiani\n#kristen \n#apostolik\n#kisahyesus \n#yesuskristus  \n#gerejasuarakebenaraninjil  \n#gski  \n#catholicanswers   \n#muridmartinluther \n#martinluther \n#ulrichzwingli \n#yohanescalvin \n#abadenambelas \n#bapareformator \n#reformed \n#liturgi \n#protestantisme \n#scriptura \n#solascriptura \n#solafide \n#solagratia \n#alkitab \n#injil \n#perjanjianlama \n#ritus \n#yahudi \n#mesianik \n#polemikus \n#apologetik \n#channelapologetik \n#alkitab \n#gerejakatolik \n#tradisisuci \n#pendetaprotestan \n#pgi \n#goi \n#luteran \n#protestantisme \n#baptis \n#advent \n#ortodoks \n#karismatik \n#imankatolik \n#umatkatolik \n#kwi \n#konfrensiwaligerejaindonesia \n#gerejaprotestan \n#pausroma \n#roma \n#paus \n#katolik \n#erickoklikkk \n#damaikasihchannel \n‪‪‪‪‪‪\nLink website damaikasihchannel :\nhttps://damaikasihchannel.com/ \n\n  \nDUKUNG SELALU CHANNEL APOLOGET KRISTEN KATOLIK :\n\n1. ERICK OKLIKKK\n‪‪‪‪‪‪‪‪@erickoklikkk8373 \n\n2. LOVLY KATOLIK\n‪‪‪‪‪‪‪‪@lovlykatolik3102 \n\n3. RITUS LATIN \n‪‪‪‪‪‪‪‪@rituslatin5678 \n\n4. 𝕯𝖜𝖎𝕾𝖆𝖞 𝕿𝖆𝖓����𝖆𝕽𝖚𝖌𝖎\n‪‪‪‪‪‪‪‪@anak_anak_terang \n\n5. Quovadis Channel‪‪‪‪‪‪‪‪‪ \n‪‪‪‪‪‪‪@Quovadis6467 \n\nCATATAN : Barang siapa yg mengambil video DAMAI KASIH CHANNEL, baik perorangan maupun organisasi, dan mengubah/mengedit vidoe tersebut bahkan membuat judul ataupun tambnel yang tidak sesuai dengan video aslinya, tanpa seijin DAMAI KASIH CHANNEL, maka kami DAMAI KASIH CHANNEL tidak bertanggung jawab lagi secara hukum.",
+        "thumbnail": "https://i.ytimg.com/vi/gxZUhVF7uPM/mqdefault.jpg",
+        "publishedAt": "2026-05-30T08:16:58Z",
+        "duration": "PT1H59M40S",
+        "viewCount": "2771",
+        "likeCount": "142",
+        "commentCount": "40",
         "favoriteCount": "0"
       }
     ]
@@ -9616,7 +9652,7 @@
         "thumbnail": "https://i.ytimg.com/vi/FApNy4evork/mqdefault.jpg",
         "publishedAt": "2021-11-10T11:36:57Z",
         "duration": "PT5M40S",
-        "viewCount": "1503",
+        "viewCount": "1505",
         "likeCount": "79",
         "commentCount": "14",
         "favoriteCount": "0"
@@ -9880,7 +9916,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bd1elkFDnrY/mqdefault.jpg",
         "publishedAt": "2025-01-09T10:15:10Z",
         "duration": "PT4H54M29S",
-        "viewCount": "7527",
+        "viewCount": "7528",
         "likeCount": "332",
         "commentCount": "114",
         "favoriteCount": "0"
@@ -9952,7 +9988,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ROTuuhCt2MA/mqdefault.jpg",
         "publishedAt": "2025-05-10T08:07:27Z",
         "duration": "PT2H58M40S",
-        "viewCount": "6322",
+        "viewCount": "6325",
         "likeCount": "290",
         "commentCount": "64",
         "favoriteCount": "0"
@@ -10025,8 +10061,8 @@
         "publishedAt": "2025-11-11T10:29:03Z",
         "duration": "PT3H7M59S",
         "viewCount": "2515",
-        "likeCount": "146",
-        "commentCount": "35",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10036,7 +10072,7 @@
         "thumbnail": "https://i.ytimg.com/vi/oQpJLY4UYNk/mqdefault.jpg",
         "publishedAt": "2025-11-22T08:48:25Z",
         "duration": "PT3H28M",
-        "viewCount": "2420",
+        "viewCount": "2421",
         "likeCount": "120",
         "commentCount": "27",
         "favoriteCount": "0"
@@ -10060,7 +10096,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ggsBhL-YcYc/mqdefault.jpg",
         "publishedAt": "2026-04-20T09:00:28Z",
         "duration": "PT2H26M35S",
-        "viewCount": "1253",
+        "viewCount": "1254",
         "likeCount": "76",
         "commentCount": "20",
         "favoriteCount": "0"
@@ -10082,8 +10118,8 @@
         "publishedAt": "2021-10-29T00:13:22Z",
         "duration": "PT4H5M25S",
         "viewCount": "1678",
-        "likeCount": "106",
-        "commentCount": "17",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10154,8 +10190,8 @@
         "publishedAt": "2021-11-01T16:49:25Z",
         "duration": "PT2H13M50S",
         "viewCount": "472",
-        "likeCount": "49",
-        "commentCount": "2",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10202,8 +10238,8 @@
         "publishedAt": "2022-02-10T17:53:47Z",
         "duration": "PT2H45M57S",
         "viewCount": "4139",
-        "likeCount": "264",
-        "commentCount": "64",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10273,7 +10309,7 @@
         "thumbnail": "https://i.ytimg.com/vi/f5vGfdwc6tY/mqdefault.jpg",
         "publishedAt": "2022-10-26T07:04:20Z",
         "duration": "PT4H55M48S",
-        "viewCount": "3249",
+        "viewCount": "3250",
         "likeCount": "173",
         "commentCount": "17",
         "favoriteCount": "0"
@@ -10369,9 +10405,9 @@
         "thumbnail": "https://i.ytimg.com/vi/BCC_-CuqSlo/mqdefault.jpg",
         "publishedAt": "2023-01-11T18:44:23Z",
         "duration": "PT6H23M26S",
-        "viewCount": "5629",
-        "likeCount": "272",
-        "commentCount": "137",
+        "viewCount": "5630",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10508,7 +10544,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bRY2UWpmnxw/mqdefault.jpg",
         "publishedAt": "2023-03-04T04:14:10Z",
         "duration": "PT6M12S",
-        "viewCount": "1472",
+        "viewCount": "1473",
         "likeCount": "114",
         "commentCount": "58",
         "favoriteCount": "0"
@@ -10520,7 +10556,7 @@
         "thumbnail": "https://i.ytimg.com/vi/-GsCqbVH3LE/mqdefault.jpg",
         "publishedAt": "2023-04-27T15:44:32Z",
         "duration": "PT34M59S",
-        "viewCount": "2719",
+        "viewCount": "2720",
         "likeCount": "205",
         "commentCount": "214",
         "favoriteCount": "0"
@@ -10532,9 +10568,9 @@
         "thumbnail": "https://i.ytimg.com/vi/XfE1edNaejg/mqdefault.jpg",
         "publishedAt": "2023-05-15T10:11:21Z",
         "duration": "PT5M42S",
-        "viewCount": "6538",
-        "likeCount": "348",
-        "commentCount": "91",
+        "viewCount": "6596",
+        "likeCount": "350",
+        "commentCount": "93",
         "favoriteCount": "0"
       },
       {
@@ -10569,8 +10605,8 @@
         "publishedAt": "2023-08-10T14:02:31Z",
         "duration": "PT3H3M5S",
         "viewCount": "3439",
-        "likeCount": "218",
-        "commentCount": "147",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10604,7 +10640,7 @@
         "thumbnail": "https://i.ytimg.com/vi/1mHBbyedZCA/mqdefault.jpg",
         "publishedAt": "2023-08-21T19:09:55Z",
         "duration": "PT8M15S",
-        "viewCount": "10728",
+        "viewCount": "10736",
         "likeCount": "527",
         "commentCount": "807",
         "favoriteCount": "0"
@@ -10629,8 +10665,8 @@
         "publishedAt": "2023-10-13T11:02:13Z",
         "duration": "PT5H10M12S",
         "viewCount": "1998",
-        "likeCount": "127",
-        "commentCount": "60",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10665,8 +10701,8 @@
         "publishedAt": "2023-11-06T06:55:02Z",
         "duration": "PT6H4M26S",
         "viewCount": "1722",
-        "likeCount": "115",
-        "commentCount": "40",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10676,7 +10712,7 @@
         "thumbnail": "https://i.ytimg.com/vi/jxELi4afcxQ/mqdefault.jpg",
         "publishedAt": "2023-11-07T05:32:22Z",
         "duration": "PT3H56M25S",
-        "viewCount": "9452",
+        "viewCount": "9454",
         "likeCount": "360",
         "commentCount": "243",
         "favoriteCount": "0"
@@ -10713,8 +10749,8 @@
         "publishedAt": "2023-11-15T08:24:54Z",
         "duration": "PT4H44M2S",
         "viewCount": "2143",
-        "likeCount": "135",
-        "commentCount": "15",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10784,7 +10820,7 @@
         "thumbnail": "https://i.ytimg.com/vi/txtrJQ0Z40Q/mqdefault.jpg",
         "publishedAt": "2024-02-19T16:09:49Z",
         "duration": "PT3H44M3S",
-        "viewCount": "2466",
+        "viewCount": "2472",
         "likeCount": "160",
         "commentCount": "125",
         "favoriteCount": "0"
@@ -10880,7 +10916,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uvvFvsYg5EI/mqdefault.jpg",
         "publishedAt": "2024-03-12T15:50:51Z",
         "duration": "PT3H10M14S",
-        "viewCount": "4562",
+        "viewCount": "4564",
         "likeCount": "243",
         "commentCount": "112",
         "favoriteCount": "0"
@@ -10929,8 +10965,8 @@
         "publishedAt": "2024-03-17T16:59:52Z",
         "duration": "PT1H15M30S",
         "viewCount": "3916",
-        "likeCount": "244",
-        "commentCount": "465",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -10989,8 +11025,8 @@
         "publishedAt": "2024-03-21T08:11:23Z",
         "duration": "PT4H36S",
         "viewCount": "3198",
-        "likeCount": "209",
-        "commentCount": "200",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -11001,8 +11037,8 @@
         "publishedAt": "2024-03-22T09:55:31Z",
         "duration": "PT3H27M11S",
         "viewCount": "5900",
-        "likeCount": "273",
-        "commentCount": "97",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -11060,7 +11096,7 @@
         "thumbnail": "https://i.ytimg.com/vi/XKuSOJxuDak/mqdefault.jpg",
         "publishedAt": "2024-03-27T13:02:38Z",
         "duration": "PT4H45M52S",
-        "viewCount": "2331",
+        "viewCount": "2332",
         "likeCount": "153",
         "commentCount": "661",
         "favoriteCount": "0"
@@ -11084,7 +11120,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HcOixmZq36c/mqdefault.jpg",
         "publishedAt": "2024-04-01T12:14:41Z",
         "duration": "PT5H2M22S",
-        "viewCount": "4837",
+        "viewCount": "4840",
         "likeCount": "218",
         "commentCount": "274",
         "favoriteCount": "0"
@@ -11096,7 +11132,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zqRpgPc2Vj4/mqdefault.jpg",
         "publishedAt": "2024-04-02T06:59:21Z",
         "duration": "PT3H5M24S",
-        "viewCount": "29825",
+        "viewCount": "29833",
         "likeCount": "751",
         "commentCount": "725",
         "favoriteCount": "0"
@@ -11157,7 +11193,7 @@
         "publishedAt": "2024-04-09T09:09:15Z",
         "duration": "PT6H58M14S",
         "viewCount": "4231",
-        "likeCount": "263",
+        "likeCount": "264",
         "commentCount": "118",
         "favoriteCount": "0"
       },
@@ -11192,7 +11228,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JoN4978Bmn8/mqdefault.jpg",
         "publishedAt": "2024-04-14T22:08:22Z",
         "duration": "PT3H40M48S",
-        "viewCount": "12679",
+        "viewCount": "12683",
         "likeCount": "466",
         "commentCount": "297",
         "favoriteCount": "0"
@@ -11240,7 +11276,7 @@
         "thumbnail": "https://i.ytimg.com/vi/66Wu7YQjfLQ/mqdefault.jpg",
         "publishedAt": "2024-04-25T04:29:25Z",
         "duration": "PT4H58M41S",
-        "viewCount": "20017",
+        "viewCount": "20019",
         "likeCount": "688",
         "commentCount": "445",
         "favoriteCount": "0"
@@ -11312,7 +11348,7 @@
         "thumbnail": "https://i.ytimg.com/vi/_k0cPerm3pM/mqdefault.jpg",
         "publishedAt": "2024-05-06T11:44:29Z",
         "duration": "PT6H4M13S",
-        "viewCount": "3743",
+        "viewCount": "3746",
         "likeCount": "207",
         "commentCount": "202",
         "favoriteCount": "0"
@@ -11372,7 +11408,7 @@
         "thumbnail": "https://i.ytimg.com/vi/FJhC7u70A9w/mqdefault.jpg",
         "publishedAt": "2024-05-16T10:48:36Z",
         "duration": "PT2H23M7S",
-        "viewCount": "6603",
+        "viewCount": "6605",
         "likeCount": "296",
         "commentCount": "397",
         "favoriteCount": "0"
@@ -11468,7 +11504,7 @@
         "thumbnail": "https://i.ytimg.com/vi/M96O-fA4rRM/mqdefault.jpg",
         "publishedAt": "2024-06-27T07:24:35Z",
         "duration": "PT5H21M12S",
-        "viewCount": "3100",
+        "viewCount": "3101",
         "likeCount": "209",
         "commentCount": "65",
         "favoriteCount": "0"
@@ -11528,7 +11564,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uEQ6nejE1Rg/mqdefault.jpg",
         "publishedAt": "2024-07-18T03:50:24Z",
         "duration": "PT5H47M15S",
-        "viewCount": "9945",
+        "viewCount": "9949",
         "likeCount": "560",
         "commentCount": "452",
         "favoriteCount": "0"
@@ -11588,7 +11624,7 @@
         "thumbnail": "https://i.ytimg.com/vi/j1FkMp7xKqo/mqdefault.jpg",
         "publishedAt": "2024-08-10T07:58:23Z",
         "duration": "PT2H50M28S",
-        "viewCount": "3116",
+        "viewCount": "3117",
         "likeCount": "185",
         "commentCount": "48",
         "favoriteCount": "0"
@@ -11698,7 +11734,7 @@
         "duration": "PT3H42M",
         "viewCount": "9571",
         "likeCount": "396",
-        "commentCount": "368",
+        "commentCount": "369",
         "favoriteCount": "0"
       },
       {
@@ -11744,8 +11780,8 @@
         "thumbnail": "https://i.ytimg.com/vi/tq5UNMYuUPo/mqdefault.jpg",
         "publishedAt": "2024-09-16T07:44:12Z",
         "duration": "PT16S",
-        "viewCount": "844645",
-        "likeCount": "12805",
+        "viewCount": "844664",
+        "likeCount": "12804",
         "commentCount": "3859",
         "favoriteCount": "0"
       },
@@ -11756,7 +11792,7 @@
         "thumbnail": "https://i.ytimg.com/vi/0Cw68xpkvlI/mqdefault.jpg",
         "publishedAt": "2024-09-20T06:00:02Z",
         "duration": "PT4H34M41S",
-        "viewCount": "12073",
+        "viewCount": "12075",
         "likeCount": "608",
         "commentCount": "326",
         "favoriteCount": "0"
@@ -11852,7 +11888,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tepdnPJZ0WU/mqdefault.jpg",
         "publishedAt": "2024-10-12T16:46:42Z",
         "duration": "PT2H21M26S",
-        "viewCount": "4208",
+        "viewCount": "4210",
         "likeCount": "211",
         "commentCount": "128",
         "favoriteCount": "0"
@@ -11973,8 +12009,8 @@
         "publishedAt": "2024-11-24T06:22:28Z",
         "duration": "PT4H19M17S",
         "viewCount": "4144",
-        "likeCount": "215",
-        "commentCount": "110",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12044,7 +12080,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zXeQCoJN0dM/mqdefault.jpg",
         "publishedAt": "2025-01-21T10:24:50Z",
         "duration": "PT3H50M34S",
-        "viewCount": "17063",
+        "viewCount": "17070",
         "likeCount": "611",
         "commentCount": "288",
         "favoriteCount": "0"
@@ -12092,7 +12128,7 @@
         "thumbnail": "https://i.ytimg.com/vi/duxBlwapg4g/mqdefault.jpg",
         "publishedAt": "2025-01-27T10:31:58Z",
         "duration": "PT5H20M11S",
-        "viewCount": "5785",
+        "viewCount": "5786",
         "likeCount": "282",
         "commentCount": "106",
         "favoriteCount": "0"
@@ -12104,7 +12140,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7P1Or1erdg8/mqdefault.jpg",
         "publishedAt": "2025-01-29T08:35:52Z",
         "duration": "PT4H45M58S",
-        "viewCount": "47719",
+        "viewCount": "47722",
         "likeCount": "1132",
         "commentCount": "582",
         "favoriteCount": "0"
@@ -12153,8 +12189,8 @@
         "publishedAt": "2025-02-14T07:55:30Z",
         "duration": "PT29M14S",
         "viewCount": "5132",
-        "likeCount": "253",
-        "commentCount": "359",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12164,7 +12200,7 @@
         "thumbnail": "https://i.ytimg.com/vi/THucTeVnaKg/mqdefault.jpg",
         "publishedAt": "2025-02-15T08:37:44Z",
         "duration": "PT1H5M34S",
-        "viewCount": "3939",
+        "viewCount": "3942",
         "likeCount": "204",
         "commentCount": "70",
         "favoriteCount": "0"
@@ -12212,7 +12248,7 @@
         "thumbnail": "https://i.ytimg.com/vi/n8rGkn1_yU8/mqdefault.jpg",
         "publishedAt": "2025-03-01T09:33:37Z",
         "duration": "PT2H57M11S",
-        "viewCount": "2006",
+        "viewCount": "2007",
         "likeCount": "176",
         "commentCount": "10",
         "favoriteCount": "0"
@@ -12224,7 +12260,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rcM1JjhN41g/mqdefault.jpg",
         "publishedAt": "2025-03-03T11:15:44Z",
         "duration": "PT2H45M45S",
-        "viewCount": "46069",
+        "viewCount": "46086",
         "likeCount": "1219",
         "commentCount": "389",
         "favoriteCount": "0"
@@ -12260,7 +12296,7 @@
         "thumbnail": "https://i.ytimg.com/vi/t2sFuf1Lo9E/mqdefault.jpg",
         "publishedAt": "2025-03-12T09:58:59Z",
         "duration": "PT4H26M41S",
-        "viewCount": "3904",
+        "viewCount": "3905",
         "likeCount": "198",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -12297,8 +12333,8 @@
         "publishedAt": "2025-06-13T07:28:39Z",
         "duration": "PT3H33M47S",
         "viewCount": "4447",
-        "likeCount": "245",
-        "commentCount": "44",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12345,8 +12381,8 @@
         "publishedAt": "2025-07-01T09:09:36Z",
         "duration": "PT1H52M10S",
         "viewCount": "1384",
-        "likeCount": "121",
-        "commentCount": "22",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12356,7 +12392,7 @@
         "thumbnail": "https://i.ytimg.com/vi/6oXmpGkpvaE/mqdefault.jpg",
         "publishedAt": "2025-07-05T09:29:32Z",
         "duration": "PT1H25M15S",
-        "viewCount": "1648",
+        "viewCount": "1651",
         "likeCount": "139",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -12404,7 +12440,7 @@
         "thumbnail": "https://i.ytimg.com/vi/eV46-hmL3I4/mqdefault.jpg",
         "publishedAt": "2025-08-09T09:30:46Z",
         "duration": "PT2H51M31S",
-        "viewCount": "6868",
+        "viewCount": "6869",
         "likeCount": "304",
         "commentCount": "71",
         "favoriteCount": "0"
@@ -12416,7 +12452,7 @@
         "thumbnail": "https://i.ytimg.com/vi/euVRvt0LqLQ/mqdefault.jpg",
         "publishedAt": "2025-08-12T10:21:39Z",
         "duration": "PT3H26M31S",
-        "viewCount": "11566",
+        "viewCount": "11567",
         "likeCount": "360",
         "commentCount": "156",
         "favoriteCount": "0"
@@ -12428,7 +12464,7 @@
         "thumbnail": "https://i.ytimg.com/vi/faD3-NWlYWc/mqdefault.jpg",
         "publishedAt": "2025-08-15T09:50:23Z",
         "duration": "PT5H7M11S",
-        "viewCount": "9464",
+        "viewCount": "9465",
         "likeCount": "295",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -12464,7 +12500,7 @@
         "thumbnail": "https://i.ytimg.com/vi/jgwxd4gf9KA/mqdefault.jpg",
         "publishedAt": "2025-08-27T10:20:54Z",
         "duration": "PT4H19M14S",
-        "viewCount": "1717",
+        "viewCount": "1718",
         "likeCount": "124",
         "commentCount": "47",
         "favoriteCount": "0"
@@ -12476,7 +12512,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rXLN6D4QYWc/mqdefault.jpg",
         "publishedAt": "2025-08-28T12:40:15Z",
         "duration": "PT4H55M24S",
-        "viewCount": "1783",
+        "viewCount": "1784",
         "likeCount": "118",
         "commentCount": "21",
         "favoriteCount": "0"
@@ -12500,7 +12536,7 @@
         "thumbnail": "https://i.ytimg.com/vi/XaKfzadw9Ho/mqdefault.jpg",
         "publishedAt": "2025-09-06T03:41:52Z",
         "duration": "PT5H25M11S",
-        "viewCount": "3660",
+        "viewCount": "3661",
         "likeCount": "191",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -12584,9 +12620,9 @@
         "thumbnail": "https://i.ytimg.com/vi/OzJOU4rWo54/mqdefault.jpg",
         "publishedAt": "2025-09-22T08:06:23Z",
         "duration": "PT7M53S",
-        "viewCount": "69250",
-        "likeCount": "499",
-        "commentCount": "891",
+        "viewCount": "69274",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12596,9 +12632,9 @@
         "thumbnail": "https://i.ytimg.com/vi/bOu7y56nVlE/mqdefault.jpg",
         "publishedAt": "2025-09-23T04:14:06Z",
         "duration": "PT1H55M",
-        "viewCount": "9265",
+        "viewCount": "9270",
         "likeCount": "237",
-        "commentCount": "460",
+        "commentCount": "461",
         "favoriteCount": "0"
       },
       {
@@ -12608,9 +12644,9 @@
         "thumbnail": "https://i.ytimg.com/vi/0E06jgrHgGQ/mqdefault.jpg",
         "publishedAt": "2025-09-23T16:38:21Z",
         "duration": "PT3H6M19S",
-        "viewCount": "32366",
+        "viewCount": "32373",
         "likeCount": "1113",
-        "commentCount": "719",
+        "commentCount": "718",
         "favoriteCount": "0"
       },
       {
@@ -12644,7 +12680,7 @@
         "thumbnail": "https://i.ytimg.com/vi/J7sR0LHUdiE/mqdefault.jpg",
         "publishedAt": "2025-10-04T09:05:34Z",
         "duration": "PT3H9M15S",
-        "viewCount": "10224",
+        "viewCount": "10225",
         "likeCount": "344",
         "commentCount": "118",
         "favoriteCount": "0"
@@ -12692,7 +12728,7 @@
         "thumbnail": "https://i.ytimg.com/vi/55OuKujKSmw/mqdefault.jpg",
         "publishedAt": "2025-11-02T11:37:59Z",
         "duration": "PT2H51M25S",
-        "viewCount": "1287",
+        "viewCount": "1288",
         "likeCount": "96",
         "commentCount": "17",
         "favoriteCount": "0"
@@ -12752,7 +12788,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Ll7NxHuc50E/mqdefault.jpg",
         "publishedAt": "2025-11-09T12:17:43Z",
         "duration": "PT1M52S",
-        "viewCount": "11329",
+        "viewCount": "11330",
         "likeCount": "503",
         "commentCount": "76",
         "favoriteCount": "0"
@@ -12777,8 +12813,8 @@
         "publishedAt": "2025-11-26T09:34:27Z",
         "duration": "PT3H12M41S",
         "viewCount": "1723",
-        "likeCount": "112",
-        "commentCount": "28",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12788,7 +12824,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Y8WuqUEyxHA/mqdefault.jpg",
         "publishedAt": "2025-11-28T09:26:00Z",
         "duration": "PT3H40M11S",
-        "viewCount": "2103",
+        "viewCount": "2104",
         "likeCount": "106",
         "commentCount": "46",
         "favoriteCount": "0"
@@ -12801,8 +12837,8 @@
         "publishedAt": "2025-11-29T09:57:03Z",
         "duration": "PT4H38M33S",
         "viewCount": "2412",
-        "likeCount": "121",
-        "commentCount": "27",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -12824,9 +12860,9 @@
         "thumbnail": "https://i.ytimg.com/vi/ike0F1jUgB8/mqdefault.jpg",
         "publishedAt": "2026-01-07T23:34:08Z",
         "duration": "PT15M35S",
-        "viewCount": "1752",
+        "viewCount": "1755",
         "likeCount": "144",
-        "commentCount": "71",
+        "commentCount": "72",
         "favoriteCount": "0"
       },
       {
@@ -12860,7 +12896,7 @@
         "thumbnail": "https://i.ytimg.com/vi/1s5J0QzVZ4s/mqdefault.jpg",
         "publishedAt": "2026-01-17T09:44:24Z",
         "duration": "PT3H31M1S",
-        "viewCount": "1891",
+        "viewCount": "1895",
         "likeCount": "116",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -12872,7 +12908,7 @@
         "thumbnail": "https://i.ytimg.com/vi/EpnAv8loQSE/mqdefault.jpg",
         "publishedAt": "2026-02-28T08:44:49Z",
         "duration": "PT4H4M10S",
-        "viewCount": "1418",
+        "viewCount": "1421",
         "likeCount": "101",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -12884,7 +12920,7 @@
         "thumbnail": "https://i.ytimg.com/vi/geYeE-QRons/mqdefault.jpg",
         "publishedAt": "2026-04-11T08:48:47Z",
         "duration": "PT1H49M35S",
-        "viewCount": "1383",
+        "viewCount": "1384",
         "likeCount": "75",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -12896,7 +12932,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tlfQ4cEn7O0/mqdefault.jpg",
         "publishedAt": "2026-04-15T01:37:33Z",
         "duration": "PT5M46S",
-        "viewCount": "403",
+        "viewCount": "405",
         "likeCount": "31",
         "commentCount": "16",
         "favoriteCount": "0"
@@ -12920,7 +12956,7 @@
         "thumbnail": "https://i.ytimg.com/vi/chuBD2n1FPk/mqdefault.jpg",
         "publishedAt": "2026-04-24T16:14:45Z",
         "duration": "PT3M17S",
-        "viewCount": "398",
+        "viewCount": "404",
         "likeCount": "24",
         "commentCount": "66",
         "favoriteCount": "0"
@@ -13013,7 +13049,7 @@
         "thumbnail": "https://i.ytimg.com/vi/EdHDExdlb7E/mqdefault.jpg",
         "publishedAt": "2022-05-20T11:01:51Z",
         "duration": "PT3H46M32S",
-        "viewCount": "4560",
+        "viewCount": "4561",
         "likeCount": "289",
         "commentCount": "11",
         "favoriteCount": "0"
@@ -13109,7 +13145,7 @@
         "thumbnail": "https://i.ytimg.com/vi/MGGaFKhn_Tk/mqdefault.jpg",
         "publishedAt": "2023-04-20T18:15:00Z",
         "duration": "PT39M51S",
-        "viewCount": "133796",
+        "viewCount": "133801",
         "likeCount": "4346",
         "commentCount": "674",
         "favoriteCount": "0"
@@ -13157,7 +13193,7 @@
         "thumbnail": "https://i.ytimg.com/vi/8A4Mbk-Af4k/mqdefault.jpg",
         "publishedAt": "2023-10-09T10:15:49Z",
         "duration": "PT43S",
-        "viewCount": "12476",
+        "viewCount": "12478",
         "likeCount": "910",
         "commentCount": "59",
         "favoriteCount": "0"
@@ -13361,7 +13397,7 @@
         "thumbnail": "https://i.ytimg.com/vi/GULRrOukEaA/mqdefault.jpg",
         "publishedAt": "2024-11-21T17:39:01Z",
         "duration": "PT2H58M27S",
-        "viewCount": "3368",
+        "viewCount": "3372",
         "likeCount": "210",
         "commentCount": "79",
         "favoriteCount": "0"
@@ -13385,7 +13421,7 @@
         "thumbnail": "https://i.ytimg.com/vi/TOj0SypfwhE/mqdefault.jpg",
         "publishedAt": "2025-03-19T10:14:38Z",
         "duration": "PT2H37M25S",
-        "viewCount": "1213",
+        "viewCount": "1215",
         "likeCount": "117",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -13397,8 +13433,8 @@
         "thumbnail": "https://i.ytimg.com/vi/wJKOGo-Nx3o/mqdefault.jpg",
         "publishedAt": "2025-04-11T07:25:14Z",
         "duration": "PT3H35S",
-        "viewCount": "8071",
-        "likeCount": "441",
+        "viewCount": "8073",
+        "likeCount": "442",
         "commentCount": "141",
         "favoriteCount": "0"
       },
@@ -13587,8 +13623,8 @@
         "publishedAt": "2021-12-06T01:18:58Z",
         "duration": "PT2H21M",
         "viewCount": "744",
-        "likeCount": "74",
-        "commentCount": "5",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13599,8 +13635,8 @@
         "publishedAt": "2022-06-27T16:33:22Z",
         "duration": "PT2H9M53S",
         "viewCount": "3723",
-        "likeCount": "225",
-        "commentCount": "82",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13646,7 +13682,7 @@
         "thumbnail": "https://i.ytimg.com/vi/4ec_6W3Drr8/mqdefault.jpg",
         "publishedAt": "2022-10-11T15:33:50Z",
         "duration": "PT3H20M52S",
-        "viewCount": "4739",
+        "viewCount": "4743",
         "likeCount": "209",
         "commentCount": "37",
         "favoriteCount": "0"
@@ -13786,8 +13822,8 @@
         "publishedAt": "2023-03-13T17:22:49Z",
         "duration": "PT1H54M22S",
         "viewCount": "1770",
-        "likeCount": "127",
-        "commentCount": "43",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13798,8 +13834,8 @@
         "publishedAt": "2023-05-06T16:26:03Z",
         "duration": "PT1H12M26S",
         "viewCount": "6154",
-        "likeCount": "296",
-        "commentCount": "50",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13858,8 +13894,8 @@
         "publishedAt": "2023-06-01T18:03:34Z",
         "duration": "PT4H18S",
         "viewCount": "1616",
-        "likeCount": "126",
-        "commentCount": "3",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13894,8 +13930,8 @@
         "publishedAt": "2023-06-07T15:57:20Z",
         "duration": "PT4H57M48S",
         "viewCount": "2955",
-        "likeCount": "201",
-        "commentCount": "20",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13942,8 +13978,8 @@
         "publishedAt": "2023-08-01T16:44:50Z",
         "duration": "PT3H19M2S",
         "viewCount": "2477",
-        "likeCount": "146",
-        "commentCount": "12",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -13965,7 +14001,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HJgY49av1FM/mqdefault.jpg",
         "publishedAt": "2023-08-04T18:42:17Z",
         "duration": "PT5H36M34S",
-        "viewCount": "5432",
+        "viewCount": "5440",
         "likeCount": "299",
         "commentCount": "138",
         "favoriteCount": "0"
@@ -14013,7 +14049,7 @@
         "thumbnail": "https://i.ytimg.com/vi/juBSr-KrxtU/mqdefault.jpg",
         "publishedAt": "2023-08-18T10:14:16Z",
         "duration": "PT57S",
-        "viewCount": "17181",
+        "viewCount": "17188",
         "likeCount": "1495",
         "commentCount": "165",
         "favoriteCount": "0"
@@ -14073,7 +14109,7 @@
         "thumbnail": "https://i.ytimg.com/vi/QytxMfiKlsE/mqdefault.jpg",
         "publishedAt": "2023-12-18T12:35:52Z",
         "duration": "PT2H9M10S",
-        "viewCount": "1007",
+        "viewCount": "1008",
         "likeCount": "88",
         "commentCount": "2",
         "favoriteCount": "0"
@@ -14241,7 +14277,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7Mk0YSJ5hzE/mqdefault.jpg",
         "publishedAt": "2024-05-06T06:29:02Z",
         "duration": "PT38S",
-        "viewCount": "27223",
+        "viewCount": "27244",
         "likeCount": "704",
         "commentCount": "527",
         "favoriteCount": "0"
@@ -14253,7 +14289,7 @@
         "thumbnail": "https://i.ytimg.com/vi/3LXRUkN0pls/mqdefault.jpg",
         "publishedAt": "2024-05-08T06:12:19Z",
         "duration": "PT4H38M23S",
-        "viewCount": "6921",
+        "viewCount": "6924",
         "likeCount": "291",
         "commentCount": "224",
         "favoriteCount": "0"
@@ -14337,7 +14373,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Qoot8KrtTZo/mqdefault.jpg",
         "publishedAt": "2024-06-30T10:55:44Z",
         "duration": "PT1H31M32S",
-        "viewCount": "4038",
+        "viewCount": "4039",
         "likeCount": "192",
         "commentCount": "58",
         "favoriteCount": "0"
@@ -14361,7 +14397,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Lv-J0zCA6sk/mqdefault.jpg",
         "publishedAt": "2024-07-01T08:28:34Z",
         "duration": "PT4H2M49S",
-        "viewCount": "2685",
+        "viewCount": "2686",
         "likeCount": "161",
         "commentCount": "18",
         "favoriteCount": "0"
@@ -14385,7 +14421,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bqqgY9mLN8M/mqdefault.jpg",
         "publishedAt": "2024-07-02T21:17:57Z",
         "duration": "PT9H15M38S",
-        "viewCount": "3929",
+        "viewCount": "3930",
         "likeCount": "228",
         "commentCount": "55",
         "favoriteCount": "0"
@@ -14433,8 +14469,8 @@
         "thumbnail": "https://i.ytimg.com/vi/tq5UNMYuUPo/mqdefault.jpg",
         "publishedAt": "2024-09-16T07:44:03Z",
         "duration": "PT16S",
-        "viewCount": "844645",
-        "likeCount": "12805",
+        "viewCount": "844664",
+        "likeCount": "12804",
         "commentCount": "3859",
         "favoriteCount": "0"
       },
@@ -14457,7 +14493,7 @@
         "thumbnail": "https://i.ytimg.com/vi/g2-zJxHQ4Uw/mqdefault.jpg",
         "publishedAt": "2024-09-29T12:41:17Z",
         "duration": "PT1M1S",
-        "viewCount": "3028",
+        "viewCount": "3029",
         "likeCount": "136",
         "commentCount": "57",
         "favoriteCount": "0"
@@ -14565,7 +14601,7 @@
         "thumbnail": "https://i.ytimg.com/vi/duxBlwapg4g/mqdefault.jpg",
         "publishedAt": "2025-01-27T10:31:58Z",
         "duration": "PT5H20M11S",
-        "viewCount": "5785",
+        "viewCount": "5786",
         "likeCount": "282",
         "commentCount": "106",
         "favoriteCount": "0"
@@ -14577,7 +14613,7 @@
         "thumbnail": "https://i.ytimg.com/vi/BOg-kKVkoTI/mqdefault.jpg",
         "publishedAt": "2025-02-11T10:43:21Z",
         "duration": "PT5H59M3S",
-        "viewCount": "4475",
+        "viewCount": "4476",
         "likeCount": "220",
         "commentCount": "53",
         "favoriteCount": "0"
@@ -14589,8 +14625,8 @@
         "thumbnail": "https://i.ytimg.com/vi/kcPaSFTX5fc/mqdefault.jpg",
         "publishedAt": "2025-02-19T09:24:23Z",
         "duration": "PT2H44M34S",
-        "viewCount": "10527",
-        "likeCount": "390",
+        "viewCount": "10537",
+        "likeCount": "389",
         "commentCount": "146",
         "favoriteCount": "0"
       },
@@ -14613,7 +14649,7 @@
         "thumbnail": "https://i.ytimg.com/vi/t2sFuf1Lo9E/mqdefault.jpg",
         "publishedAt": "2025-03-12T09:58:59Z",
         "duration": "PT4H26M41S",
-        "viewCount": "3904",
+        "viewCount": "3905",
         "likeCount": "198",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -14757,7 +14793,7 @@
         "thumbnail": "https://i.ytimg.com/vi/2gaL3VynXfE/mqdefault.jpg",
         "publishedAt": "2025-05-23T11:08:38Z",
         "duration": "PT4H10M35S",
-        "viewCount": "3427",
+        "viewCount": "3429",
         "likeCount": "218",
         "commentCount": "42",
         "favoriteCount": "0"
@@ -14794,8 +14830,8 @@
         "publishedAt": "2025-09-19T03:39:48Z",
         "duration": "PT5H44M25S",
         "viewCount": "3766",
-        "likeCount": "185",
-        "commentCount": "73",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -14841,7 +14877,7 @@
         "thumbnail": "https://i.ytimg.com/vi/j3hG04gM5IU/mqdefault.jpg",
         "publishedAt": "2025-11-05T09:02:35Z",
         "duration": "PT3H41M56S",
-        "viewCount": "5748",
+        "viewCount": "5750",
         "likeCount": "256",
         "commentCount": "112",
         "favoriteCount": "0"
@@ -14889,7 +14925,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OfHsSEa03RA/mqdefault.jpg",
         "publishedAt": "2025-11-30T11:23:22Z",
         "duration": "PT1M7S",
-        "viewCount": "1860",
+        "viewCount": "1862",
         "likeCount": "132",
         "commentCount": "20",
         "favoriteCount": "0"
@@ -14901,7 +14937,7 @@
         "thumbnail": "https://i.ytimg.com/vi/c7hvmBzLY6Y/mqdefault.jpg",
         "publishedAt": "2025-12-30T09:56:58Z",
         "duration": "PT1H59M16S",
-        "viewCount": "2608",
+        "viewCount": "2611",
         "likeCount": "162",
         "commentCount": "36",
         "favoriteCount": "0"
@@ -14913,7 +14949,7 @@
         "thumbnail": "https://i.ytimg.com/vi/9s6aBXQtmE0/mqdefault.jpg",
         "publishedAt": "2026-01-06T09:29:34Z",
         "duration": "PT2H50M55S",
-        "viewCount": "1818",
+        "viewCount": "1819",
         "likeCount": "107",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -14970,7 +15006,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bcW3P1Tl9MA/mqdefault.jpg",
         "publishedAt": "2021-08-29T04:08:29Z",
         "duration": "PT3H25M9S",
-        "viewCount": "17455",
+        "viewCount": "17458",
         "likeCount": "706",
         "commentCount": "205",
         "favoriteCount": "0"
@@ -15138,7 +15174,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7pB1FobbMos/mqdefault.jpg",
         "publishedAt": "2021-12-08T23:56:16Z",
         "duration": "PT1H25M22S",
-        "viewCount": "1810",
+        "viewCount": "1813",
         "likeCount": "83",
         "commentCount": "5",
         "favoriteCount": "0"
@@ -15222,7 +15258,7 @@
         "thumbnail": "https://i.ytimg.com/vi/sRb7XQuQT0s/mqdefault.jpg",
         "publishedAt": "2022-01-31T20:54:09Z",
         "duration": "PT5H23M54S",
-        "viewCount": "62768",
+        "viewCount": "62769",
         "likeCount": "1914",
         "commentCount": "1574",
         "favoriteCount": "0"
@@ -15295,8 +15331,8 @@
         "publishedAt": "2022-02-10T15:34:55Z",
         "duration": "PT3H35M6S",
         "viewCount": "3250",
-        "likeCount": "188",
-        "commentCount": "45",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -15390,7 +15426,7 @@
         "thumbnail": "https://i.ytimg.com/vi/hBNkPm4Whsg/mqdefault.jpg",
         "publishedAt": "2022-02-21T14:26:32Z",
         "duration": "PT2H54M34S",
-        "viewCount": "11427",
+        "viewCount": "11429",
         "likeCount": "578",
         "commentCount": "257",
         "favoriteCount": "0"
@@ -15462,7 +15498,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Mcly5V9Ernk/mqdefault.jpg",
         "publishedAt": "2022-03-08T02:13:46Z",
         "duration": "PT3H18M2S",
-        "viewCount": "7425",
+        "viewCount": "7426",
         "likeCount": "359",
         "commentCount": "210",
         "favoriteCount": "0"
@@ -15475,8 +15511,8 @@
         "publishedAt": "2022-03-08T17:37:17Z",
         "duration": "PT5H14M19S",
         "viewCount": "20422",
-        "likeCount": "754",
-        "commentCount": "424",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -15558,7 +15594,7 @@
         "thumbnail": "https://i.ytimg.com/vi/i1_kDbJn-dE/mqdefault.jpg",
         "publishedAt": "2022-03-23T04:34:26Z",
         "duration": "PT6H17M41S",
-        "viewCount": "29237",
+        "viewCount": "29238",
         "likeCount": "1028",
         "commentCount": "561",
         "favoriteCount": "0"
@@ -15606,7 +15642,7 @@
         "thumbnail": "https://i.ytimg.com/vi/neti-kJQkck/mqdefault.jpg",
         "publishedAt": "2022-03-30T19:08:36Z",
         "duration": "PT2H59M27S",
-        "viewCount": "5627",
+        "viewCount": "5628",
         "likeCount": "315",
         "commentCount": "88",
         "favoriteCount": "0"
@@ -15619,8 +15655,8 @@
         "publishedAt": "2022-04-01T06:36:01Z",
         "duration": "PT3H24M19S",
         "viewCount": "6829",
-        "likeCount": "334",
-        "commentCount": "93",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -15678,7 +15714,7 @@
         "thumbnail": "https://i.ytimg.com/vi/5R4E1WemuX4/mqdefault.jpg",
         "publishedAt": "2022-05-04T15:28:07Z",
         "duration": "PT3H33M50S",
-        "viewCount": "16212",
+        "viewCount": "16213",
         "likeCount": "624",
         "commentCount": "392",
         "favoriteCount": "0"
@@ -15714,7 +15750,7 @@
         "thumbnail": "https://i.ytimg.com/vi/FOGN6PAx2vk/mqdefault.jpg",
         "publishedAt": "2022-06-14T02:45:26Z",
         "duration": "PT6H56M25S",
-        "viewCount": "6863",
+        "viewCount": "6864",
         "likeCount": "415",
         "commentCount": "85",
         "favoriteCount": "0"
@@ -15834,9 +15870,9 @@
         "thumbnail": "https://i.ytimg.com/vi/sEvMJ2YKb88/mqdefault.jpg",
         "publishedAt": "2022-08-09T00:18:08Z",
         "duration": "PT6H47M11S",
-        "viewCount": "11334",
+        "viewCount": "11335",
         "likeCount": "493",
-        "commentCount": "252",
+        "commentCount": "253",
         "favoriteCount": "0"
       },
       {
@@ -15871,8 +15907,8 @@
         "publishedAt": "2022-08-22T06:33:43Z",
         "duration": "PT6H11M28S",
         "viewCount": "5144",
-        "likeCount": "273",
-        "commentCount": "56",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -15894,7 +15930,7 @@
         "thumbnail": "https://i.ytimg.com/vi/c6Tp2zVnuks/mqdefault.jpg",
         "publishedAt": "2022-09-10T19:25:44Z",
         "duration": "PT4H57M38S",
-        "viewCount": "5128",
+        "viewCount": "5130",
         "likeCount": "239",
         "commentCount": "76",
         "favoriteCount": "0"
@@ -15906,7 +15942,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wHS5p8Jo36o/mqdefault.jpg",
         "publishedAt": "2022-09-11T12:12:21Z",
         "duration": "PT5H31M40S",
-        "viewCount": "7050",
+        "viewCount": "7051",
         "likeCount": "358",
         "commentCount": "69",
         "favoriteCount": "0"
@@ -15955,7 +15991,7 @@
         "publishedAt": "2022-10-10T17:48:49Z",
         "duration": "PT5H38M2S",
         "viewCount": "5232",
-        "likeCount": "309",
+        "likeCount": "310",
         "commentCount": "45",
         "favoriteCount": "0"
       },
@@ -15991,8 +16027,8 @@
         "publishedAt": "2022-10-19T18:35:22Z",
         "duration": "PT5H51M43S",
         "viewCount": "3962",
-        "likeCount": "253",
-        "commentCount": "21",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16026,7 +16062,7 @@
         "thumbnail": "https://i.ytimg.com/vi/-EAXenhiZXk/mqdefault.jpg",
         "publishedAt": "2022-10-22T04:26:04Z",
         "duration": "PT5H7M40S",
-        "viewCount": "7831",
+        "viewCount": "7832",
         "likeCount": "365",
         "commentCount": "89",
         "favoriteCount": "0"
@@ -16086,7 +16122,7 @@
         "thumbnail": "https://i.ytimg.com/vi/iog8VngfzkM/mqdefault.jpg",
         "publishedAt": "2023-01-07T18:55:36Z",
         "duration": "PT6H19M",
-        "viewCount": "2777",
+        "viewCount": "2778",
         "likeCount": "169",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -16376,7 +16412,7 @@
         "thumbnail": "https://i.ytimg.com/vi/iIys5JhIrao/mqdefault.jpg",
         "publishedAt": "2023-03-04T09:53:11Z",
         "duration": "PT1H9M36S",
-        "viewCount": "8949",
+        "viewCount": "8954",
         "likeCount": "432",
         "commentCount": "593",
         "favoriteCount": "0"
@@ -16388,7 +16424,7 @@
         "thumbnail": "https://i.ytimg.com/vi/AGliO1KhJRU/mqdefault.jpg",
         "publishedAt": "2023-03-04T18:16:57Z",
         "duration": "PT1H26M29S",
-        "viewCount": "4996",
+        "viewCount": "4999",
         "likeCount": "247",
         "commentCount": "488",
         "favoriteCount": "0"
@@ -16401,8 +16437,8 @@
         "publishedAt": "2023-03-05T16:13:10Z",
         "duration": "PT5H27M51S",
         "viewCount": "5486",
-        "likeCount": "319",
-        "commentCount": "198",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16509,8 +16545,8 @@
         "publishedAt": "2023-04-15T20:11:58Z",
         "duration": "PT6H26M49S",
         "viewCount": "3745",
-        "likeCount": "242",
-        "commentCount": "43",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16532,7 +16568,7 @@
         "thumbnail": "https://i.ytimg.com/vi/IkINxMIlpk0/mqdefault.jpg",
         "publishedAt": "2023-04-21T16:39:22Z",
         "duration": "PT56M8S",
-        "viewCount": "32451",
+        "viewCount": "32452",
         "likeCount": "1125",
         "commentCount": "1673",
         "favoriteCount": "0"
@@ -16545,8 +16581,8 @@
         "publishedAt": "2023-04-25T18:39:28Z",
         "duration": "PT1H43M46S",
         "viewCount": "2085",
-        "likeCount": "209",
-        "commentCount": "92",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16568,9 +16604,9 @@
         "thumbnail": "https://i.ytimg.com/vi/GH23UK7Sa4U/mqdefault.jpg",
         "publishedAt": "2023-05-03T15:19:12Z",
         "duration": "PT5H6M52S",
-        "viewCount": "8677",
-        "likeCount": "394",
-        "commentCount": "348",
+        "viewCount": "8678",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16617,8 +16653,8 @@
         "publishedAt": "2023-05-26T15:21:47Z",
         "duration": "PT3H15M32S",
         "viewCount": "4595",
-        "likeCount": "224",
-        "commentCount": "119",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16628,7 +16664,7 @@
         "thumbnail": "https://i.ytimg.com/vi/z9EYN3wPis0/mqdefault.jpg",
         "publishedAt": "2023-05-27T07:56:43Z",
         "duration": "PT56M48S",
-        "viewCount": "28259",
+        "viewCount": "28265",
         "likeCount": "934",
         "commentCount": "942",
         "favoriteCount": "0"
@@ -16652,7 +16688,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tgBdBDLXW_0/mqdefault.jpg",
         "publishedAt": "2023-06-11T13:55:21Z",
         "duration": "PT33M51S",
-        "viewCount": "28380",
+        "viewCount": "28391",
         "likeCount": "1085",
         "commentCount": "853",
         "favoriteCount": "0"
@@ -16760,7 +16796,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HJgY49av1FM/mqdefault.jpg",
         "publishedAt": "2023-08-04T18:42:17Z",
         "duration": "PT5H36M34S",
-        "viewCount": "5432",
+        "viewCount": "5440",
         "likeCount": "299",
         "commentCount": "138",
         "favoriteCount": "0"
@@ -16785,8 +16821,8 @@
         "publishedAt": "2023-08-09T04:29:23Z",
         "duration": "PT5H13M7S",
         "viewCount": "4201",
-        "likeCount": "210",
-        "commentCount": "226",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16820,8 +16856,8 @@
         "thumbnail": "https://i.ytimg.com/vi/l-WGos3wkQs/mqdefault.jpg",
         "publishedAt": "2023-08-21T19:35:49Z",
         "duration": "PT22S",
-        "viewCount": "92970",
-        "likeCount": "6151",
+        "viewCount": "92996",
+        "likeCount": "6153",
         "commentCount": "1059",
         "favoriteCount": "0"
       },
@@ -16845,8 +16881,8 @@
         "publishedAt": "2023-09-04T12:10:48Z",
         "duration": "PT3H25M36S",
         "viewCount": "3105",
-        "likeCount": "176",
-        "commentCount": "34",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -16976,7 +17012,7 @@
         "thumbnail": "https://i.ytimg.com/vi/jxELi4afcxQ/mqdefault.jpg",
         "publishedAt": "2023-11-07T05:32:22Z",
         "duration": "PT3H56M25S",
-        "viewCount": "9452",
+        "viewCount": "9454",
         "likeCount": "360",
         "commentCount": "243",
         "favoriteCount": "0"
@@ -16988,7 +17024,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OZ6Od3hek3c/mqdefault.jpg",
         "publishedAt": "2023-11-09T10:26:25Z",
         "duration": "PT5H9M58S",
-        "viewCount": "4228",
+        "viewCount": "4231",
         "likeCount": "211",
         "commentCount": "90",
         "favoriteCount": "0"
@@ -17013,8 +17049,8 @@
         "publishedAt": "2023-11-17T17:57:52Z",
         "duration": "PT3H21M54S",
         "viewCount": "3512",
-        "likeCount": "169",
-        "commentCount": "9",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -17199,7 +17235,7 @@
         "thumbnail": "https://i.ytimg.com/vi/973Jj-0Phio/mqdefault.jpg",
         "publishedAt": "2024-01-12T16:53:00Z",
         "duration": "PT1H58M22S",
-        "viewCount": "4865",
+        "viewCount": "4866",
         "likeCount": "255",
         "commentCount": "265",
         "favoriteCount": "0"
@@ -17283,7 +17319,7 @@
         "thumbnail": "https://i.ytimg.com/vi/VOyheqWU15Q/mqdefault.jpg",
         "publishedAt": "2024-02-03T01:55:32Z",
         "duration": "PT2H58M24S",
-        "viewCount": "1544",
+        "viewCount": "1545",
         "likeCount": "111",
         "commentCount": "24",
         "favoriteCount": "0"
@@ -17403,7 +17439,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zqRpgPc2Vj4/mqdefault.jpg",
         "publishedAt": "2024-04-02T09:21:07Z",
         "duration": "PT3H5M24S",
-        "viewCount": "29825",
+        "viewCount": "29833",
         "likeCount": "751",
         "commentCount": "725",
         "favoriteCount": "0"
@@ -17451,7 +17487,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JoN4978Bmn8/mqdefault.jpg",
         "publishedAt": "2024-04-14T22:08:22Z",
         "duration": "PT3H40M48S",
-        "viewCount": "12679",
+        "viewCount": "12683",
         "likeCount": "466",
         "commentCount": "297",
         "favoriteCount": "0"
@@ -17499,7 +17535,7 @@
         "thumbnail": "https://i.ytimg.com/vi/66Wu7YQjfLQ/mqdefault.jpg",
         "publishedAt": "2024-04-25T04:29:25Z",
         "duration": "PT4H58M41S",
-        "viewCount": "20017",
+        "viewCount": "20019",
         "likeCount": "688",
         "commentCount": "445",
         "favoriteCount": "0"
@@ -17511,7 +17547,7 @@
         "thumbnail": "https://i.ytimg.com/vi/FJhC7u70A9w/mqdefault.jpg",
         "publishedAt": "2024-05-16T10:48:36Z",
         "duration": "PT2H23M7S",
-        "viewCount": "6603",
+        "viewCount": "6605",
         "likeCount": "296",
         "commentCount": "397",
         "favoriteCount": "0"
@@ -17619,7 +17655,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Qoot8KrtTZo/mqdefault.jpg",
         "publishedAt": "2024-06-30T10:55:44Z",
         "duration": "PT1H31M32S",
-        "viewCount": "4038",
+        "viewCount": "4039",
         "likeCount": "192",
         "commentCount": "58",
         "favoriteCount": "0"
@@ -17643,7 +17679,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Lv-J0zCA6sk/mqdefault.jpg",
         "publishedAt": "2024-07-01T08:28:34Z",
         "duration": "PT4H2M49S",
-        "viewCount": "2685",
+        "viewCount": "2686",
         "likeCount": "161",
         "commentCount": "18",
         "favoriteCount": "0"
@@ -17787,7 +17823,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OPWi9-JD-Vk/mqdefault.jpg",
         "publishedAt": "2024-07-24T09:26:23Z",
         "duration": "PT3H48M21S",
-        "viewCount": "10142",
+        "viewCount": "10144",
         "likeCount": "420",
         "commentCount": "194",
         "favoriteCount": "0"
@@ -17811,7 +17847,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uwKjRz_pVtU/mqdefault.jpg",
         "publishedAt": "2024-08-03T17:28:08Z",
         "duration": "PT2H47M47S",
-        "viewCount": "8569",
+        "viewCount": "8570",
         "likeCount": "398",
         "commentCount": "303",
         "favoriteCount": "0"
@@ -17861,7 +17897,7 @@
         "duration": "PT3H42M",
         "viewCount": "9571",
         "likeCount": "396",
-        "commentCount": "368",
+        "commentCount": "369",
         "favoriteCount": "0"
       },
       {
@@ -17907,7 +17943,7 @@
         "thumbnail": "https://i.ytimg.com/vi/RUo6faAZH0s/mqdefault.jpg",
         "publishedAt": "2024-09-16T15:44:16Z",
         "duration": "PT3H50M46S",
-        "viewCount": "7266",
+        "viewCount": "7268",
         "likeCount": "316",
         "commentCount": "271",
         "favoriteCount": "0"
@@ -17986,7 +18022,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lcZ76OTGtqM/mqdefault.jpg",
         "publishedAt": "2024-10-21T12:10:38Z",
         "duration": "PT1M3S",
-        "viewCount": "3444",
+        "viewCount": "3445",
         "likeCount": "146",
         "commentCount": "98",
         "favoriteCount": "0"
@@ -18022,7 +18058,7 @@
         "thumbnail": "https://i.ytimg.com/vi/nGnhN1-crRQ/mqdefault.jpg",
         "publishedAt": "2024-11-01T12:05:47Z",
         "duration": "PT5H4M5S",
-        "viewCount": "4616",
+        "viewCount": "4617",
         "likeCount": "232",
         "commentCount": "36",
         "favoriteCount": "0"
@@ -18047,8 +18083,8 @@
         "publishedAt": "2024-11-05T03:16:36Z",
         "duration": "PT5H12M15S",
         "viewCount": "5719",
-        "likeCount": "299",
-        "commentCount": "85",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -18107,8 +18143,8 @@
         "publishedAt": "2024-11-17T14:51:55Z",
         "duration": "PT1M8S",
         "viewCount": "16728",
-        "likeCount": "767",
-        "commentCount": "189",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -18119,8 +18155,8 @@
         "publishedAt": "2024-12-05T16:58:37Z",
         "duration": "PT4H6M15S",
         "viewCount": "3117",
-        "likeCount": "193",
-        "commentCount": "87",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -18130,7 +18166,7 @@
         "thumbnail": "https://i.ytimg.com/vi/YWR7QqoFLp8/mqdefault.jpg",
         "publishedAt": "2024-12-11T15:33:16Z",
         "duration": "PT4H3M22S",
-        "viewCount": "2818",
+        "viewCount": "2819",
         "likeCount": "182",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -18167,8 +18203,8 @@
         "publishedAt": "2024-12-30T05:45:03Z",
         "duration": "PT2H25M50S",
         "viewCount": "2888",
-        "likeCount": "169",
-        "commentCount": "59",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -18190,7 +18226,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bd1elkFDnrY/mqdefault.jpg",
         "publishedAt": "2025-01-09T10:15:10Z",
         "duration": "PT4H54M29S",
-        "viewCount": "7527",
+        "viewCount": "7528",
         "likeCount": "332",
         "commentCount": "114",
         "favoriteCount": "0"
@@ -18214,7 +18250,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zXeQCoJN0dM/mqdefault.jpg",
         "publishedAt": "2025-01-21T10:24:50Z",
         "duration": "PT3H50M34S",
-        "viewCount": "17063",
+        "viewCount": "17070",
         "likeCount": "611",
         "commentCount": "288",
         "favoriteCount": "0"
@@ -18238,7 +18274,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7P1Or1erdg8/mqdefault.jpg",
         "publishedAt": "2025-01-29T08:35:52Z",
         "duration": "PT4H45M58S",
-        "viewCount": "47719",
+        "viewCount": "47722",
         "likeCount": "1132",
         "commentCount": "582",
         "favoriteCount": "0"
@@ -18250,7 +18286,7 @@
         "thumbnail": "https://i.ytimg.com/vi/9Q8rMJc9pQ8/mqdefault.jpg",
         "publishedAt": "2025-01-31T08:32:44Z",
         "duration": "PT4H52M34S",
-        "viewCount": "12559",
+        "viewCount": "12561",
         "likeCount": "459",
         "commentCount": "318",
         "favoriteCount": "0"
@@ -18286,7 +18322,7 @@
         "thumbnail": "https://i.ytimg.com/vi/GdBvWscP5mc/mqdefault.jpg",
         "publishedAt": "2025-02-08T10:02:30Z",
         "duration": "PT4H13M20S",
-        "viewCount": "7828",
+        "viewCount": "7832",
         "likeCount": "285",
         "commentCount": "88",
         "favoriteCount": "0"
@@ -18298,7 +18334,7 @@
         "thumbnail": "https://i.ytimg.com/vi/BOg-kKVkoTI/mqdefault.jpg",
         "publishedAt": "2025-02-11T10:43:21Z",
         "duration": "PT5H59M3S",
-        "viewCount": "4475",
+        "viewCount": "4476",
         "likeCount": "220",
         "commentCount": "53",
         "favoriteCount": "0"
@@ -18334,8 +18370,8 @@
         "thumbnail": "https://i.ytimg.com/vi/kcPaSFTX5fc/mqdefault.jpg",
         "publishedAt": "2025-02-19T09:24:23Z",
         "duration": "PT2H44M34S",
-        "viewCount": "10527",
-        "likeCount": "390",
+        "viewCount": "10537",
+        "likeCount": "389",
         "commentCount": "146",
         "favoriteCount": "0"
       },
@@ -18346,7 +18382,7 @@
         "thumbnail": "https://i.ytimg.com/vi/EZWBo37QBw8/mqdefault.jpg",
         "publishedAt": "2025-02-21T10:04:22Z",
         "duration": "PT2H57M56S",
-        "viewCount": "5484",
+        "viewCount": "5485",
         "likeCount": "283",
         "commentCount": "79",
         "favoriteCount": "0"
@@ -18394,7 +18430,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7d69-TSyk7s/mqdefault.jpg",
         "publishedAt": "2025-03-11T10:11:33Z",
         "duration": "PT3H35M26S",
-        "viewCount": "2821",
+        "viewCount": "2822",
         "likeCount": "199",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -18418,7 +18454,7 @@
         "thumbnail": "https://i.ytimg.com/vi/t2sFuf1Lo9E/mqdefault.jpg",
         "publishedAt": "2025-03-12T09:58:59Z",
         "duration": "PT4H26M41S",
-        "viewCount": "3904",
+        "viewCount": "3905",
         "likeCount": "198",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -18550,7 +18586,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uhjgWSAPQq8/mqdefault.jpg",
         "publishedAt": "2025-05-13T13:01:03Z",
         "duration": "PT3H46M45S",
-        "viewCount": "8653",
+        "viewCount": "8654",
         "likeCount": "336",
         "commentCount": "270",
         "favoriteCount": "0"
@@ -18598,7 +18634,7 @@
         "thumbnail": "https://i.ytimg.com/vi/euXYlU_7Qmg/mqdefault.jpg",
         "publishedAt": "2025-05-20T09:32:56Z",
         "duration": "PT2H25M11S",
-        "viewCount": "4936",
+        "viewCount": "4937",
         "likeCount": "209",
         "commentCount": "196",
         "favoriteCount": "0"
@@ -18622,7 +18658,7 @@
         "thumbnail": "https://i.ytimg.com/vi/2gaL3VynXfE/mqdefault.jpg",
         "publishedAt": "2025-05-23T11:08:38Z",
         "duration": "PT4H10M35S",
-        "viewCount": "3427",
+        "viewCount": "3429",
         "likeCount": "218",
         "commentCount": "42",
         "favoriteCount": "0"
@@ -18742,7 +18778,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wNXq-QLPQlE/mqdefault.jpg",
         "publishedAt": "2025-07-04T09:31:27Z",
         "duration": "PT5H11M",
-        "viewCount": "25236",
+        "viewCount": "25241",
         "likeCount": "693",
         "commentCount": "485",
         "favoriteCount": "0"
@@ -18755,8 +18791,8 @@
         "publishedAt": "2025-07-08T09:33:34Z",
         "duration": "PT3H27M20S",
         "viewCount": "2661",
-        "likeCount": "167",
-        "commentCount": "9",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -18766,7 +18802,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JOF7ituDsxQ/mqdefault.jpg",
         "publishedAt": "2025-07-09T09:52:41Z",
         "duration": "PT1H22M15S",
-        "viewCount": "1310",
+        "viewCount": "1311",
         "likeCount": "108",
         "commentCount": "9",
         "favoriteCount": "0"
@@ -18790,7 +18826,7 @@
         "thumbnail": "https://i.ytimg.com/vi/pg5PLnpk1gI/mqdefault.jpg",
         "publishedAt": "2025-07-17T10:02:34Z",
         "duration": "PT3H35M",
-        "viewCount": "8394",
+        "viewCount": "8395",
         "likeCount": "409",
         "commentCount": "147",
         "favoriteCount": "0"
@@ -18862,8 +18898,8 @@
         "thumbnail": "https://i.ytimg.com/vi/M-FeiqPygYk/mqdefault.jpg",
         "publishedAt": "2025-08-03T12:52:38Z",
         "duration": "PT4H22M41S",
-        "viewCount": "21686",
-        "likeCount": "752",
+        "viewCount": "21690",
+        "likeCount": "753",
         "commentCount": "385",
         "favoriteCount": "0"
       },
@@ -18886,7 +18922,7 @@
         "thumbnail": "https://i.ytimg.com/vi/eV46-hmL3I4/mqdefault.jpg",
         "publishedAt": "2025-08-09T09:30:46Z",
         "duration": "PT2H51M31S",
-        "viewCount": "6868",
+        "viewCount": "6869",
         "likeCount": "304",
         "commentCount": "71",
         "favoriteCount": "0"
@@ -18898,7 +18934,7 @@
         "thumbnail": "https://i.ytimg.com/vi/euVRvt0LqLQ/mqdefault.jpg",
         "publishedAt": "2025-08-12T10:21:39Z",
         "duration": "PT3H26M31S",
-        "viewCount": "11566",
+        "viewCount": "11567",
         "likeCount": "360",
         "commentCount": "156",
         "favoriteCount": "0"
@@ -18910,7 +18946,7 @@
         "thumbnail": "https://i.ytimg.com/vi/faD3-NWlYWc/mqdefault.jpg",
         "publishedAt": "2025-08-15T09:50:23Z",
         "duration": "PT5H7M11S",
-        "viewCount": "9464",
+        "viewCount": "9465",
         "likeCount": "295",
         "commentCount": "41",
         "favoriteCount": "0"
@@ -18982,7 +19018,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rXLN6D4QYWc/mqdefault.jpg",
         "publishedAt": "2025-08-28T12:40:15Z",
         "duration": "PT4H55M24S",
-        "viewCount": "1783",
+        "viewCount": "1784",
         "likeCount": "118",
         "commentCount": "21",
         "favoriteCount": "0"
@@ -18994,7 +19030,7 @@
         "thumbnail": "https://i.ytimg.com/vi/35lgtF9knqA/mqdefault.jpg",
         "publishedAt": "2025-08-29T03:51:05Z",
         "duration": "PT3H5M15S",
-        "viewCount": "2095",
+        "viewCount": "2096",
         "likeCount": "144",
         "commentCount": "67",
         "favoriteCount": "0"
@@ -19043,8 +19079,8 @@
         "publishedAt": "2025-09-02T07:58:16Z",
         "duration": "PT1H36M16S",
         "viewCount": "1174",
-        "likeCount": "88",
-        "commentCount": "3",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19054,9 +19090,9 @@
         "thumbnail": "https://i.ytimg.com/vi/XaKfzadw9Ho/mqdefault.jpg",
         "publishedAt": "2025-09-06T03:41:52Z",
         "duration": "PT5H25M11S",
-        "viewCount": "3660",
-        "likeCount": "191",
-        "commentCount": "41",
+        "viewCount": "3661",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19079,8 +19115,8 @@
         "publishedAt": "2025-09-09T09:31:45Z",
         "duration": "PT3H17M21S",
         "viewCount": "2146",
-        "likeCount": "143",
-        "commentCount": "25",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19139,8 +19175,8 @@
         "publishedAt": "2025-09-16T11:12:05Z",
         "duration": "PT4H17M35S",
         "viewCount": "5394",
-        "likeCount": "220",
-        "commentCount": "82",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19151,8 +19187,8 @@
         "publishedAt": "2025-09-17T09:43:37Z",
         "duration": "PT1H58M10S",
         "viewCount": "1289",
-        "likeCount": "108",
-        "commentCount": "1",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19198,7 +19234,7 @@
         "thumbnail": "https://i.ytimg.com/vi/2y8eLHZQz_M/mqdefault.jpg",
         "publishedAt": "2025-09-20T09:40:08Z",
         "duration": "PT3H51M35S",
-        "viewCount": "8887",
+        "viewCount": "8889",
         "likeCount": "271",
         "commentCount": "221",
         "favoriteCount": "0"
@@ -19223,8 +19259,8 @@
         "publishedAt": "2025-09-26T09:12:10Z",
         "duration": "PT4H52M14S",
         "viewCount": "4858",
-        "likeCount": "185",
-        "commentCount": "52",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19258,7 +19294,7 @@
         "thumbnail": "https://i.ytimg.com/vi/J7sR0LHUdiE/mqdefault.jpg",
         "publishedAt": "2025-10-04T09:05:34Z",
         "duration": "PT3H9M15S",
-        "viewCount": "10224",
+        "viewCount": "10225",
         "likeCount": "344",
         "commentCount": "118",
         "favoriteCount": "0"
@@ -19283,8 +19319,8 @@
         "publishedAt": "2025-10-11T08:41:42Z",
         "duration": "PT2H12M55S",
         "viewCount": "2455",
-        "likeCount": "156",
-        "commentCount": "24",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19307,8 +19343,8 @@
         "publishedAt": "2025-10-15T09:18:11Z",
         "duration": "PT1H49M26S",
         "viewCount": "1009",
-        "likeCount": "85",
-        "commentCount": "2",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19343,8 +19379,8 @@
         "publishedAt": "2025-10-19T04:09:51Z",
         "duration": "PT2H48M40S",
         "viewCount": "6034",
-        "likeCount": "207",
-        "commentCount": "76",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19438,7 +19474,7 @@
         "thumbnail": "https://i.ytimg.com/vi/55OuKujKSmw/mqdefault.jpg",
         "publishedAt": "2025-11-02T11:37:59Z",
         "duration": "PT2H51M25S",
-        "viewCount": "1287",
+        "viewCount": "1288",
         "likeCount": "96",
         "commentCount": "17",
         "favoriteCount": "0"
@@ -19462,7 +19498,7 @@
         "thumbnail": "https://i.ytimg.com/vi/j3hG04gM5IU/mqdefault.jpg",
         "publishedAt": "2025-11-05T09:02:35Z",
         "duration": "PT3H41M56S",
-        "viewCount": "5748",
+        "viewCount": "5750",
         "likeCount": "256",
         "commentCount": "112",
         "favoriteCount": "0"
@@ -19510,7 +19546,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Ll7NxHuc50E/mqdefault.jpg",
         "publishedAt": "2025-11-09T12:17:43Z",
         "duration": "PT1M52S",
-        "viewCount": "11329",
+        "viewCount": "11330",
         "likeCount": "503",
         "commentCount": "76",
         "favoriteCount": "0"
@@ -19523,8 +19559,8 @@
         "publishedAt": "2025-11-11T10:29:03Z",
         "duration": "PT3H7M59S",
         "viewCount": "2515",
-        "likeCount": "146",
-        "commentCount": "35",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19570,7 +19606,7 @@
         "thumbnail": "https://i.ytimg.com/vi/oQpJLY4UYNk/mqdefault.jpg",
         "publishedAt": "2025-11-22T08:48:25Z",
         "duration": "PT3H28M",
-        "viewCount": "2420",
+        "viewCount": "2421",
         "likeCount": "120",
         "commentCount": "27",
         "favoriteCount": "0"
@@ -19594,9 +19630,9 @@
         "thumbnail": "https://i.ytimg.com/vi/Y8WuqUEyxHA/mqdefault.jpg",
         "publishedAt": "2025-11-28T09:26:00Z",
         "duration": "PT3H40M11S",
-        "viewCount": "2103",
-        "likeCount": "106",
-        "commentCount": "46",
+        "viewCount": "2104",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19619,8 +19655,8 @@
         "publishedAt": "2025-12-06T09:48:09Z",
         "duration": "PT2H19M35S",
         "viewCount": "1642",
-        "likeCount": "112",
-        "commentCount": "19",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19643,8 +19679,8 @@
         "publishedAt": "2025-12-16T10:34:20Z",
         "duration": "PT2H47M15S",
         "viewCount": "1493",
-        "likeCount": "97",
-        "commentCount": "24",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -19666,9 +19702,9 @@
         "thumbnail": "https://i.ytimg.com/vi/ike0F1jUgB8/mqdefault.jpg",
         "publishedAt": "2026-01-07T23:33:47Z",
         "duration": "PT15M35S",
-        "viewCount": "1752",
+        "viewCount": "1755",
         "likeCount": "144",
-        "commentCount": "71",
+        "commentCount": "72",
         "favoriteCount": "0"
       },
       {
@@ -19690,7 +19726,7 @@
         "thumbnail": "https://i.ytimg.com/vi/1s5J0QzVZ4s/mqdefault.jpg",
         "publishedAt": "2026-01-17T09:44:24Z",
         "duration": "PT3H31M1S",
-        "viewCount": "1891",
+        "viewCount": "1895",
         "likeCount": "116",
         "commentCount": "23",
         "favoriteCount": "0"
@@ -19726,9 +19762,9 @@
         "thumbnail": "https://i.ytimg.com/vi/9Y_w_0VFtUM/mqdefault.jpg",
         "publishedAt": "2026-01-28T09:18:42Z",
         "duration": "PT6H8M11S",
-        "viewCount": "5148",
+        "viewCount": "5156",
         "likeCount": "239",
-        "commentCount": "156",
+        "commentCount": "157",
         "favoriteCount": "0"
       },
       {
@@ -19738,7 +19774,7 @@
         "thumbnail": "https://i.ytimg.com/vi/14VnFHPbfnE/mqdefault.jpg",
         "publishedAt": "2026-01-31T09:07:28Z",
         "duration": "PT4H30M6S",
-        "viewCount": "3770",
+        "viewCount": "3771",
         "likeCount": "160",
         "commentCount": "48",
         "favoriteCount": "0"
@@ -19810,7 +19846,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lCHARZ2FYYw/mqdefault.jpg",
         "publishedAt": "2026-02-14T09:23:26Z",
         "duration": "PT4H7M36S",
-        "viewCount": "2553",
+        "viewCount": "2554",
         "likeCount": "138",
         "commentCount": "12",
         "favoriteCount": "0"
@@ -19834,7 +19870,7 @@
         "thumbnail": "https://i.ytimg.com/vi/L9Kj9cKjEUY/mqdefault.jpg",
         "publishedAt": "2026-02-16T09:21:01Z",
         "duration": "PT3H26M",
-        "viewCount": "2868",
+        "viewCount": "2869",
         "likeCount": "137",
         "commentCount": "108",
         "favoriteCount": "0"
@@ -19858,7 +19894,7 @@
         "thumbnail": "https://i.ytimg.com/vi/4tlz-CB1Jc0/mqdefault.jpg",
         "publishedAt": "2026-02-20T10:12:05Z",
         "duration": "PT3H54M46S",
-        "viewCount": "6011",
+        "viewCount": "6014",
         "likeCount": "213",
         "commentCount": "140",
         "favoriteCount": "0"
@@ -19954,9 +19990,9 @@
         "thumbnail": "https://i.ytimg.com/vi/x_iKB0NBaLw/mqdefault.jpg",
         "publishedAt": "2026-03-07T15:40:33Z",
         "duration": "PT9M54S",
-        "viewCount": "1343",
+        "viewCount": "1346",
         "likeCount": "117",
-        "commentCount": "67",
+        "commentCount": "68",
         "favoriteCount": "0"
       },
       {
@@ -20002,7 +20038,7 @@
         "thumbnail": "https://i.ytimg.com/vi/8d4r7Iq2Un4/mqdefault.jpg",
         "publishedAt": "2026-03-14T09:18:45Z",
         "duration": "PT4H16M26S",
-        "viewCount": "2169",
+        "viewCount": "2172",
         "likeCount": "136",
         "commentCount": "73",
         "favoriteCount": "0"
@@ -20122,7 +20158,7 @@
         "thumbnail": "https://i.ytimg.com/vi/xTeRRslKPgo/mqdefault.jpg",
         "publishedAt": "2026-04-10T09:00:40Z",
         "duration": "PT1H58M",
-        "viewCount": "1528",
+        "viewCount": "1530",
         "likeCount": "93",
         "commentCount": "44",
         "favoriteCount": "0"
@@ -20146,7 +20182,7 @@
         "thumbnail": "https://i.ytimg.com/vi/30HyJ0YhaHE/mqdefault.jpg",
         "publishedAt": "2026-04-14T09:13:05Z",
         "duration": "PT3H17M36S",
-        "viewCount": "2100",
+        "viewCount": "2104",
         "likeCount": "107",
         "commentCount": "26",
         "favoriteCount": "0"
@@ -20170,7 +20206,7 @@
         "thumbnail": "https://i.ytimg.com/vi/lkSICnOeiPo/mqdefault.jpg",
         "publishedAt": "2026-04-21T09:21:43Z",
         "duration": "PT2H9M35S",
-        "viewCount": "1484",
+        "viewCount": "1485",
         "likeCount": "79",
         "commentCount": "16",
         "favoriteCount": "0"
@@ -20182,9 +20218,9 @@
         "thumbnail": "https://i.ytimg.com/vi/uk5Tv3IDC44/mqdefault.jpg",
         "publishedAt": "2026-04-27T09:19:12Z",
         "duration": "PT1H22M25S",
-        "viewCount": "1441",
+        "viewCount": "1445",
         "likeCount": "77",
-        "commentCount": "42",
+        "commentCount": "43",
         "favoriteCount": "0"
       },
       {
@@ -20194,7 +20230,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Mjhcyz-5IYA/mqdefault.jpg",
         "publishedAt": "2026-04-28T09:19:53Z",
         "duration": "PT4H9M16S",
-        "viewCount": "2711",
+        "viewCount": "2714",
         "likeCount": "105",
         "commentCount": "36",
         "favoriteCount": "0"
@@ -20206,7 +20242,7 @@
         "thumbnail": "https://i.ytimg.com/vi/GCWF0gwGtrw/mqdefault.jpg",
         "publishedAt": "2026-05-03T08:46:53Z",
         "duration": "PT1H46M21S",
-        "viewCount": "2732",
+        "viewCount": "2733",
         "likeCount": "114",
         "commentCount": "29",
         "favoriteCount": "0"
@@ -20218,7 +20254,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zCnI5s1gDBQ/mqdefault.jpg",
         "publishedAt": "2026-05-07T08:53:54Z",
         "duration": "PT7H3M50S",
-        "viewCount": "4791",
+        "viewCount": "4794",
         "likeCount": "193",
         "commentCount": "35",
         "favoriteCount": "0"
@@ -20230,7 +20266,7 @@
         "thumbnail": "https://i.ytimg.com/vi/xxxFo9szrPI/mqdefault.jpg",
         "publishedAt": "2026-05-07T19:17:54Z",
         "duration": "PT1M1S",
-        "viewCount": "153",
+        "viewCount": "155",
         "likeCount": "24",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -20242,7 +20278,7 @@
         "thumbnail": "https://i.ytimg.com/vi/zZVXaIgg11U/mqdefault.jpg",
         "publishedAt": "2026-05-08T09:14:05Z",
         "duration": "PT1H58M15S",
-        "viewCount": "1082",
+        "viewCount": "1085",
         "likeCount": "89",
         "commentCount": "4",
         "favoriteCount": "0"
@@ -20254,7 +20290,7 @@
         "thumbnail": "https://i.ytimg.com/vi/kGt7ojRqqA0/mqdefault.jpg",
         "publishedAt": "2026-05-09T12:54:11Z",
         "duration": "PT59S",
-        "viewCount": "214",
+        "viewCount": "216",
         "likeCount": "25",
         "commentCount": "6",
         "favoriteCount": "0"
@@ -20266,8 +20302,8 @@
         "thumbnail": "https://i.ytimg.com/vi/kredF9pjspo/mqdefault.jpg",
         "publishedAt": "2026-05-10T07:50:09Z",
         "duration": "PT4H40M46S",
-        "viewCount": "1967",
-        "likeCount": "95",
+        "viewCount": "2008",
+        "likeCount": "96",
         "commentCount": "10",
         "favoriteCount": "0"
       },
@@ -20278,7 +20314,7 @@
         "thumbnail": "https://i.ytimg.com/vi/fPbXehpYB1s/mqdefault.jpg",
         "publishedAt": "2026-05-11T09:05:36Z",
         "duration": "PT2H50M1S",
-        "viewCount": "2559",
+        "viewCount": "2571",
         "likeCount": "128",
         "commentCount": "26",
         "favoriteCount": "0"
@@ -20290,8 +20326,8 @@
         "thumbnail": "https://i.ytimg.com/vi/C6hu58JkaUo/mqdefault.jpg",
         "publishedAt": "2026-05-12T09:08:38Z",
         "duration": "PT6H16M21S",
-        "viewCount": "7283",
-        "likeCount": "287",
+        "viewCount": "7309",
+        "likeCount": "286",
         "commentCount": "170",
         "favoriteCount": "0"
       },
@@ -20302,7 +20338,7 @@
         "thumbnail": "https://i.ytimg.com/vi/e4l6qqsFj6g/mqdefault.jpg",
         "publishedAt": "2026-05-15T02:42:48Z",
         "duration": "PT1M1S",
-        "viewCount": "207",
+        "viewCount": "212",
         "likeCount": "28",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -20314,7 +20350,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OMeXbf4S5Nc/mqdefault.jpg",
         "publishedAt": "2026-05-16T09:15:04Z",
         "duration": "PT2H9M55S",
-        "viewCount": "763",
+        "viewCount": "765",
         "likeCount": "70",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -20326,8 +20362,8 @@
         "thumbnail": "https://i.ytimg.com/vi/uLd6JDcmVys/mqdefault.jpg",
         "publishedAt": "2026-05-18T09:06:54Z",
         "duration": "PT3H36M36S",
-        "viewCount": "1100",
-        "likeCount": "68",
+        "viewCount": "1113",
+        "likeCount": "69",
         "commentCount": "8",
         "favoriteCount": "0"
       },
@@ -20338,8 +20374,8 @@
         "thumbnail": "https://i.ytimg.com/vi/JvKU3YUsLfA/mqdefault.jpg",
         "publishedAt": "2026-05-19T08:54:17Z",
         "duration": "PT1H55M19S",
-        "viewCount": "665",
-        "likeCount": "52",
+        "viewCount": "671",
+        "likeCount": "51",
         "commentCount": "15",
         "favoriteCount": "0"
       },
@@ -20350,8 +20386,8 @@
         "thumbnail": "https://i.ytimg.com/vi/dukIGe3UezQ/mqdefault.jpg",
         "publishedAt": "2026-05-21T08:35:35Z",
         "duration": "PT1M",
-        "viewCount": "162",
-        "likeCount": "19",
+        "viewCount": "169",
+        "likeCount": "20",
         "commentCount": "1",
         "favoriteCount": "0"
       },
@@ -20362,8 +20398,8 @@
         "thumbnail": "https://i.ytimg.com/vi/OGs5wtamwKs/mqdefault.jpg",
         "publishedAt": "2026-05-22T08:44:11Z",
         "duration": "PT59M11S",
-        "viewCount": "869",
-        "likeCount": "67",
+        "viewCount": "889",
+        "likeCount": "71",
         "commentCount": "36",
         "favoriteCount": "0"
       },
@@ -20374,8 +20410,8 @@
         "thumbnail": "https://i.ytimg.com/vi/UFgpWkkCmkg/mqdefault.jpg",
         "publishedAt": "2026-05-22T13:14:28Z",
         "duration": "PT58S",
-        "viewCount": "112",
-        "likeCount": "12",
+        "viewCount": "119",
+        "likeCount": "13",
         "commentCount": "1",
         "favoriteCount": "0"
       },
@@ -20386,9 +20422,9 @@
         "thumbnail": "https://i.ytimg.com/vi/pi2L7_TBHZg/mqdefault.jpg",
         "publishedAt": "2026-05-23T08:44:43Z",
         "duration": "PT2H39M1S",
-        "viewCount": "1321",
-        "likeCount": "74",
-        "commentCount": "9",
+        "viewCount": "1340",
+        "likeCount": "76",
+        "commentCount": "11",
         "favoriteCount": "0"
       },
       {
@@ -20398,8 +20434,8 @@
         "thumbnail": "https://i.ytimg.com/vi/7BsRuyJ3dhg/mqdefault.jpg",
         "publishedAt": "2026-05-24T13:02:22Z",
         "duration": "PT1M1S",
-        "viewCount": "84",
-        "likeCount": "18",
+        "viewCount": "95",
+        "likeCount": "0",
         "commentCount": "0",
         "favoriteCount": "0"
       },
@@ -20410,9 +20446,9 @@
         "thumbnail": "https://i.ytimg.com/vi/75OZ9aVQReQ/mqdefault.jpg",
         "publishedAt": "2026-05-25T09:13:20Z",
         "duration": "PT2H38M26S",
-        "viewCount": "1588",
-        "likeCount": "91",
-        "commentCount": "7",
+        "viewCount": "1651",
+        "likeCount": "95",
+        "commentCount": "8",
         "favoriteCount": "0"
       },
       {
@@ -20422,9 +20458,9 @@
         "thumbnail": "https://i.ytimg.com/vi/TlYFghI5Y6Y/mqdefault.jpg",
         "publishedAt": "2026-05-25T14:48:53Z",
         "duration": "PT55S",
-        "viewCount": "515",
-        "likeCount": "24",
-        "commentCount": "4",
+        "viewCount": "723",
+        "likeCount": "27",
+        "commentCount": "5",
         "favoriteCount": "0"
       },
       {
@@ -20434,9 +20470,9 @@
         "thumbnail": "https://i.ytimg.com/vi/ZBKW_ldlIfw/mqdefault.jpg",
         "publishedAt": "2026-05-26T08:27:04Z",
         "duration": "PT3H38M6S",
-        "viewCount": "2271",
-        "likeCount": "126",
-        "commentCount": "8",
+        "viewCount": "2480",
+        "likeCount": "133",
+        "commentCount": "11",
         "favoriteCount": "0"
       },
       {
@@ -20446,9 +20482,45 @@
         "thumbnail": "https://i.ytimg.com/vi/wP2uYQdUJ6o/mqdefault.jpg",
         "publishedAt": "2026-05-28T03:03:07Z",
         "duration": "PT1M1S",
-        "viewCount": "8",
-        "likeCount": "4",
+        "viewCount": "195",
+        "likeCount": "24",
+        "commentCount": "1",
+        "favoriteCount": "0"
+      },
+      {
+        "id": "C-PkPaOCQZo",
+        "title": "VIRAL!!! Sola Scriptura hanya Mitos @MuriwaliYantoMataluGKKR‬, live#63 -05-2026",
+        "description": "VIRAL!!! Sola Scriptura hanya Mitos @MuriwaliYantoMataluGKKR, live#63 -05-2026\n\nLive Streaming hari Jum'at, 29 Mei 2026, jam 19.00 WIB di kannal Youtube DAMAI KASIH CHANNEL @damaikasihchannel9153 \n\nMohon maaf apabila ada kesalahan dalam ucapan atau literasi yang kami sampaikan, mohon koreksinya, terima kasih.\n\n#gerejakatolik   #theotokos   #bundamaria #yesuskristus  #satukuduskatolikapostolik     #kredo   #tradisisuci  #purgatory  #tempatpenantian  #dialog  #gereja   #protestantisme  #protestan #katolik #apologetik #apologetics #ortodox #ortodoks #gerejaapostolik  \n\nAPOLOGETIK KRISTEN KATOLIK\n\n#dialog  \n#theotokos    \n#satukuduskatolikapostolik \n#gerejaapostolik\n#imankatolik \n#imanrasuli\n#bundamaria\n#kredo \n#tradisisuci\n#imandanperbuatan\n#kristiani\n#kristen \n#apostolik\n#kisahyesus \n#yesuskristus  \n#gerejasuarakebenaraninjil  \n#gski  \n#catholicanswers   \n#muridmartinluther \n#martinluther \n#ulrichzwingli \n#yohanescalvin \n#abadenambelas \n#bapareformator \n#reformed \n#liturgi \n#protestantisme \n#scriptura \n#solascriptura \n#solafide \n#solagratia \n#alkitab \n#injil \n#perjanjianlama \n#ritus \n#yahudi \n#mesianik \n#polemikus \n#apologetik \n#channelapologetik \n#alkitab \n#gerejakatolik \n#tradisisuci \n#pendetaprotestan \n#pgi \n#goi \n#luteran \n#protestantisme \n#baptis \n#advent \n#ortodoks \n#karismatik \n#imankatolik \n#umatkatolik \n#kwi \n#konfrensiwaligerejaindonesia \n#gerejaprotestan \n#pausroma \n#roma \n#paus \n#katolik \n#erickoklikkk \n#damaikasihchannel \n‪‪‪‪‪‪\nLink website damaikasihchannel :\nhttps://damaikasihchannel.com/ \n\n  \nDUKUNG SELALU CHANNEL APOLOGET KRISTEN KATOLIK :\n\n1. ERICK OKLIKKK\n‪‪‪‪‪‪‪@erickoklikkk8373 \n\n2. LOVLY KATOLIK\n‪‪‪‪‪‪‪@lovlykatolik3102  \n\n3. RITUS LATIN \n‪‪‪‪‪‪‪@rituslatin5678 \n\n4. 𝕯𝖜𝖎𝕾𝖆𝖞 𝕿𝖆𝖓����𝖆𝕽𝖚𝖌𝖎\n‪‪‪‪‪‪‪@anak_anak_terang \n\n5. Quovadis Channel‪‪‪‪‪‪‪‪‪ \n‪‪‪‪‪‪@Quovadis6467 \n\nCATATAN : Barang siapa yg mengambil video DAMAI KASIH CHANNEL, baik perorangan maupun organisasi, dan mengubah/mengedit vidoe tersebut bahkan membuat judul ataupun tambnel yang tidak sesuai dengan video aslinya, tanpa seijin DAMAI KASIH CHANNEL, maka kami DAMAI KASIH CHANNEL tidak bertanggung jawab lagi secara hukum.",
+        "thumbnail": "https://i.ytimg.com/vi/C-PkPaOCQZo/mqdefault.jpg",
+        "publishedAt": "2026-05-29T08:58:10Z",
+        "duration": "PT4H32M45S",
+        "viewCount": "2550",
+        "likeCount": "134",
+        "commentCount": "44",
+        "favoriteCount": "0"
+      },
+      {
+        "id": "K9yqASTVn8c",
+        "title": "Surat terbuka buat @EsraAlfredSoru untuk dialog",
+        "description": "Surat terbuka buat @EsraAlfredSoru untuk dialog",
+        "thumbnail": "https://i.ytimg.com/vi/K9yqASTVn8c/mqdefault.jpg",
+        "publishedAt": "2026-05-29T16:47:09Z",
+        "duration": "PT1M1S",
+        "viewCount": "159",
+        "likeCount": "26",
         "commentCount": "0",
+        "favoriteCount": "0"
+      },
+      {
+        "id": "gxZUhVF7uPM",
+        "title": "Surat terbuka buat @EsraAlfredSoru untuk dialog, live#64 -05-2026",
+        "description": "Surat terbuka buat @EsraAlfredSoru untuk dialog, live#64 -05-2026\n\nLive Streaming hari Sabtu, 30 Mei 2026, jam 19.00 WIB di kannal Youtube DAMAI KASIH CHANNEL @damaikasihchannel9153 \n\nMohon maaf apabila ada kesalahan dalam ucapan atau literasi yang kami sampaikan, mohon koreksinya, terima kasih.\n\n#gerejakatolik   #theotokos   #bundamaria #yesuskristus  #satukuduskatolikapostolik     #kredo   #tradisisuci  #purgatory  #tempatpenantian  #dialog  #gereja   #protestantisme  #protestan #katolik #apologetik #apologetics #ortodox #ortodoks #gerejaapostolik  \n\nAPOLOGETIK KRISTEN KATOLIK\n\n#dialog  \n#theotokos    \n#satukuduskatolikapostolik \n#gerejaapostolik\n#imankatolik \n#imanrasuli\n#bundamaria\n#kredo \n#tradisisuci\n#imandanperbuatan\n#kristiani\n#kristen \n#apostolik\n#kisahyesus \n#yesuskristus  \n#gerejasuarakebenaraninjil  \n#gski  \n#catholicanswers   \n#muridmartinluther \n#martinluther \n#ulrichzwingli \n#yohanescalvin \n#abadenambelas \n#bapareformator \n#reformed \n#liturgi \n#protestantisme \n#scriptura \n#solascriptura \n#solafide \n#solagratia \n#alkitab \n#injil \n#perjanjianlama \n#ritus \n#yahudi \n#mesianik \n#polemikus \n#apologetik \n#channelapologetik \n#alkitab \n#gerejakatolik \n#tradisisuci \n#pendetaprotestan \n#pgi \n#goi \n#luteran \n#protestantisme \n#baptis \n#advent \n#ortodoks \n#karismatik \n#imankatolik \n#umatkatolik \n#kwi \n#konfrensiwaligerejaindonesia \n#gerejaprotestan \n#pausroma \n#roma \n#paus \n#katolik \n#erickoklikkk \n#damaikasihchannel \n‪‪‪‪‪‪\nLink website damaikasihchannel :\nhttps://damaikasihchannel.com/ \n\n  \nDUKUNG SELALU CHANNEL APOLOGET KRISTEN KATOLIK :\n\n1. ERICK OKLIKKK\n‪‪‪‪‪‪‪‪@erickoklikkk8373 \n\n2. LOVLY KATOLIK\n‪‪‪‪‪‪‪‪@lovlykatolik3102 \n\n3. RITUS LATIN \n‪‪‪‪‪‪‪‪@rituslatin5678 \n\n4. 𝕯𝖜𝖎𝕾𝖆𝖞 𝕿𝖆𝖓����𝖆𝕽𝖚𝖌𝖎\n‪‪‪‪‪‪‪‪@anak_anak_terang \n\n5. Quovadis Channel‪‪‪‪‪‪‪‪‪ \n‪‪‪‪‪‪‪@Quovadis6467 \n\nCATATAN : Barang siapa yg mengambil video DAMAI KASIH CHANNEL, baik perorangan maupun organisasi, dan mengubah/mengedit vidoe tersebut bahkan membuat judul ataupun tambnel yang tidak sesuai dengan video aslinya, tanpa seijin DAMAI KASIH CHANNEL, maka kami DAMAI KASIH CHANNEL tidak bertanggung jawab lagi secara hukum.",
+        "thumbnail": "https://i.ytimg.com/vi/gxZUhVF7uPM/mqdefault.jpg",
+        "publishedAt": "2026-05-30T08:16:58Z",
+        "duration": "PT1H59M40S",
+        "viewCount": "2771",
+        "likeCount": "142",
+        "commentCount": "40",
         "favoriteCount": "0"
       }
     ]
@@ -20565,7 +20637,7 @@
         "publishedAt": "2021-08-26T03:34:46Z",
         "duration": "PT3H3M23S",
         "viewCount": "143",
-        "likeCount": "24",
+        "likeCount": "0",
         "commentCount": "0",
         "favoriteCount": "0"
       },
@@ -21318,7 +21390,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rveKbVBn_BI/mqdefault.jpg",
         "publishedAt": "2021-09-15T17:59:57Z",
         "duration": "PT5H47M19S",
-        "viewCount": "1144",
+        "viewCount": "1145",
         "likeCount": "96",
         "commentCount": "25",
         "favoriteCount": "0"
@@ -21354,7 +21426,7 @@
         "thumbnail": "https://i.ytimg.com/vi/oy5H6izIr_8/mqdefault.jpg",
         "publishedAt": "2021-09-27T12:37:13Z",
         "duration": "PT3H4M57S",
-        "viewCount": "3476",
+        "viewCount": "3477",
         "likeCount": "157",
         "commentCount": "27",
         "favoriteCount": "0"
@@ -21462,7 +21534,7 @@
         "thumbnail": "https://i.ytimg.com/vi/EQwAFp9mKD8/mqdefault.jpg",
         "publishedAt": "2021-10-18T20:30:37Z",
         "duration": "PT17M52S",
-        "viewCount": "2959504",
+        "viewCount": "2959515",
         "likeCount": "5637",
         "commentCount": "612",
         "favoriteCount": "0"
@@ -21641,7 +21713,7 @@
         "description": "APA 1TU 4LKIT48 D4N APA 1TU 1NJ1L..???\n\nKata ‘injil’ umumnya diartikan sebagai rekaman tertulis akan perkataan dan perbuatan Yesus. Asal katanya dari bahasa Yunani, ‘euaggelion’, atau dalam bahasa Latin ‘Evangelium‘, yang artinya adalah “Kabar Gembira”. Maka kisah yang dituliskan di sana adalah kisah yang berhubungan dengan kehidupan Kristus. Menurut New Advent Catholic Encyclopedia, terdapat sekitar 50-an karya-karya tulis di abad- abad awal yang menulis tentang Pribadi dan karya Kristus, dan ada 20 karya yang disebut ‘injil’ walaupun hanya empat kitab Injil yang disebut Injil kanonik, artinya dinyatakan oleh Gereja sebagai Injil yang ditulis atas ilham Roh Kudus. Keduapuluh Injil tersebut adalah:\n\n1-4. Injil Kanonik: Injil Matius, Markus, Lukas, Yohanes\n5. Injil menurut jemaat Ibrani\n6. Injil Petrus\n7. Injil menurut jemaat Mesir\n8. Injil Matias\n9. Injil Filipus\n10. Injil Tomas\n11. Proto-evangelium Yakobus\n12. Injil Nicodemus (Acta Pilati)\n13. Injil Keduabelas Rasul\n14. Injil Basilides\n15. Injil Valentinus\n16. Injil Marcion\n17. Injil Hawa\n18. Injil Yudas\n19. Tulisan Genna Marias\n20. Injil Teleioseos\n\nNamun dari keduapuluh Injil ini hanya empat yang diakui oleh Gereja sebagai Injil yang ‘diilhami oleh Roh Kudus’, yaitu Injil Matius, Markus, Lukas, Yohanes. Keempat Injil tersebut ditulis sendiri oleh rasul Kristus (Matius dan Yohanes) atau oleh murid rasul Kristus (Markus, murid Rasul Petrus dan Lukas, murid Rasul Paulus). Keempat Injil tersebut: Matius, Markus, Lukas dan Yohanes ini ditetapkan sebagai Injil Kanonik/ termasuk dalam Kanon Kitab Suci Perjanjian Baru, pertama- tama oleh Paus Damasus I (382) dan kemudian diteguhkan oleh Konsili Hippo (393) dan Carthage (397) dan konsili- konsili berikutnya.\n\n\n#apaitualkitab\n#alkitab\n#apaituinjil\n#injil\n#manuskrip\n#erickoklikkk\n#damaikasihchannel\n\n1. ERICK OKLIKKK\nhttps://youtube.com/channel/UCHAfDi-j...\n2. DAMAI KASIH CHANNEL\nhttps://youtube.com/channel/UC3QXgTA_...",
         "thumbnail": "https://i.ytimg.com/vi/LochbyOvOlU/mqdefault.jpg",
         "publishedAt": "2021-12-14T19:12:45Z",
-        "duration": "PT2H13M40S",
+        "duration": "PT2H12M53S",
         "viewCount": "455",
         "likeCount": "48",
         "commentCount": "2",
@@ -21654,7 +21726,7 @@
         "thumbnail": "https://i.ytimg.com/vi/m9klIy_auEg/mqdefault.jpg",
         "publishedAt": "2021-12-16T04:51:40Z",
         "duration": "PT2H13M56S",
-        "viewCount": "1154",
+        "viewCount": "1155",
         "likeCount": "54",
         "commentCount": "3",
         "favoriteCount": "0"
@@ -22098,7 +22170,7 @@
         "thumbnail": "https://i.ytimg.com/vi/xq2Xs7Hhe5k/mqdefault.jpg",
         "publishedAt": "2022-04-29T21:55:57Z",
         "duration": "PT1H57M23S",
-        "viewCount": "2008",
+        "viewCount": "2009",
         "likeCount": "168",
         "commentCount": "11",
         "favoriteCount": "0"
@@ -22134,7 +22206,7 @@
         "thumbnail": "https://i.ytimg.com/vi/0gdEL5n4PSA/mqdefault.jpg",
         "publishedAt": "2022-05-30T05:04:00Z",
         "duration": "PT2H3S",
-        "viewCount": "3146",
+        "viewCount": "3147",
         "likeCount": "236",
         "commentCount": "11",
         "favoriteCount": "0"
@@ -22146,7 +22218,7 @@
         "thumbnail": "https://i.ytimg.com/vi/rI9i-rosdVk/mqdefault.jpg",
         "publishedAt": "2022-06-06T22:53:18Z",
         "duration": "PT4H18M",
-        "viewCount": "4522",
+        "viewCount": "4523",
         "likeCount": "352",
         "commentCount": "19",
         "favoriteCount": "0"
@@ -22302,7 +22374,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bLNhNehWTXk/mqdefault.jpg",
         "publishedAt": "2022-07-31T03:01:15Z",
         "duration": "PT2H32M",
-        "viewCount": "2502",
+        "viewCount": "2503",
         "likeCount": "123",
         "commentCount": "2",
         "favoriteCount": "0"
@@ -22326,7 +22398,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wpint3h3Gbg/mqdefault.jpg",
         "publishedAt": "2022-08-03T14:12:07Z",
         "duration": "PT1H9M49S",
-        "viewCount": "1490",
+        "viewCount": "1491",
         "likeCount": "107",
         "commentCount": "9",
         "favoriteCount": "0"
@@ -22435,7 +22507,7 @@
         "publishedAt": "2022-11-09T14:43:02Z",
         "duration": "PT2H30M34S",
         "viewCount": "694",
-        "likeCount": "69",
+        "likeCount": "0",
         "commentCount": "0",
         "favoriteCount": "0"
       },
@@ -22494,7 +22566,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wYncQIxA8PU/mqdefault.jpg",
         "publishedAt": "2022-11-22T17:03:27Z",
         "duration": "PT4H42M38S",
-        "viewCount": "4245",
+        "viewCount": "4246",
         "likeCount": "244",
         "commentCount": "22",
         "favoriteCount": "0"
@@ -22578,9 +22650,9 @@
         "thumbnail": "https://i.ytimg.com/vi/BCC_-CuqSlo/mqdefault.jpg",
         "publishedAt": "2023-01-11T18:44:28Z",
         "duration": "PT6H23M26S",
-        "viewCount": "5629",
-        "likeCount": "272",
-        "commentCount": "137",
+        "viewCount": "5630",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -22735,8 +22807,8 @@
         "publishedAt": "2023-02-08T14:38:04Z",
         "duration": "PT4H5M40S",
         "viewCount": "2146",
-        "likeCount": "151",
-        "commentCount": "19",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -22771,8 +22843,8 @@
         "publishedAt": "2023-02-18T01:36:17Z",
         "duration": "PT5H39M14S",
         "viewCount": "4142",
-        "likeCount": "206",
-        "commentCount": "227",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -22826,8 +22898,8 @@
         "publishedAt": "2023-03-08T17:55:59Z",
         "duration": "PT4M58S",
         "viewCount": "1892",
-        "likeCount": "87",
-        "commentCount": "299",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -22873,7 +22945,7 @@
         "thumbnail": "https://i.ytimg.com/vi/YZMwH5h_Iqk/mqdefault.jpg",
         "publishedAt": "2023-03-20T17:43:04Z",
         "duration": "PT2H9M41S",
-        "viewCount": "3230",
+        "viewCount": "3231",
         "likeCount": "210",
         "commentCount": "91",
         "favoriteCount": "0"
@@ -22969,7 +23041,7 @@
         "thumbnail": "https://i.ytimg.com/vi/t4b_ngKrTNU/mqdefault.jpg",
         "publishedAt": "2023-05-12T10:23:13Z",
         "duration": "PT12M1S",
-        "viewCount": "1814",
+        "viewCount": "1816",
         "likeCount": "124",
         "commentCount": "27",
         "favoriteCount": "0"
@@ -22988,9 +23060,9 @@
         "thumbnail": "https://i.ytimg.com/vi/XfE1edNaejg/mqdefault.jpg",
         "publishedAt": "2023-05-15T10:11:21Z",
         "duration": "PT5M42S",
-        "viewCount": "6538",
-        "likeCount": "348",
-        "commentCount": "91",
+        "viewCount": "6596",
+        "likeCount": "350",
+        "commentCount": "93",
         "favoriteCount": "0"
       },
       {
@@ -23019,7 +23091,7 @@
         "thumbnail": "https://i.ytimg.com/vi/tgBdBDLXW_0/mqdefault.jpg",
         "publishedAt": "2023-06-11T13:55:08Z",
         "duration": "PT33M51S",
-        "viewCount": "28380",
+        "viewCount": "28391",
         "likeCount": "1085",
         "commentCount": "853",
         "favoriteCount": "0"
@@ -23043,7 +23115,7 @@
         "thumbnail": "https://i.ytimg.com/vi/2keJtCtVevc/mqdefault.jpg",
         "publishedAt": "2023-06-15T04:56:05Z",
         "duration": "PT1H44M31S",
-        "viewCount": "3760",
+        "viewCount": "3762",
         "likeCount": "231",
         "commentCount": "20",
         "favoriteCount": "0"
@@ -23080,8 +23152,8 @@
         "publishedAt": "2023-06-20T17:38:00Z",
         "duration": "PT4H55M16S",
         "viewCount": "3557",
-        "likeCount": "210",
-        "commentCount": "12",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -23211,7 +23283,7 @@
         "thumbnail": "https://i.ytimg.com/vi/qK8mYjsBL-w/mqdefault.jpg",
         "publishedAt": "2023-09-26T16:04:53Z",
         "duration": "PT5H12M59S",
-        "viewCount": "2056",
+        "viewCount": "2057",
         "likeCount": "125",
         "commentCount": "108",
         "favoriteCount": "0"
@@ -23513,7 +23585,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ydjdDaPjKbA/mqdefault.jpg",
         "publishedAt": "2024-01-24T17:51:45Z",
         "duration": "PT3H19M58S",
-        "viewCount": "1694",
+        "viewCount": "1695",
         "likeCount": "122",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -23574,8 +23646,8 @@
         "publishedAt": "2024-01-29T07:01:40Z",
         "duration": "PT4H42M49S",
         "viewCount": "2454",
-        "likeCount": "177",
-        "commentCount": "190",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -23585,7 +23657,7 @@
         "thumbnail": "https://i.ytimg.com/vi/9OJID_ySuVU/mqdefault.jpg",
         "publishedAt": "2024-01-31T16:44:34Z",
         "duration": "PT4H23M14S",
-        "viewCount": "1667",
+        "viewCount": "1669",
         "likeCount": "132",
         "commentCount": "12",
         "favoriteCount": "0"
@@ -23718,8 +23790,8 @@
         "publishedAt": "2024-02-12T18:09:35Z",
         "duration": "PT59M51S",
         "viewCount": "876",
-        "likeCount": "96",
-        "commentCount": "11",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -23741,9 +23813,9 @@
         "thumbnail": "https://i.ytimg.com/vi/lBI7Z_KQPZE/mqdefault.jpg",
         "publishedAt": "2024-02-17T09:40:55Z",
         "duration": "PT4H56M35S",
-        "viewCount": "3043",
-        "likeCount": "186",
-        "commentCount": "141",
+        "viewCount": "3044",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -23777,7 +23849,7 @@
         "thumbnail": "https://i.ytimg.com/vi/txtrJQ0Z40Q/mqdefault.jpg",
         "publishedAt": "2024-02-19T16:09:49Z",
         "duration": "PT3H44M3S",
-        "viewCount": "2466",
+        "viewCount": "2472",
         "likeCount": "160",
         "commentCount": "125",
         "favoriteCount": "0"
@@ -23886,8 +23958,8 @@
         "publishedAt": "2024-03-03T07:38:47Z",
         "duration": "PT5H40M43S",
         "viewCount": "1282",
-        "likeCount": "101",
-        "commentCount": "28",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -23909,7 +23981,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Nk5xizMZepM/mqdefault.jpg",
         "publishedAt": "2024-03-05T16:57:57Z",
         "duration": "PT4H8M5S",
-        "viewCount": "1885",
+        "viewCount": "1886",
         "likeCount": "149",
         "commentCount": "121",
         "favoriteCount": "0"
@@ -23957,7 +24029,7 @@
         "thumbnail": "https://i.ytimg.com/vi/JCypK68JX38/mqdefault.jpg",
         "publishedAt": "2024-03-23T07:56:03Z",
         "duration": "PT2H13M",
-        "viewCount": "2055",
+        "viewCount": "2056",
         "likeCount": "154",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -24053,7 +24125,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HcOixmZq36c/mqdefault.jpg",
         "publishedAt": "2024-04-01T12:14:41Z",
         "duration": "PT5H2M22S",
-        "viewCount": "4837",
+        "viewCount": "4840",
         "likeCount": "218",
         "commentCount": "274",
         "favoriteCount": "0"
@@ -24149,7 +24221,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Xa8ZYSXw7Fw/mqdefault.jpg",
         "publishedAt": "2024-04-12T05:59:44Z",
         "duration": "PT6H7M30S",
-        "viewCount": "5843",
+        "viewCount": "5845",
         "likeCount": "325",
         "commentCount": "321",
         "favoriteCount": "0"
@@ -24245,7 +24317,7 @@
         "thumbnail": "https://i.ytimg.com/vi/66Wu7YQjfLQ/mqdefault.jpg",
         "publishedAt": "2024-04-25T04:29:25Z",
         "duration": "PT4H58M41S",
-        "viewCount": "20017",
+        "viewCount": "20019",
         "likeCount": "688",
         "commentCount": "445",
         "favoriteCount": "0"
@@ -24329,7 +24401,7 @@
         "thumbnail": "https://i.ytimg.com/vi/7Mk0YSJ5hzE/mqdefault.jpg",
         "publishedAt": "2024-05-06T06:29:12Z",
         "duration": "PT38S",
-        "viewCount": "27223",
+        "viewCount": "27244",
         "likeCount": "704",
         "commentCount": "527",
         "favoriteCount": "0"
@@ -24353,7 +24425,7 @@
         "thumbnail": "https://i.ytimg.com/vi/3LXRUkN0pls/mqdefault.jpg",
         "publishedAt": "2024-05-08T06:12:19Z",
         "duration": "PT4H38M23S",
-        "viewCount": "6921",
+        "viewCount": "6924",
         "likeCount": "291",
         "commentCount": "224",
         "favoriteCount": "0"
@@ -24390,8 +24462,8 @@
         "publishedAt": "2024-05-13T18:19:35Z",
         "duration": "PT6H24M12S",
         "viewCount": "3469",
-        "likeCount": "222",
-        "commentCount": "55",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -24425,8 +24497,8 @@
         "thumbnail": "https://i.ytimg.com/vi/K9rcZ5zI2qw/mqdefault.jpg",
         "publishedAt": "2024-05-19T12:11:14Z",
         "duration": "PT3H24M52S",
-        "viewCount": "1632",
-        "likeCount": "128",
+        "viewCount": "1635",
+        "likeCount": "129",
         "commentCount": "12",
         "favoriteCount": "0"
       },
@@ -24653,7 +24725,7 @@
         "thumbnail": "https://i.ytimg.com/vi/w91IaZrIM9w/mqdefault.jpg",
         "publishedAt": "2024-06-19T17:13:50Z",
         "duration": "PT4H16M37S",
-        "viewCount": "2854",
+        "viewCount": "2855",
         "likeCount": "210",
         "commentCount": "13",
         "favoriteCount": "0"
@@ -24761,7 +24833,7 @@
         "thumbnail": "https://i.ytimg.com/vi/M96O-fA4rRM/mqdefault.jpg",
         "publishedAt": "2024-06-27T07:24:35Z",
         "duration": "PT5H21M12S",
-        "viewCount": "3100",
+        "viewCount": "3101",
         "likeCount": "209",
         "commentCount": "65",
         "favoriteCount": "0"
@@ -24785,7 +24857,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Qoot8KrtTZo/mqdefault.jpg",
         "publishedAt": "2024-06-30T10:55:44Z",
         "duration": "PT1H31M32S",
-        "viewCount": "4038",
+        "viewCount": "4039",
         "likeCount": "192",
         "commentCount": "58",
         "favoriteCount": "0"
@@ -24809,7 +24881,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Lv-J0zCA6sk/mqdefault.jpg",
         "publishedAt": "2024-07-01T08:28:34Z",
         "duration": "PT4H2M49S",
-        "viewCount": "2685",
+        "viewCount": "2686",
         "likeCount": "161",
         "commentCount": "18",
         "favoriteCount": "0"
@@ -24821,7 +24893,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bqqgY9mLN8M/mqdefault.jpg",
         "publishedAt": "2024-07-02T21:17:57Z",
         "duration": "PT9H15M38S",
-        "viewCount": "3929",
+        "viewCount": "3930",
         "likeCount": "228",
         "commentCount": "55",
         "favoriteCount": "0"
@@ -24965,7 +25037,7 @@
         "thumbnail": "https://i.ytimg.com/vi/sYDeWJYN5lg/mqdefault.jpg",
         "publishedAt": "2024-07-12T20:42:11Z",
         "duration": "PT31M44S",
-        "viewCount": "8072",
+        "viewCount": "8076",
         "likeCount": "346",
         "commentCount": "123",
         "favoriteCount": "0"
@@ -25001,7 +25073,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Zra5zzvdmA0/mqdefault.jpg",
         "publishedAt": "2024-07-15T16:13:28Z",
         "duration": "PT3H47M38S",
-        "viewCount": "4923",
+        "viewCount": "4924",
         "likeCount": "273",
         "commentCount": "180",
         "favoriteCount": "0"
@@ -25013,7 +25085,7 @@
         "thumbnail": "https://i.ytimg.com/vi/qijAu_qb1FQ/mqdefault.jpg",
         "publishedAt": "2024-07-16T17:58:45Z",
         "duration": "PT4H58M",
-        "viewCount": "17450",
+        "viewCount": "17459",
         "likeCount": "686",
         "commentCount": "352",
         "favoriteCount": "0"
@@ -25037,7 +25109,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uEQ6nejE1Rg/mqdefault.jpg",
         "publishedAt": "2024-07-18T03:50:24Z",
         "duration": "PT5H47M15S",
-        "viewCount": "9945",
+        "viewCount": "9949",
         "likeCount": "560",
         "commentCount": "452",
         "favoriteCount": "0"
@@ -25109,7 +25181,7 @@
         "thumbnail": "https://i.ytimg.com/vi/k5-o0xykb0o/mqdefault.jpg",
         "publishedAt": "2024-07-23T11:59:46Z",
         "duration": "PT3H8M16S",
-        "viewCount": "4542",
+        "viewCount": "4545",
         "likeCount": "281",
         "commentCount": "60",
         "favoriteCount": "0"
@@ -25121,7 +25193,7 @@
         "thumbnail": "https://i.ytimg.com/vi/DUL7qSBQ24w/mqdefault.jpg",
         "publishedAt": "2024-07-24T08:07:59Z",
         "duration": "PT2H33M30S",
-        "viewCount": "15312",
+        "viewCount": "15314",
         "likeCount": "536",
         "commentCount": "403",
         "favoriteCount": "0"
@@ -25133,7 +25205,7 @@
         "thumbnail": "https://i.ytimg.com/vi/OPWi9-JD-Vk/mqdefault.jpg",
         "publishedAt": "2024-07-24T09:26:23Z",
         "duration": "PT3H48M21S",
-        "viewCount": "10142",
+        "viewCount": "10144",
         "likeCount": "420",
         "commentCount": "194",
         "favoriteCount": "0"
@@ -25169,7 +25241,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Rr7QPq38wKk/mqdefault.jpg",
         "publishedAt": "2024-07-26T08:31:23Z",
         "duration": "PT2H8M9S",
-        "viewCount": "6484",
+        "viewCount": "6486",
         "likeCount": "285",
         "commentCount": "174",
         "favoriteCount": "0"
@@ -25181,7 +25253,7 @@
         "thumbnail": "https://i.ytimg.com/vi/avXj8-uia5s/mqdefault.jpg",
         "publishedAt": "2024-07-26T19:47:23Z",
         "duration": "PT2H41M2S",
-        "viewCount": "17300",
+        "viewCount": "17301",
         "likeCount": "495",
         "commentCount": "794",
         "favoriteCount": "0"
@@ -25301,7 +25373,7 @@
         "thumbnail": "https://i.ytimg.com/vi/bWAQPkPOc4U/mqdefault.jpg",
         "publishedAt": "2024-08-01T06:33:13Z",
         "duration": "PT4H9M46S",
-        "viewCount": "4682",
+        "viewCount": "4683",
         "likeCount": "305",
         "commentCount": "206",
         "favoriteCount": "0"
@@ -25314,8 +25386,8 @@
         "publishedAt": "2024-08-02T06:29:28Z",
         "duration": "PT4H20M39S",
         "viewCount": "3787",
-        "likeCount": "221",
-        "commentCount": "104",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25338,8 +25410,8 @@
         "publishedAt": "2024-08-03T05:06:36Z",
         "duration": "PT5H47M40S",
         "viewCount": "4208",
-        "likeCount": "259",
-        "commentCount": "90",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25361,7 +25433,7 @@
         "thumbnail": "https://i.ytimg.com/vi/uwKjRz_pVtU/mqdefault.jpg",
         "publishedAt": "2024-08-03T17:28:08Z",
         "duration": "PT2H47M47S",
-        "viewCount": "8569",
+        "viewCount": "8570",
         "likeCount": "398",
         "commentCount": "303",
         "favoriteCount": "0"
@@ -25373,7 +25445,7 @@
         "thumbnail": "https://i.ytimg.com/vi/HR5kLjRuoUQ/mqdefault.jpg",
         "publishedAt": "2024-08-05T16:03:45Z",
         "duration": "PT2H3M25S",
-        "viewCount": "2309",
+        "viewCount": "2310",
         "likeCount": "173",
         "commentCount": "75",
         "favoriteCount": "0"
@@ -25410,8 +25482,8 @@
         "publishedAt": "2024-08-08T15:56:45Z",
         "duration": "PT54M2S",
         "viewCount": "1129",
-        "likeCount": "123",
-        "commentCount": "46",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25421,7 +25493,7 @@
         "thumbnail": "https://i.ytimg.com/vi/j1FkMp7xKqo/mqdefault.jpg",
         "publishedAt": "2024-08-10T07:58:23Z",
         "duration": "PT2H50M28S",
-        "viewCount": "3116",
+        "viewCount": "3117",
         "likeCount": "185",
         "commentCount": "48",
         "favoriteCount": "0"
@@ -25482,8 +25554,8 @@
         "publishedAt": "2024-08-13T04:29:18Z",
         "duration": "PT4H29M18S",
         "viewCount": "4875",
-        "likeCount": "267",
-        "commentCount": "83",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25517,7 +25589,7 @@
         "thumbnail": "https://i.ytimg.com/vi/1ge_urzw-BE/mqdefault.jpg",
         "publishedAt": "2024-08-15T11:17:12Z",
         "duration": "PT4H44M50S",
-        "viewCount": "4140",
+        "viewCount": "4142",
         "likeCount": "254",
         "commentCount": "64",
         "favoriteCount": "0"
@@ -25697,7 +25769,7 @@
         "thumbnail": "https://i.ytimg.com/vi/ZBqVryz3mfU/mqdefault.jpg",
         "publishedAt": "2024-09-02T11:53:39Z",
         "duration": "PT5H2M33S",
-        "viewCount": "9218",
+        "viewCount": "9223",
         "likeCount": "399",
         "commentCount": "106",
         "favoriteCount": "0"
@@ -25709,7 +25781,7 @@
         "thumbnail": "https://i.ytimg.com/vi/wkSvLlaeA-w/mqdefault.jpg",
         "publishedAt": "2024-09-03T08:30:43Z",
         "duration": "PT3H54M41S",
-        "viewCount": "5514",
+        "viewCount": "5516",
         "likeCount": "313",
         "commentCount": "121",
         "favoriteCount": "0"
@@ -25734,8 +25806,8 @@
         "publishedAt": "2024-09-04T16:13:19Z",
         "duration": "PT4H54M11S",
         "viewCount": "5975",
-        "likeCount": "321",
-        "commentCount": "13",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25769,7 +25841,7 @@
         "thumbnail": "https://i.ytimg.com/vi/5_aHKJMEmzM/mqdefault.jpg",
         "publishedAt": "2024-09-08T07:23:36Z",
         "duration": "PT5H24M17S",
-        "viewCount": "7990",
+        "viewCount": "7991",
         "likeCount": "297",
         "commentCount": "217",
         "favoriteCount": "0"
@@ -25866,8 +25938,8 @@
         "publishedAt": "2025-10-22T07:51:53Z",
         "duration": "PT2H17M11S",
         "viewCount": "1609",
-        "likeCount": "126",
-        "commentCount": "5",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25902,8 +25974,8 @@
         "publishedAt": "2025-11-19T10:39:11Z",
         "duration": "PT3H39M52S",
         "viewCount": "1080",
-        "likeCount": "78",
-        "commentCount": "5",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -25913,7 +25985,7 @@
         "thumbnail": "https://i.ytimg.com/vi/oQpJLY4UYNk/mqdefault.jpg",
         "publishedAt": "2025-11-22T08:48:25Z",
         "duration": "PT3H28M",
-        "viewCount": "2420",
+        "viewCount": "2421",
         "likeCount": "120",
         "commentCount": "27",
         "favoriteCount": "0"
@@ -25937,7 +26009,7 @@
         "thumbnail": "https://i.ytimg.com/vi/Y8WuqUEyxHA/mqdefault.jpg",
         "publishedAt": "2025-11-28T09:26:00Z",
         "duration": "PT3H40M11S",
-        "viewCount": "2103",
+        "viewCount": "2104",
         "likeCount": "106",
         "commentCount": "46",
         "favoriteCount": "0"
@@ -26037,8 +26109,8 @@
         "publishedAt": "2021-12-12T15:36:27Z",
         "duration": "PT2H50M37S",
         "viewCount": "574",
-        "likeCount": "57",
-        "commentCount": "14",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -26219,8 +26291,8 @@
         "publishedAt": "2025-12-23T15:28:25Z",
         "duration": "PT1M17S",
         "viewCount": "2848",
-        "likeCount": "56",
-        "commentCount": "55",
+        "likeCount": "0",
+        "commentCount": "0",
         "favoriteCount": "0"
       },
       {
@@ -26230,7 +26302,7 @@
         "thumbnail": "https://i.ytimg.com/vi/QozAdGzMprI/mqdefault.jpg",
         "publishedAt": "2026-03-25T10:36:39Z",
         "duration": "PT41M41S",
-        "viewCount": "716",
+        "viewCount": "718",
         "likeCount": "82",
         "commentCount": "27",
         "favoriteCount": "0"
